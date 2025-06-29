@@ -1,0 +1,43 @@
+---
+hide_table_of_contents: true
+---
+
+import post_processing_volumeIcon from '@site/static/img/Entities/cs2/post_processing_volume.png';
+
+<img src={post_processing_volumeIcon} alt="post_processing_volume icon" style={{height: '80px'}} />
+
+Mesh Entity
+
+Set postprocessing params while a player is inside the volume.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Postprocessing Resource Name** (`postprocessing`) \<`Resource`\>
+
+- **Fade Time** (`fadetime`) \<`Float`\>\
+Time to fade to these postprocessing settings in seconds
+
+- **Exposure Control** (`enableexposure`) \<`Boolean`\>\
+Use exposure settings for this volume?
+
+- **Min Exposure Brightness** (`minexposure`) \<`Float`\>\
+Minimum autoexposure scale
+
+- **Max Exposure Brightness** (`maxexposure`) \<`Float`\>\
+Maximum autoexposure scale
+
+- **Exposure Compensation** (`exposurecompensation`) \<`Float`\>\
+Number of stops to adjust auto-exposure by
+
+- **Exposure Adjustment Speed Up** (`exposurespeedup`) \<`Float`\>
+
+- **Exposure Adjustment Speed Down** (`exposurespeeddown`) \<`Float`\>
+
+- **Range between target exposure and current exposure where we switch to logarithmic approach** (`exposuresmoothingrange`) \<`Float`\>
+
+- **Master Volume** (`master`) \<`Boolean`\>\
+Is this volume active by default even when not touched by the player? (Master)
+
+
+ </details>
+

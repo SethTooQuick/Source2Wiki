@@ -1,0 +1,108 @@
+---
+hide_table_of_contents: true
+---
+
+import env_fadeIcon from '@site/static/img/Entities/cs2/env_fade.png';
+
+<img src={env_fadeIcon} alt="env_fade icon" style={{height: '80px'}} />
+
+Point Entity
+
+An entity that controls screen fades.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Entity Scripts** (`vscripts`) \<`ScriptList`\>\
+Name(s) of script files that are executed after all entities have spawned.
+
+- **Name** (`targetname`) \<`TargetSource`\>\
+The name that other entities refer to this entity by.
+
+- **Spawnflags** (`spawnflags`) \<`Flags`\>
+  - Fade From 
+  - Modulate 
+  - Triggering player only 
+  - Stay Out 
+
+
+- **Duration (seconds)** (`duration`) \<`String`\>\
+The time that it will take to fade the screen in or out.
+
+- **Hold Fade (seconds)** (`holdtime`) \<`String`\>\
+The time to hold the faded in/out state.
+
+- **Fade Alpha** (`renderamt`) \<`Integer`\>\
+Alpha of the fade, where 0 = fully transparent and 255 = fully opaque.
+
+- **Fade Color (R G B)** (`rendercolor`) \<`Color255`\>
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- RunScriptFile \<`String`\>\
+Load and execute a script file
+
+- RunScriptCode \<`String`\>\
+Execute a fragment of script code
+
+- CallScriptFunction \<`String`\>\
+Call a script function
+
+- CallPrivateScriptFunction \<`String`\>\
+Calls a script function from this entity's private script scope.
+
+- CallGlobalScriptFunction \<`String`\>\
+Calls a script function in the global script scope.
+
+- Kill \<`Void`\>\
+Removes this entity from the world.
+
+- KillHierarchy \<`Void`\>\
+Removes this entity and all its children from the world.
+
+- KillConstrained \<`Void`\>\
+Removes this entity, all its children, and anything constrained to it, from the world.
+
+- AddOutput \<`String`\>\
+Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname>inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.
+
+- FireUser1 \<`Void`\>\
+Causes this entity's OnUser1 output to be fired.
+
+- FireUser2 \<`Void`\>\
+Causes this entity's OnUser2 output to be fired.
+
+- FireUser3 \<`Void`\>\
+Causes this entity's OnUser3 output to be fired.
+
+- FireUser4 \<`Void`\>\
+Causes this entity's OnUser4 output to be fired.
+
+- Fade \<`Void`\>\
+Start the screen fade.
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnUser1 \<`Void`\>\
+Fired in response to FireUser1 input.
+
+- OnUser2 \<`Void`\>\
+Fired in response to FireUser2 input.
+
+- OnUser3 \<`Void`\>\
+Fired in response to FireUser3 input.
+
+- OnUser4 \<`Void`\>\
+Fired in response to FireUser4 input.
+
+- OnKilled \<`Void`\>\
+Fired when the entity is killed and removed from the game. Parameter is the inflictor.
+
+- OnBeginFade \<`Void`\>\
+Fired when the fade has begun.
+
+
+ </details>

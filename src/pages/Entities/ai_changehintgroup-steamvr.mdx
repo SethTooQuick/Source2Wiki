@@ -1,0 +1,39 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+Change Hint Group
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Search Type** (`SearchType`) \<`Choices`\>\
+How to search for the entities to change.
+  - Entity Name 
+  - Classname 
+  - Old Hint Group 
+
+
+- **Name to search for** (`SearchName`) \<`TargetNameOrClass`\>
+
+- **New Hint Group** (`NewHintGroup`) \<`String`\>
+
+- **Search Radius** (`Radius`) \<`String`\>\
+Radius to search (0 for all of map)
+
+- **Hint Limit Nav** (`hintlimiting`) \<`Boolean`\>\
+Limits NPC to using specified hint group for navigation requests, does not limit local navigation.
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- Kill \<`Void`\>\
+Removes this entity from the world
+
+- Activate \<`Void`\>\
+Change the Hint Group
+
+
+ </details>

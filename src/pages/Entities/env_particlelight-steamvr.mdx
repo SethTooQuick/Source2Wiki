@@ -1,0 +1,57 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+An entity that can be used to light the smoke particles emitted by env_smokestack entities. Does not light any other particle types.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Parent** (`parentname`) \<`TargetDestination`\>\
+The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent.
+
+- **Parent Model Bone/Attachment Name** (`parentAttachmentName`) \<`ParentAttachment`\>\
+The name of the bone or attachment to attach to on the entity's parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.
+
+- **Model Attachment position offset** (`local.origin`) \<`Vector`\>\
+Offset in the local space of the parent model's attachment/bone to use in hierarchy. Not used if you are not using parent attachment.
+
+- **Model Attachment angular offset** (`local.angles`) \<`Angle`\>\
+Angular offset in the local space of the parent model's attachment/bone to use in hierarchy. Not used if you are not using parent attachment.
+
+- **Model Attachment scale** (`local.scales`) \<`Vector`\>\
+Scale in the local space of the parent model's attachment/bone to use in hierarchy. Not used if you are not using parent attachment.
+
+- **Use Model Attachment Offset** (`useLocalOffset`) \<`Boolean`\>\
+Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.
+
+- **Color** (`Color`) \<`Color255`\>\
+Color emitted by this light.
+
+- **Intensity** (`Intensity`) \<`Integer`\>
+
+- **Directional** (`directional`) \<`Boolean`\>\
+If this is specified, then this light will use the bump map on the particles. Each particle system can have one ambient and one directional light.
+
+- **Particle System Entity** (`PSName`) \<`String`\>\
+Set this to the name of the env_smokestack that you want this light to affect.
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- SetParent \<`TargetDestination`\>\
+Changes the entity's parent in the movement hierarchy.
+
+- SetParentAttachment \<`String`\>\
+Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment.
+
+- SetParentAttachmentMaintainOffset \<`String`\>\
+Change this entity to attach to a specific attachment point on it's parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it's position relative to the parent at the time it is attached.
+
+- ClearParent \<`Void`\>\
+Removes this entity from the the movement hierarchy, leaving it free to move independently.
+
+
+ </details>

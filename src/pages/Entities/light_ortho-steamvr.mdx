@@ -1,0 +1,182 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+An orthographic spot light source.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Indirect Light Multiplier** (`bouncescale`) \<`Float`\>
+
+- **Render Diffuse** (`renderdiffuse`) \<`Boolean`\>
+
+- **Render Specular** (`renderspecular`) \<`Choices`\>
+  - Off 
+  - On 
+  - Bake into cubemaps 
+
+
+- **Direct Lighting** (`directlight`) \<`Choices`\>\
+How direct lighting should be represented
+  - None 
+  - Baked 
+  - Per-Pixel 
+
+
+- **Indirect Lighting** (`indirectlight`) \<`Choices`\>\
+How indirect lighting should be represented
+  - None 
+  - Baked 
+
+
+- **Enabled** (`enabled`) \<`Boolean`\>
+
+- **Color** (`color`) \<`Color255`\>
+
+- **Brightness** (`brightness`) \<`Float`\>
+
+- **Range** (`range`) \<`Float`\>\
+Distance range for light. 0=infinite
+
+- **Cast Shadows** (`castshadows`) \<`Choices`\>\
+Whether this light casts shadow
+  - No 
+  - Yes 
+  - Baked Only 
+
+
+- **Shadow Near Clip Plane** (`nearclipplane`) \<`Float`\>\
+Distance for near clip plane for shadow map
+
+- **Appearance** (`style`) \<`Choices`\>
+  - Normal 
+  - Fluorescent flicker 
+  - Slow, strong pulse 
+  - Slow pulse, noblack 
+  - Gentle pulse 
+  - Flicker A 
+  - Flicker B 
+  - Candle A 
+  - Candle B 
+  - Candle C 
+  - Fast strobe 
+  - Slow strobe 
+
+
+- **Custom Appearance** (`pattern`) \<`String`\>\
+Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light.
+
+- **Start Fade Dist** (`fademindist`) \<`Float`\>\
+Distance at which the light starts to fade (&lt;0 = use fademaxdist).
+
+- **End Fade Dist** (`fademaxdist`) \<`Float`\>\
+Maximum distance at which the light is visible (0 = don't fade out).
+
+- **Render to Cubemaps** (`rendertocubemaps`) \<`Boolean`\>\
+If true, this geometry renders into baked cube maps
+
+- **Priority** (`priority`) \<`Integer`\>\
+When the number of visible lights exceeds the rendering budget, higher priority lights are chosen for rendering first.
+
+- **Light Cookie** (`lightcookie`) \<`String`\>\
+light cookie name in effects/lightcookies.vtex
+
+- **Width** (`ortholightwidth`) \<`Float`\>\
+Ortho light rectangle width
+
+- **Height** (`ortholightheight`) \<`Float`\>\
+Ortho light rectangle height
+
+- **Range** (`range`) \<`Float`\>\
+Distance range for light. 0=infinite
+
+- **SunSpreadAngle** (`angulardiameter`) \<`Float`\>\
+The angular extent of the sun for casting soft shadows. Higher numbers are more diffuse. 1 is a good starting value.
+
+- **Shadow Texture Width** (`shadowtexturewidth`) \<`Integer`\>\
+0 = use default texture resolution
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- SetParent \<`String`\>\
+Changes the entity's parent in the movement hierarchy.
+
+- SetParentAttachment \<`String`\>\
+Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment.
+
+- SetParentAttachmentMaintainOffset \<`String`\>\
+Change this entity to attach to a specific attachment point on it's parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it's position relative to the parent at the time it is attached.
+
+- ClearParent \<`Void`\>\
+Removes this entity from the the movement hierarchy, leaving it free to move independently.
+
+- Kill \<`Void`\>\
+Removes this entity from the world.
+
+- KillHierarchy \<`Void`\>\
+Removes this entity and all its children from the world.
+
+- AddOutput \<`String`\>\
+Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname>inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.
+
+- FireUser1 \<`Void`\>\
+Causes this entity's OnUser1 output to be fired.
+
+- FireUser2 \<`Void`\>\
+Causes this entity's OnUser2 output to be fired.
+
+- FireUser3 \<`Void`\>\
+Causes this entity's OnUser3 output to be fired.
+
+- FireUser4 \<`Void`\>\
+Causes this entity's OnUser4 output to be fired.
+
+- SetLightEnabled \<`Void`\>\
+Sets whether the light is enabled (takes parameter of 0 or 1)
+
+- TurnOn \<`Void`\>\
+Turn the light on.
+
+- TurnOff \<`Void`\>\
+Turn the light off.
+
+- Toggle \<`Void`\>\
+Toggle the light on/off.
+
+- SetLightColor \<`Vector`\>\
+Set light color
+
+- SetLightBrightness \<`Float`\>\
+Set light brightness
+
+- SetAppearance \<`Integer`\>\
+Set appearance 0=Normal 1=Flicker A, 2=Slow, strong pulse 3=Candle A ...
+
+- SetCustomAppearance \<`String`\>\
+Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light.
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnUser1 \<`Void`\>\
+Fired in response to FireUser1 input.
+
+- OnUser2 \<`Void`\>\
+Fired in response to FireUser2 input.
+
+- OnUser3 \<`Void`\>\
+Fired in response to FireUser3 input.
+
+- OnUser4 \<`Void`\>\
+Fired in response to FireUser4 input.
+
+- OnKilled \<`Void`\>\
+Fired when the entity is killed and removed from the game.
+
+
+ </details>

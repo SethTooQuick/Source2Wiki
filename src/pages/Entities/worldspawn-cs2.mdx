@@ -1,0 +1,130 @@
+---
+hide_table_of_contents: true
+---
+
+Mesh Entity
+
+This is the world entity. Each map can only contain one, and it's automatically created for you.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Name** (`targetname`) \<`TargetSource`\>\
+The name that other entities refer to this entity by.
+
+- **SkyBox Texture Name** (`skyname`) \<`String`\>
+
+- **Level Fade In** (`startdark`) \<`Boolean`\>
+
+- **Level Fade In Color (R G B)** (`startcolor`) \<`Color255`\>
+
+- **Precomputed Visibility** (`pvstype`) \<`Choices`\>
+  - Disabled 
+  - Test map (open space, no skybox) 
+  - Full visibility solve 
+  - Partitioned solve (large map volume) 
+
+
+- **New Level Unit** (`newunit`) \<`Choices`\>\
+Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.
+  - No, keep current 
+  - Yes, clear previous levels 
+
+
+- **Start Fade Pixels** (`maxpropscreenwidth`) \<`Float`\>\
+Number of pixels wide at which all props in the level start to fade (&lt;0 = use fademaxdist). This number is ignored if the prop has a specific fade distance specified.
+
+- **End Fade Pixels** (`minpropscreenwidth`) \<`Float`\>\
+Minimum number of pixels wide at which the prop is visible (0 = don't fade out). This number is ignored if the prop has a specific fade distance specified.
+
+- **VR Chaperone** (`vrchaperone`) \<`Choices`\>
+  - Chaperone 
+  - Chaperone + Safe Zone 
+  - No Chaperone 
+
+
+- **VR Movement** (`vrmovement`) \<`Choices`\>
+  - None 
+  - Teleport 
+  - Teleport (w/non-up floor) 
+
+
+- **Maximum Lightmap Resolution** (`max_lightmap_resolution`) \<`Choices`\>
+  - No Maximum 
+  - 512 
+  - 1024 
+  - 2048 
+  - 4096 
+  - 8192 
+  - 16384 
+
+
+- **Lightmap Queries** (`lightmap_queries`) \<`Boolean`\>\
+Generates data which can be used to lookup lightmap UVs at a given position, useful for high-fidelity illumination of bullet decals on lightmapped geometry.
+
+- **Rebake Option** (`steamaudio_reverb_rebake_option`) \<`Choices`\>\
+<b>Cleanup</b>: Reverb bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br /><b>Manual</b>: Reverb needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br /><b>Auto</b>: Reverb is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.
+  - Cleanup 
+  - Manual 
+  - Auto 
+
+
+- **Grid Type** (`steamaudio_reverb_grid_type`) \<`Choices`\>\
+<b>Uniform Floor</b>: Places probes at a specified height above the floor with a specified horizontal spacing between probes. <br /><b>Manual Grid</b>: Use manually generated probes in the map.<br /><b>NavMesh Grid</b>: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.
+  - Uniform Floor 
+  - Manual Grid 
+  - NavMesh Grid 
+
+
+- **Grid Spacing** (`steamaudio_reverb_grid_spacing`) \<`Float`\>\
+The horizontal distance (in meters) between adjacent probes.
+
+- **Height Above Floor** (`steamaudio_reverb_height_above_floor`) \<`Float`\>\
+The height (in meters) above the floor at which probes should be placed..
+
+- **Baking Rays** (`steamaudio_reverb_rays`) \<`Integer`\>\
+The number of rays traced from the listener when baking reflections or reverb. Increasing this value results in more accurate reflections, at the cost of increased bake times.
+
+- **Baking Bounces** (`steamaudio_reverb_bounces`) \<`Integer`\>\
+The number of times each ray traced from the listener is reflected when baking reflections or reverb. Increasing this value results in longer, more accurate reverb tails, at the cost of increased bake times.
+
+- **Baking Duration** (`steamaudio_reverb_ir_duration`) \<`Float`\>\
+The duration (in seconds) of the IRs generated when baking reflections or reverb. Increasing this value results in longer, more accurate reverb tails, at the cost of increased disk space usage.
+
+- **Baking Ambisonic Order** (`steamaudio_reverb_ambisonic_order`) \<`Integer`\>\
+The Ambisonic order of the IRs generated when baking reflections or reverb. Increasing this value results in more accurate directional variation of reflected sound, at the cost of increased disk space usage.
+
+- **Rebake Option** (`steamaudio_pathing_rebake_option`) \<`Choices`\>\
+<b>Cleanup</b>: Pathing bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br /><b>Manual</b>: Pathing needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br /><b>Auto</b>: Pathing is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.
+  - Cleanup 
+  - Manual 
+  - Auto 
+
+
+- **Grid Type** (`steamaudio_pathing_grid_type`) \<`Choices`\>\
+<b>Uniform Floor</b>: Places probes at a specified height above the floor with a specified horizontal spacing between probes. <br /><b>Manual Grid</b>: Use manually generated probes in the map.<br /><b>NavMesh Grid</b>: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.
+  - Uniform Floor 
+  - Manual Grid 
+  - NavMesh Grid 
+
+
+- **Grid Spacing** (`steamaudio_pathing_grid_spacing`) \<`Float`\>\
+The horizontal distance (in meters) between adjacent probes.
+
+- **Height Above Floor** (`steamaudio_pathing_height_above_floor`) \<`Float`\>\
+The height (in meters) above the floor at which probes should be placed..
+
+- **Baking Visibilty Samples** (`steamaudio_pathing_visibility_samples`) \<`Integer`\>\
+Number of point samples to use around each probe when testing whether one probe can see another. To determine if two probes are mutually visible, rays are traced from each point sample of the first probe, to every other point sample of the second probe. Increasing this value prevents paths from being considered occluded by small objects, at the cost of increased bake times.
+
+- **Baking Visibility Radius** (`steamaudio_pathing_visibility_radius`) \<`Float`\>\
+When testing for mutual visibility between a pair of probes, each probe is treated as a sphere of this radius (in meters), and point samples are generated within this sphere.
+
+- **Baking Visibility Threshold** (`steamaudio_pathing_visibility_threshold`) \<`Float`\>\
+When tracing rays to test for mutual visibility between a pair of probes, the fraction of rays that are unoccluded must be greater than this threshold for the pair of probes to be considered mutually visible.
+
+- **Baking Path Range** (`steamaudio_pathing_visibility_pathrange`) \<`Float`\>\
+If the distance (in meters) between two probes is greater than this value, the probes are considered to not have any path between them. Increasing this value allows sound to propagate over greater distances, at the cost of increased bake times and memory usage.
+
+
+ </details>
+

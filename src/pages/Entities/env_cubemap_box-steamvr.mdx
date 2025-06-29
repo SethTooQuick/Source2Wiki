@@ -1,0 +1,41 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+An env_cubemap with box projection.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Priority** (`indoor_outdoor_level`) \<`Choices`\>\
+If multiple volumes contain an object, the highest priority volume takes precedence.
+  - Lowest 
+  - Low 
+  - Normal 
+  - High 
+  - Highest 
+
+
+- **Cubemap Texture** (`cubemaptexture`) \<`Resource`\>\
+Name of the cubemap texture
+
+- **Bake Near Z** (`bakenearz`) \<`Float`\>\
+Near clip plane used for the camera when baking the cube map
+
+- **Bake Far Z** (`bakefarz`) \<`Float`\>\
+Far clip plane used for the camera when baking the cube map
+
+- **Light Group** (`lightgroup`) \<`String`\>\
+Semicolon-delimited list of light groups to affect
+
+- **Moveable** (`moveable`) \<`Boolean`\>\
+Can be moved, parented, enabled, or disabled at runtime.
+
+- **Box Projection Mins** (`box_mins`) \<`Vector`\>
+
+- **Box Projection Maxs** (`box_maxs`) \<`Vector`\>
+
+
+ </details>
+

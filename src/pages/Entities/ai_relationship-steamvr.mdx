@@ -1,0 +1,62 @@
+---
+hide_table_of_contents: true
+---
+
+import ai_relationshipIcon from '@site/static/img/Entities/steamvr/ai_relationship.png';
+
+<img src={ai_relationshipIcon} alt="ai_relationship icon" style={{height: '80px'}} />
+
+Point Entity
+
+AI Relationship - Sets relationships between groups of NPCs in the AI.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Disposition** (`disposition`) \<`Choices`\>\
+Choose the way the Subject(s) should feel about the Target(s)
+  - Hate 
+  - Fear 
+  - Like 
+  - Neutral 
+
+
+- **Radius for subject** (`radius`) \<`Float`\>
+
+- **Disposition Priority** (`rank`) \<`Integer`\>\
+How much the Subject(s) should Like/Hate/Fear the Target(s). Higher priority = stronger feeling.
+
+- **Start Active** (`StartActive`) \<`Boolean`\>
+
+- **Reciprocal** (`Reciprocal`) \<`Boolean`\>\
+Set this to YES to have the new relationship mirrored by Target
+
+- **Spawnflags** (`spawnflags`) \<`Flags`\>
+  - Notify subject of target's location 
+  - Notify target of subject's location 
+
+
+- **Subject NPC(s) whose opinion of Target(s) will change** (`subject`) \<`TargetNameOrClass`\>\
+This is the NPC(s) whose disposition about the Target(s) will change. May be a targetname or a classname.
+
+- **Target player or NPC(s) about whom Subject(s) will feel differently** (`target`) \<`TargetNameOrClass`\>\
+This is the player or NPC(s) about whom the Subject(s) will change their disposition. May be a targetname or a classname.
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- ApplyRelationship \<`Void`\>\
+Apply relationship changes. This will change all Subject entities' relationships to all Target entities.
+
+<b>IMPORTANT:</b> Once you ApplyRelationships, this entity is then 'ALWAYS ON' until you send a Disable input or RevertRelationship input. During the time this entity is 'ON', any entities that spawn who match the Subject or Target names will be affected.
+
+<b>IMPORTANT:</b> Unpredictable results may occur when two ai_relationship entities refer to the same set or subset of target or subject entities. This situation should be avoided.
+
+- RevertRelationship \<`Void`\>\
+Revert relationship changes. This will return the relationship to what it was at the time the ApplyRelationship input was called (or when this ai_relationship was spawned if StartActive is set).
+
+- RevertToDefaultRelationship \<`Void`\>\
+Revert relationship changes to the default relationship, which may have changed since this ai_relationship was applied. This returns control of the entity relationship to the code.
+
+
+ </details>

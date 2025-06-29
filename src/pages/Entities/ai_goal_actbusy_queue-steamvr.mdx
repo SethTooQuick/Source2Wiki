@@ -1,0 +1,146 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+AI Goal Act Busy Queue
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Actor(s) to affect** (`actor`) \<`TargetNameOrClass`\>\
+NPC's that should act busy
+
+- **Start Active** (`StartActive`) \<`Boolean`\>
+
+- **Search Type** (`SearchType`) \<`Choices`\>\
+How to search for the entities using the targetname.
+  - Entity Name 
+  - Classname 
+
+
+- **Search Range for Busy Hints** (`busysearchrange`) \<`Float`\>
+
+- **Visible Busy Hints Only** (`visibleonly`) \<`Boolean`\>
+
+- **Exit Node** (`node_exit`) \<`TargetDestination`\>\
+The name of the node the first NPC in the queue should move to when he leaves the head of the queue.
+
+- **Node 1** (`node01`) \<`TargetDestination`\>\
+The name of the first actbusy hint node in the queue.
+
+- **Node 2** (`node02`) \<`TargetDestination`\>\
+The name of the second actbusy hint node in the queue.
+
+- **Node 3** (`node03`) \<`TargetDestination`\>\
+The name of the third actbusy hint node in the queue.
+
+- **Node 4** (`node04`) \<`TargetDestination`\>\
+The name of the fourth actbusy hint node in the queue.
+
+- **Node 5** (`node05`) \<`TargetDestination`\>\
+The name of the fifth actbusy hint node in the queue.
+
+- **Node 6** (`node06`) \<`TargetDestination`\>\
+The name of the sixth actbusy hint node in the queue.
+
+- **Node 7** (`node07`) \<`TargetDestination`\>\
+The name of the seventh actbusy hint node in the queue.
+
+- **Node 8** (`node08`) \<`TargetDestination`\>\
+The name of the eighth actbusy hint node in the queue.
+
+- **Node 9** (`node09`) \<`TargetDestination`\>\
+The name of the ninth actbusy hint node in the queue.
+
+- **Node 10** (`node10`) \<`TargetDestination`\>\
+The name of the tenth actbusy hint node in the queue.
+
+- **Node 11** (`node11`) \<`TargetDestination`\>\
+The name of the eleventh actbusy hint node in the queue.
+
+- **Node 12** (`node12`) \<`TargetDestination`\>\
+The name of the twelfth actbusy hint node in the queue.
+
+- **Node 13** (`node13`) \<`TargetDestination`\>\
+The name of the thirteenth actbusy hint node in the queue.
+
+- **Node 14** (`node14`) \<`TargetDestination`\>\
+The name of the fourteenth actbusy hint node in the queue.
+
+- **Node 15** (`node15`) \<`TargetDestination`\>\
+The name of the fifteenth actbusy hint node in the queue.
+
+- **Node 16** (`node16`) \<`TargetDestination`\>\
+The name of the sixteenth actbusy hint node in the queue.
+
+- **Node 17** (`node17`) \<`TargetDestination`\>\
+The name of the seventeenth actbusy hint node in the queue.
+
+- **Node 18** (`node18`) \<`TargetDestination`\>\
+The name of the eighteenth actbusy hint node in the queue.
+
+- **Node 19** (`node19`) \<`TargetDestination`\>\
+The name of the nineteenth actbusy hint node in the queue.
+
+- **Node 20** (`node20`) \<`TargetDestination`\>\
+The name of the twentieth actbusy hint node in the queue.
+
+- **Must Reach Front** (`mustreachfront`) \<`Boolean`\>\
+If true, NPCs much reach the front node in the queue before they're allowed to leave the queue.
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- Activate \<`Void`\>\
+Begin acting busy
+
+- Deactivate \<`Void`\>\
+Cease acting busy
+
+- SetBusySearchRange \<`Float`\>\
+Update the busy search range for all actors.
+
+- ForceNPCToActBusy \<`String`\>\
+Force an NPC to act busy. Takes parameters, separated by spaces: &lt;Targetname&gt; &lt;hint node targetname&gt; &lt;optional:teleport&gt; &lt;optional:$customactivityorsequence&gt; &lt;maximum time to actbusy&gt;. If no hint node targetname is specified, it'll search for a random one. If no max time is specified, it'll use the default. Specifying 0 as the max time will make the NPC act busy until disturbed. If the optional teleport parameter is specified, the NPC will teleport to the act busy point. A custom move animation can be specified by prepending $ to the name of it. i.e. $ACT_RUN will make the NPC Run. Sequence names can be used instead of activities.
+
+- ForceThisNPCToActBusy \<`String`\>\
+Force an NPC outputted from another entity to act busy. (only usable from an output that specifies an entity)
+
+- ForceThisNPCToLeave \<`String`\>\
+Force an NPC outputted from another entity to find a HINT_NPC_EXIT_POINT hintnode and vanish.
+
+- PlayerStartedBlocking \<`Float`\>\
+Tell the queue manager that the player has started blocking a spot in the queue.
+
+- PlayerStoppedBlocking \<`Float`\>\
+Tell the queue manager that the player has stopped blocking a spot in the queue.
+
+- MoveQueueUp \<`Void`\>\
+Force the queue to move up, sending the front-most NPC out of the queue.
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnNPCStartedBusy \<`String`\>\
+Fired when an NPC targeted by this goal starts an ActBusy animation.
+
+- OnNPCFinishedBusy \<`String`\>\
+Fired when an NPC targeted by this goal finishes an ActBusy.
+
+- OnNPCLeft \<`String`\>\
+Fired when an NPC target by this goal finishes a forced Leave.
+
+- OnQueueMoved \<`Float`\>\
+Fired when the queue moves. Outputs the number of NPCs left in the queue.
+
+- OnNPCStartedLeavingQueue \<`String`\>\
+Fired when the NPC at the head of the queue starts to leave. The activator is the NPC, and the string is the name of the NPC.
+
+- OnNPCLeftQueue \<`String`\>\
+Fired when the NPC at the head of the queue leaves. The activator is the NPC, and the string is the name of the NPC.
+
+
+ </details>

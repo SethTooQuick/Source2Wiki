@@ -1,0 +1,81 @@
+---
+hide_table_of_contents: true
+---
+
+import assault_assaultpointIcon from '@site/static/img/Entities/steamvr/assault_assaultpoint.png';
+
+<img src={assault_assaultpointIcon} alt="assault_assaultpoint icon" style={{height: '80px'}} />
+
+Point Entity
+
+(Assault) assault point
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Assault Hint Group** (`assaultgroup`) \<`String`\>\
+NPC's movements are constrained to this hint group once assault has begun
+
+- **Next assault point (optional)** (`nextassaultpoint`) \<`TargetDestination`\>
+
+- **Assault time out** (`assaulttimeout`) \<`Float`\>\
+This point is cleared when no enemies are seen for this long (seconds)
+
+- **Clear on contact with enemies** (`clearoncontact`) \<`Boolean`\>\
+If you come in contact with enemies while approaching the assault point, clear our assault point
+
+- **Allow diversion** (`allowdiversion`) \<`Boolean`\>\
+If you come in contact with enemies while approaching the assault point, divert to kill them. Resume the assault once contact is lost.
+
+- **Diversion Proximity** (`allowdiversionradius`) \<`Float`\>\
+If Allow Diversion is set, NPC will only divert from assault to attack an enemy that is within this distance of the assault point. 0 = No limit.
+
+- **Never Timeout** (`nevertimeout`) \<`Boolean`\>\
+If set, the assault never ends for NPCs assaulting this point. Useful for forcing NPCs back to a point.
+
+- **Strict?** (`strict`) \<`Choices`\>
+  - No, NPC may move from point to attack 
+  - Yes, NPC may not move to attack 
+
+
+- **Spawnflags** (`spawnflags`) \<`Flags`\>
+  - Clear this point upon arrival, UNCONDITIONALLY 
+
+
+- **Force Crouch** (`forcecrouch`) \<`Boolean`\>\
+NPCs using this assault point are forced into crouching while holding it.
+
+- **Urgent** (`urgent`) \<`Boolean`\>\
+If true, NPCs will consider movement to this assault point as Urgent Navigation.
+
+- **Attack Tolerance** (`assaulttolerance`) \<`Choices`\>\
+How far this NPC may move from the assault point to try to attack an enemy.
+  - Tight (3ft) 
+  - Medium (6ft) 
+  - Large (10ft) 
+
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- SetClearOnContact \<`Integer`\>\
+Set the clear on contact flag. NPCs who spot enemies while running to the assault point, or while waiting at it, will immediately Clear it.
+
+- SetAllowDiversion \<`Integer`\>\
+Set the allow diversion flag. NPCs who spot enemies whil running to the assault point, or while waiting on it, will divert away (leave Assault mode) to deal with the enemies. Upon losing enemies, they'll go back to Assault mode, and return to this assault point.
+
+- SetForceClear \<`Integer`\>\
+Set the Force Clear flag. NPCs who are currently running to the assault point will Clear it immediately. NPCs who acquire it in the future will Clear it automatically.
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnArrival \<`Void`\>\
+Fires when the NPC reaches this assault point
+
+- OnAssaultClear \<`Void`\>\
+Fires when this assault point is cleared of enemies
+
+
+ </details>

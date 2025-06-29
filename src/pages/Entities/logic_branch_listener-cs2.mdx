@@ -1,0 +1,142 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+Contains a list of logic_branch entities and fires outputs when the state of any of the logic_branches changes.
+
+This entity is used to fire an event when a set of conditions are all satisfied.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Entity Scripts** (`vscripts`) \<`ScriptList`\>\
+Name(s) of script files that are executed after all entities have spawned.
+
+- **Name** (`targetname`) \<`TargetSource`\>\
+The name that other entities refer to this entity by.
+
+- **Logic Branch 01** (`Branch01`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 02** (`Branch02`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 03** (`Branch03`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 04** (`Branch04`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 05** (`Branch05`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 06** (`Branch06`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 07** (`Branch07`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 08** (`Branch08`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 09** (`Branch09`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 10** (`Branch10`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 11** (`Branch11`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 12** (`Branch12`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 13** (`Branch13`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 14** (`Branch14`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 15** (`Branch15`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+- **Logic Branch 16** (`Branch16`) \<`TargetDestination`\>\
+The name of one or more logic_branches (wildcards allowed).
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- RunScriptFile \<`String`\>\
+Load and execute a script file
+
+- RunScriptCode \<`String`\>\
+Execute a fragment of script code
+
+- CallScriptFunction \<`String`\>\
+Call a script function
+
+- CallPrivateScriptFunction \<`String`\>\
+Calls a script function from this entity's private script scope.
+
+- CallGlobalScriptFunction \<`String`\>\
+Calls a script function in the global script scope.
+
+- Kill \<`Void`\>\
+Removes this entity from the world.
+
+- KillHierarchy \<`Void`\>\
+Removes this entity and all its children from the world.
+
+- KillConstrained \<`Void`\>\
+Removes this entity, all its children, and anything constrained to it, from the world.
+
+- AddOutput \<`String`\>\
+Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname>inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.
+
+- FireUser1 \<`Void`\>\
+Causes this entity's OnUser1 output to be fired.
+
+- FireUser2 \<`Void`\>\
+Causes this entity's OnUser2 output to be fired.
+
+- FireUser3 \<`Void`\>\
+Causes this entity's OnUser3 output to be fired.
+
+- FireUser4 \<`Void`\>\
+Causes this entity's OnUser4 output to be fired.
+
+- Test \<`Void`\>\
+Tests the state of all the logic_branches in the list and fires the appropriate output.
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnUser1 \<`Void`\>\
+Fired in response to FireUser1 input.
+
+- OnUser2 \<`Void`\>\
+Fired in response to FireUser2 input.
+
+- OnUser3 \<`Void`\>\
+Fired in response to FireUser3 input.
+
+- OnUser4 \<`Void`\>\
+Fired in response to FireUser4 input.
+
+- OnKilled \<`Void`\>\
+Fired when the entity is killed and removed from the game. Parameter is the inflictor.
+
+- OnAllTrue \<`Void`\>\
+Fired when all the logic_branches in the list become true.
+
+- OnAllFalse \<`Void`\>\
+Fired when all the logic_branches in the list become false.
+
+- OnMixed \<`Void`\>\
+Fired when one of the logic branches in the list changes, but some are true and some are false.
+
+
+ </details>

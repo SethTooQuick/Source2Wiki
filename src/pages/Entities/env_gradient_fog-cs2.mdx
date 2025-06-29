@@ -1,0 +1,153 @@
+---
+hide_table_of_contents: true
+---
+
+import env_gradient_fogIcon from '@site/static/img/Entities/cs2/env_gradient_fog.png';
+
+<img src={env_gradient_fogIcon} alt="env_gradient_fog icon" style={{height: '80px'}} />
+
+Point Entity
+
+
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Start Disabled** (`StartDisabled`) \<`Boolean`\>
+
+- **Entity Scripts** (`vscripts`) \<`ScriptList`\>\
+Name(s) of script files that are executed after all entities have spawned.
+
+- **Name** (`targetname`) \<`TargetSource`\>\
+The name that other entities refer to this entity by.
+
+- **Fog Color** (`fogcolor`) \<`Color255`\>\
+Set the gradient fog color.
+
+- **Fog Color Multiplier** (`fogstrength`) \<`Float`\>\
+For HDR color values
+
+- **Fog Maximum Opacity** (`fogmaxopacity`) \<`Float`\>\
+Set the maximum opacity of the gradient fog.
+
+- **Fog Start Distance** (`fogstart`) \<`Float`\>
+
+- **Fog End Distance** (`fogend`) \<`Float`\>
+
+- **Distance Falloff Exponent** (`fogfalloffexponent`) \<`Float`\>\
+Exponent for distance falloff.
+
+- **Height Fog Enabled?** (`heightfog`) \<`Boolean`\>
+
+- **Fog Start Height** (`fogstartheight`) \<`Float`\>
+
+- **Fog End Height** (`fogendheight`) \<`Float`\>
+
+- **Height Falloff Exponent** (`fogverticalexponent`) \<`Float`\>\
+Exponent for height falloff.
+
+- **Fade Time** (`fadetime`) \<`Float`\>\
+How much time it takes to fade in new values.
+
+- **Far Z Clip Plane** (`farz`) \<`Float`\>\
+Controls the Far Z distance clipping plane, beyond which geometry will be culled.
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- Enable \<`Void`\>\
+Enable this entity.
+
+- Disable \<`Void`\>\
+Disable this entity.
+
+- RunScriptFile \<`String`\>\
+Load and execute a script file
+
+- RunScriptCode \<`String`\>\
+Execute a fragment of script code
+
+- CallScriptFunction \<`String`\>\
+Call a script function
+
+- CallPrivateScriptFunction \<`String`\>\
+Calls a script function from this entity's private script scope.
+
+- CallGlobalScriptFunction \<`String`\>\
+Calls a script function in the global script scope.
+
+- Kill \<`Void`\>\
+Removes this entity from the world.
+
+- KillHierarchy \<`Void`\>\
+Removes this entity and all its children from the world.
+
+- KillConstrained \<`Void`\>\
+Removes this entity, all its children, and anything constrained to it, from the world.
+
+- AddOutput \<`String`\>\
+Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname>inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.
+
+- FireUser1 \<`Void`\>\
+Causes this entity's OnUser1 output to be fired.
+
+- FireUser2 \<`Void`\>\
+Causes this entity's OnUser2 output to be fired.
+
+- FireUser3 \<`Void`\>\
+Causes this entity's OnUser3 output to be fired.
+
+- FireUser4 \<`Void`\>\
+Causes this entity's OnUser4 output to be fired.
+
+- SetFogStartDistance \<`Float`\>\
+Set Fog Start Distance
+
+- SetFogEndDistance \<`Float`\>\
+Set Fog End Distance
+
+- SetFogStartHeight \<`Float`\>\
+Set Fog Start Height
+
+- SetFogEndHeight \<`Float`\>\
+Set Fog End Height
+
+- SetFogMaxOpacity \<`Float`\>\
+Set Fog Max Opacity
+
+- SetFogFalloffExponent \<`Float`\>\
+Set Fog Falloff Exponent
+
+- SetFogVerticalExponent \<`Float`\>\
+Set Fog Vertical Exponent
+
+- SetFogColor \<`Color255`\>\
+Set Fog Color
+
+- SetFogStrength \<`Float`\>\
+Set Fog Strength
+
+- SetFarZ \<`Float`\>\
+Set the far clip plane distance.
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnUser1 \<`Void`\>\
+Fired in response to FireUser1 input.
+
+- OnUser2 \<`Void`\>\
+Fired in response to FireUser2 input.
+
+- OnUser3 \<`Void`\>\
+Fired in response to FireUser3 input.
+
+- OnUser4 \<`Void`\>\
+Fired in response to FireUser4 input.
+
+- OnKilled \<`Void`\>\
+Fired when the entity is killed and removed from the game. Parameter is the inflictor.
+
+
+ </details>

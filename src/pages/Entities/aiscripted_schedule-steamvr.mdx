@@ -1,0 +1,72 @@
+---
+hide_table_of_contents: true
+---
+
+import aiscripted_scheduleIcon from '@site/static/img/Entities/steamvr/aiscripted_schedule.png';
+
+<img src={aiscripted_scheduleIcon} alt="aiscripted_schedule icon" style={{height: '80px'}} />
+
+Point Entity
+
+Issues a command to an NPC without taking the NPC out of its AI. This does not seize control of the NPC as a scripted_sequence does
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Target NPC** (`m_iszEntity`) \<`TargetDestination`\>\
+The name or classname of an NPC to use.
+
+- **Search Radius (0=everywhere)** (`m_flRadius`) \<`Integer`\>\
+Radius to search within for an NPC to use. 0 searches everywhere.
+
+- **All in radius** (`graball`) \<`Boolean`\>\
+Whether to grab all matching NPCs in the specified radius, instead of just one
+
+- **Spawnflags** (`spawnflags`) \<`Flags`\>
+  - Repeatable 
+  - Search Cyclically 
+  - Don't Complain 
+
+
+- **AI state to set** (`forcestate`) \<`Choices`\>
+  - None 
+  - Set state to IDLE 
+  - Set state to ALERT 
+  - Set state to COMBAT 
+
+
+- **Schedule to run** (`schedule`) \<`Choices`\>
+  - None 
+  - Walk to Goal Entity 
+  - Run to Goal Entity 
+  - Set enemy to Goal Entity 
+  - Walk Goal Path 
+  - Run Goal Path 
+  - Set enemy to Goal Entity AND Run to Goal Entity 
+  - Set enemy to Goal Entity AND Walk to Goal Entity 
+
+
+- **Interruptability** (`interruptability`) \<`Choices`\>
+  - General 
+  - Damage or Death 
+  - Death 
+  - Combat 
+
+
+- **Reacquire after break** (`resilient`) \<`Boolean`\>\
+If set on a walk/run schedule, once the NPC returns to idling, it'll resume the walk/run until reaching the target, even if it previously broke out of the schedule due to the Interruptability choices.
+
+- **Goal entity** (`goalent`) \<`TargetDestination`\>\
+Provides the name of a schedule-specific goal entity (see 'Schedule to run')
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- StartSchedule \<`Void`\>\
+Starts the scripted schedule. This will first locate an NPC that matches the given target, then tell the NPC to run the specified schedule.
+
+- StopSchedule \<`Void`\>\
+Stops the scripted schedule. Will attempt to stop any NPC that appears to be running this scripted schedule.
+
+
+ </details>

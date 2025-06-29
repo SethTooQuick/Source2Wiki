@@ -1,0 +1,47 @@
+---
+hide_table_of_contents: true
+---
+
+import npc_bullseyeIcon from '@site/static/img/Entities/steamvr/npc_bullseye.png';
+
+<img src={npc_bullseyeIcon} alt="npc_bullseye icon" style={{height: '80px'}} />
+
+Point Entity
+
+Bullseye
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Health** (`health`) \<`Integer`\>
+
+- **Minimum Angle** (`minangle`) \<`String`\>\
+Angle from the bullseye required for bullseye to be a valid enemy
+
+- **Minimum Distance** (`mindist`) \<`String`\>\
+Distance from the bullseye required for bullseye to be a valid enemy
+
+- **Autoaim Radius** (`autoaimradius`) \<`Float`\>\
+Radius of autoaim influence. Use ent_autoaim  to visualize.
+
+- **Spawnflags** (`spawnflags`) \<`Flags`\>
+  - Not Solid 
+  - Take No Damage 
+  - Enemy Damage Only 
+  - Bleed 
+  - Perfect Accuracy 
+  - Collide against physics objects (Creates VPhysics Shadow) 
+
+
+
+ </details>
+
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnTargeted \<`Void`\>\
+Fires when targeted
+
+- OnReleased \<`Void`\>\
+Fires when no longer targeted
+
+
+ </details>

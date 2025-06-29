@@ -1,0 +1,71 @@
+---
+hide_table_of_contents: true
+---
+
+import logic_scene_list_managerIcon from '@site/static/img/Entities/steamvr/logic_scene_list_manager.png';
+
+<img src={logic_scene_list_managerIcon} alt="logic_scene_list_manager icon" style={{height: '80px'}} />
+
+Point Entity
+
+Manages a list of logic_choreographed_scene entities. Store choreo scenes in them in order that they will be played by other inputs. Whenever a scene plays, the manager will remove all scenes before that one in the list. The name of another logic_scene_list_manager can be entered in a slot instead of an invididual scene, which will cause all scenes in that manager to be removed when a later scene in this list is played.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Scene 1** (`scene0`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 2** (`scene1`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 3** (`scene2`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 4** (`scene3`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 5** (`scene4`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 6** (`scene5`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 7** (`scene6`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 8** (`scene7`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 9** (`scene8`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 10** (`scene9`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 11** (`scene10`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 12** (`scene11`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 13** (`scene12`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 14** (`scene13`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 15** (`scene14`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+- **Scene 16** (`scene15`) \<`TargetDestination`\>\
+The name of a logic_choreographed_scene, or logic_scene_list_manager.
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- Shutdown \<`Void`\>\
+Remove the manager and all scenes referenced by it (and all scenes referenced by logic_scene_list_manager's embedded in this one).
+
+
+ </details>

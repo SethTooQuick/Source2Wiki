@@ -1,0 +1,126 @@
+---
+hide_table_of_contents: true
+---
+
+Point Entity
+
+An entity that controls the postprocess settings in the map.
+
+<details open>
+<summary><h2>Keyvalues</h2></summary>
+- **Entity Scripts** (`vscripts`) \<`ScriptList`\>\
+Name(s) of script files that are executed after all entities have spawned.
+
+- **Name** (`targetname`) \<`TargetSource`\>\
+The name that other entities refer to this entity by.
+
+- **Local contrast strength [-1..x]** (`localcontraststrength`) \<`Float`\>
+
+- **Local contrast edge strength [0..1]** (`localcontrastedgestrength`) \<`Float`\>
+
+- **Vignette start distance [0..1]** (`vignettestart`) \<`Float`\>
+
+- **Vignette end distance [0..x]** (`vignetteend`) \<`Float`\>
+
+- **Vignette blur strength [0..1]** (`vignetteblurstrength`) \<`Float`\>
+
+- **Fade to black strength [0..1]** (`fadetoblackstrength`) \<`Float`\>
+
+- **Film grain strength [0..1]** (`grainstrength`) \<`Float`\>
+
+- **Top-of-screen vignette strength [0..1]** (`topvignettestrength`) \<`Float`\>
+
+- **Fade-in time** (`fadetime`) \<`Float`\>
+
+- **Spawnflags** (`spawnflags`) \<`Flags`\>
+  - Master (Has priority if multiple postprocess_controllers exist) 
+
+
+
+ </details>
+<details open>
+<summary><h2>Inputs</h2></summary>
+- RunScriptFile \<`String`\>\
+Load and execute a script file
+
+- RunScriptCode \<`String`\>\
+Execute a fragment of script code
+
+- CallScriptFunction \<`String`\>\
+Call a script function
+
+- CallPrivateScriptFunction \<`String`\>\
+Calls a script function from this entity's private script scope.
+
+- CallGlobalScriptFunction \<`String`\>\
+Calls a script function in the global script scope.
+
+- Kill \<`Void`\>\
+Removes this entity from the world.
+
+- KillHierarchy \<`Void`\>\
+Removes this entity and all its children from the world.
+
+- AddOutput \<`String`\>\
+Adds an entity I/O connection to this entity. Parameter format: outputname&gt;targetname>inputname&gt;parameter&gt;delay&gt;max times to fire (-1 == infinite). Very dangerous, use with care.
+
+- FireUser1 \<`Void`\>\
+Causes this entity's OnUser1 output to be fired.
+
+- FireUser2 \<`Void`\>\
+Causes this entity's OnUser2 output to be fired.
+
+- FireUser3 \<`Void`\>\
+Causes this entity's OnUser3 output to be fired.
+
+- FireUser4 \<`Void`\>\
+Causes this entity's OnUser4 output to be fired.
+
+- SetFadeTime \<`Float`\>\
+Set the fade time between post process settings.
+
+- SetLocalContrastStrength \<`Float`\>\
+Set the local contrast strength.
+
+- SetLocalContrastEdgeStrength \<`Float`\>\
+Set the local contrast strength at the edge of the screen (controlled by vignette).
+
+- SetVignetteStart \<`Float`\>\
+Set the vignette start distance (from screen center).
+
+- SetVignetteEnd \<`Float`\>\
+Set the vignette end distance.
+
+- SetVignetteBlurStrength \<`Float`\>\
+Set the strength of the desaturated blur on the vignette.
+
+- SetFadeToBlackStrength \<`Float`\>\
+Set the fadeout strength.
+
+- SetGrainStrength \<`Float`\>\
+Set the film grain effect strength [0..1]
+
+- SetTopVignetteStrength \<`Float`\>\
+Set top-of-screen vignette strength [0..1]
+
+
+ </details>
+<details open>
+<summary><h2>Outputs</h2></summary>
+- OnUser1 \<`Void`\>\
+Fired in response to FireUser1 input.
+
+- OnUser2 \<`Void`\>\
+Fired in response to FireUser2 input.
+
+- OnUser3 \<`Void`\>\
+Fired in response to FireUser3 input.
+
+- OnUser4 \<`Void`\>\
+Fired in response to FireUser4 input.
+
+- OnKilled \<`Void`\>\
+Fired when the entity is killed and removed from the game.
+
+
+ </details>
