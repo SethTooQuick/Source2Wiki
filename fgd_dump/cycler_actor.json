@@ -1,0 +1,38 @@
+{
+  "Name": "cycler_actor",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "cycler_actor",
+      "Description": "Actor Cycler",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Model",
+          "InternalName": "model",
+          "VariableType": "Studio",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Sentence Group",
+          "InternalName": "Sentence",
+          "VariableType": "String",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "Alpha",
+          "Description": "Set Alpha Value",
+          "VariableType": "Integer",
+          "Type": "Input"
+        }
+      ]
+    }
+  ]
+}

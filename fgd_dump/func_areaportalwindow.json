@@ -1,0 +1,194 @@
+{
+  "Name": "func_areaportalwindow",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Mesh",
+      "Name": "func_areaportalwindow",
+      "Description": "An entity that can be used to optimize the visibility in a map. If you seal off an area with them, when the viewer moves the specified distance away from them, they will go opaque and the parts inside the area will not be drawn. The \u0027target\u0027 brush model should enclose the func_areaportal window so no parts of it are culled by the window. If you use the optional foreground brush model, then it should enclose the \u0027target\u0027 brush model.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Entity Scripts",
+          "InternalName": "vscripts",
+          "VariableType": "ScriptList",
+          "Description": "Name(s) of script files that are executed after all entities have spawned.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Rendered Window",
+          "InternalName": "target",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a brush model to render as the window.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Fade Start Distance",
+          "InternalName": "FadeStartDist",
+          "VariableType": "Integer",
+          "Description": "When the viewer is closer than this distance, the alpha is set to \u0027TranslucencyLimit\u0027.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Fade End Distance",
+          "InternalName": "FadeDist",
+          "VariableType": "Integer",
+          "Description": "When the viewer is at this distance, the portal becomes solid and closes off.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Translucency limit",
+          "InternalName": "TranslucencyLimit",
+          "VariableType": "String",
+          "Description": "This value limits the translucency of the bmodel and prevents it from becoming invisible when the viewer is right on top of it.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Foreground bmodel",
+          "InternalName": "BackgroundBModel",
+          "VariableType": "String",
+          "Description": "(Optional) brush model that is drawn after the fading brush model. This model should have alpha in its textures so you can see through it.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Portal Version",
+          "InternalName": "PortalVersion",
+          "VariableType": "Integer",
+          "Description": "(Don\u0027t change). Differentiates between shipping HL2 maps and maps using new engine features.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "RunScriptFile",
+          "Description": "Load and execute a script file",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptCode",
+          "Description": "Execute a fragment of script code",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallScriptFunction",
+          "Description": "Call a script function",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallPrivateScriptFunction",
+          "Description": "Calls a script function from this entity\u0027s private script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallGlobalScriptFunction",
+          "Description": "Calls a script function in the global script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Kill",
+          "Description": "Removes this entity from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillHierarchy",
+          "Description": "Removes this entity and all its children from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "AddOutput",
+          "Description": "Adds an entity I/O connection to this entity. Parameter format: outputname\u0026gt;targetname\u003Einputname\u0026gt;parameter\u0026gt;delay\u0026gt;max times to fire (-1 == infinite). Very dangerous, use with care.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser1",
+          "Description": "Causes this entity\u0027s OnUser1 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser2",
+          "Description": "Causes this entity\u0027s OnUser2 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser3",
+          "Description": "Causes this entity\u0027s OnUser3 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser4",
+          "Description": "Causes this entity\u0027s OnUser4 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnUser1",
+          "Description": "Fired in response to FireUser1 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser2",
+          "Description": "Fired in response to FireUser2 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser3",
+          "Description": "Fired in response to FireUser3 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser4",
+          "Description": "Fired in response to FireUser4 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnKilled",
+          "Description": "Fired when the entity is killed and removed from the game.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "SetFadeStartDistance",
+          "Description": "Set fade start distance.",
+          "VariableType": "Integer",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFadeEndDistance",
+          "Description": "Set fade end distance.",
+          "VariableType": "Integer",
+          "Type": "Input"
+        }
+      ]
+    }
+  ]
+}

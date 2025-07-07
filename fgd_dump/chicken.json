@@ -1,0 +1,14 @@
+{
+  "Name": "chicken",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "chicken",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

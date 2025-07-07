@@ -1,0 +1,259 @@
+{
+  "Name": "physics_cannister",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "physics_cannister",
+      "Description": "A physically simulated gas cannister that can have its cap shot off, at which point gas will start escaping and cause the cannister to fly around. If it takes enough damage, it will explode.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Entity Scripts",
+          "InternalName": "vscripts",
+          "VariableType": "ScriptList",
+          "Description": "Name(s) of script files that are executed after all entities have spawned.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "World model",
+          "InternalName": "model",
+          "VariableType": "Studio",
+          "Description": "The model to use for the cannister. The model must have an attachment point called \u0027nozzle\u0027, which is where the gas originates. The attachment point\u0027s up axis dictates the direction of gas thrust.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "",
+          "InternalName": "spawnflags",
+          "VariableType": "Flags",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Start Asleep",
+              "Description": ""
+            },
+            {
+              "Name": "Explodes",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Explosion Damage",
+          "InternalName": "expdamage",
+          "VariableType": "String",
+          "Description": "The amount of damage done by the explosion created when the cannister blows up.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Explosion Radius",
+          "InternalName": "expradius",
+          "VariableType": "String",
+          "Description": "The radius of the explosion to create when the cannister blows up.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Health",
+          "InternalName": "health",
+          "VariableType": "Integer",
+          "Description": "The amount of damage the cannister takes before exploding.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Thrust",
+          "InternalName": "thrust",
+          "VariableType": "String",
+          "Description": "When the cap has been blown off, and the escaping gas is thrusting the cannister about, this is the amount of thrust generated.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Fuel Seconds",
+          "InternalName": "fuel",
+          "VariableType": "String",
+          "Description": "The amount of time that gas leaks from the cannister before being considered empty.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Smoke Color (R G B)",
+          "InternalName": "rendercolor",
+          "VariableType": "Color255",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Smoke Alpha (0 - 255)",
+          "InternalName": "renderamt",
+          "VariableType": "Integer",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Thruster Sound",
+          "InternalName": "gassound",
+          "VariableType": "Sound",
+          "Description": "The sound played when the gas is escaping from the cannister.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "RunScriptFile",
+          "Description": "Load and execute a script file",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptCode",
+          "Description": "Execute a fragment of script code",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallScriptFunction",
+          "Description": "Call a script function",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallPrivateScriptFunction",
+          "Description": "Calls a script function from this entity\u0027s private script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallGlobalScriptFunction",
+          "Description": "Calls a script function in the global script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Kill",
+          "Description": "Removes this entity from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillHierarchy",
+          "Description": "Removes this entity and all its children from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "AddOutput",
+          "Description": "Adds an entity I/O connection to this entity. Parameter format: outputname\u0026gt;targetname\u003Einputname\u0026gt;parameter\u0026gt;delay\u0026gt;max times to fire (-1 == infinite). Very dangerous, use with care.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser1",
+          "Description": "Causes this entity\u0027s OnUser1 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser2",
+          "Description": "Causes this entity\u0027s OnUser2 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser3",
+          "Description": "Causes this entity\u0027s OnUser3 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser4",
+          "Description": "Causes this entity\u0027s OnUser4 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnUser1",
+          "Description": "Fired in response to FireUser1 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser2",
+          "Description": "Fired in response to FireUser2 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser3",
+          "Description": "Fired in response to FireUser3 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser4",
+          "Description": "Fired in response to FireUser4 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnKilled",
+          "Description": "Fired when the entity is killed and removed from the game.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "Activate",
+          "Description": "Start gas escaping from the cannister.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Deactivate",
+          "Description": "Stop gas escaping from the cannister.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Explode",
+          "Description": "Force the cannister to explode.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Wake",
+          "Description": "Wakes up the cannister, if it is sleeping.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnActivate",
+          "Description": "Fired when gas starts to escape from the cannister.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnAwakened",
+          "Description": "Fired when this entity becomes awake (collision/force is applied).",
+          "VariableType": "Void",
+          "Type": "Output"
+        }
+      ]
+    }
+  ]
+}

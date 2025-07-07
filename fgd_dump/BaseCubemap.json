@@ -1,0 +1,14 @@
+{
+  "Name": "BaseCubemap",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "BaseCubemap",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

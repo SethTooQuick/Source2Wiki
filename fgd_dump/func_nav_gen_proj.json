@@ -1,0 +1,70 @@
+{
+  "Name": "func_nav_gen_proj",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Mesh",
+      "Name": "func_nav_gen_proj",
+      "Description": "Generate nav inside this volume and in the direction of the arrow",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Markup Groups",
+          "InternalName": "groupnames",
+          "VariableType": "TagListDynamic",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Nav Generation Markup",
+          "InternalName": "navProperty_NavGen",
+          "VariableType": "TagList",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Walkable Seed",
+              "Description": ""
+            },
+            {
+              "Name": "No Nav",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Nav Attributes",
+          "InternalName": "navProperty_NavAttributes",
+          "VariableType": "TagList",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Avoid",
+              "Description": ""
+            },
+            {
+              "Name": "Split",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "nav gen proj markup",
+          "InternalName": "navProperty_NavGenProj",
+          "VariableType": "TagList",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Oriented nav generation (along projection indicated by arrow)",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

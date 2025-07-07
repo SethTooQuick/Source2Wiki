@@ -1,0 +1,150 @@
+{
+  "Name": "logic_scene_list_manager",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "logic_scene_list_manager",
+      "Description": "Manages a list of logic_choreographed_scene entities. Store choreo scenes in them in order that they will be played by other inputs. Whenever a scene plays, the manager will remove all scenes before that one in the list. The name of another logic_scene_list_manager can be entered in a slot instead of an invididual scene, which will cause all scenes in that manager to be removed when a later scene in this list is played.",
+      "IconPath": "fgd_dump/img/steamvr/logic_scene_list_manager.png",
+      "Properties": [
+        {
+          "FriendlyName": "Scene 1",
+          "InternalName": "scene0",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 2",
+          "InternalName": "scene1",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 3",
+          "InternalName": "scene2",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 4",
+          "InternalName": "scene3",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 5",
+          "InternalName": "scene4",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 6",
+          "InternalName": "scene5",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 7",
+          "InternalName": "scene6",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 8",
+          "InternalName": "scene7",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 9",
+          "InternalName": "scene8",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 10",
+          "InternalName": "scene9",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 11",
+          "InternalName": "scene10",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 12",
+          "InternalName": "scene11",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 13",
+          "InternalName": "scene12",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 14",
+          "InternalName": "scene13",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 15",
+          "InternalName": "scene14",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Scene 16",
+          "InternalName": "scene15",
+          "VariableType": "TargetDestination",
+          "Description": "The name of a logic_choreographed_scene, or logic_scene_list_manager.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "Shutdown",
+          "Description": "Remove the manager and all scenes referenced by it (and all scenes referenced by logic_scene_list_manager\u0027s embedded in this one).",
+          "VariableType": "Void",
+          "Type": "Input"
+        }
+      ]
+    }
+  ]
+}

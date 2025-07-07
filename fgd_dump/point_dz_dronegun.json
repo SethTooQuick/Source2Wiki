@@ -1,0 +1,31 @@
+{
+  "Name": "point_dz_dronegun",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "point_dz_dronegun",
+      "Description": "Drone Gun",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Pitch Yaw Roll (Y Z X)",
+          "InternalName": "angles",
+          "VariableType": "Angle",
+          "Description": "This entity\u0027s orientation in the world. Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Spawn Automatically",
+          "InternalName": "spawnAutomatically",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

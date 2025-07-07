@@ -1,0 +1,14 @@
+{
+  "Name": "cable_static",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "cable_static",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

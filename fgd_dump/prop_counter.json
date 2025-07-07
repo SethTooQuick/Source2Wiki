@@ -1,0 +1,31 @@
+{
+  "Name": "prop_counter",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "prop_counter",
+      "Description": "Door price counter",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Pitch Yaw Roll (Y Z X)",
+          "InternalName": "angles",
+          "VariableType": "Angle",
+          "Description": "This entity\u0027s orientation in the world. Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Initial value",
+          "InternalName": "initial_value",
+          "VariableType": "Int",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "Name": "func_survival_c4_target",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "func_survival_c4_target",
+      "Description": "C4 target",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Pitch Yaw Roll (Y Z X)",
+          "InternalName": "angles",
+          "VariableType": "Angle",
+          "Description": "This entity\u0027s orientation in the world. Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Region Radius",
+          "InternalName": "radius",
+          "VariableType": "Float",
+          "Description": "Explosion radius.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

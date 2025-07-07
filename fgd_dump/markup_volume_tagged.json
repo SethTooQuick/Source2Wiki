@@ -1,0 +1,23 @@
+{
+  "Name": "markup_volume_tagged",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Mesh",
+      "Name": "markup_volume_tagged",
+      "Description": "Tagged generic markup volume entity, can be queried in-game by tag/name/type/location",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Markup Groups",
+          "InternalName": "groupnames",
+          "VariableType": "TagListDynamic",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

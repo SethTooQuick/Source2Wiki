@@ -1,0 +1,31 @@
+{
+  "Name": "csm_fov_override",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "csm_fov_override",
+      "Description": "This entity indicates the FOV override for cascading shadow maps.   .",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Target Camera Name",
+          "InternalName": "camera_name",
+          "VariableType": "TargetDestination",
+          "Description": "Select a camera name to override a specific camera\u0027s CSM FOV.  Target \u0027default\u0027 applies to all cameras not otherwise specified.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "CSM FOV Override value",
+          "InternalName": "csm_fov_override",
+          "VariableType": "Float",
+          "Description": "This value will be used to override the FOV for cascading shadow maps only.  Actual camera FOV remains unchanged.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

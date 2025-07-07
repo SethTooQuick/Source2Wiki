@@ -1,0 +1,14 @@
+{
+  "Name": "BaseLightProbeVolume",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "BaseLightProbeVolume",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

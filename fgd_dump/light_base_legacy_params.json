@@ -1,0 +1,14 @@
+{
+  "Name": "light_base_legacy_params",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "light_base_legacy_params",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

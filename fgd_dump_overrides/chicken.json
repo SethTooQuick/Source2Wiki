@@ -1,0 +1,11 @@
+{
+    "Name": "chicken",
+    "EntityType": "Point",
+    "Description": "A Chicken, cluck",
+    "IconPath": "fgd_dump/img/cs2/chicken.png",
+    "PageAnnotation": {
+        "InternalName": "chickenAnnotation",
+        "Message": "Beware, they bite",
+        "Type": "tip"
+    }
+}

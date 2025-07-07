@@ -1,0 +1,44 @@
+{
+  "Name": "monster_generic",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "monster_generic",
+      "Description": "Generic Script NPC",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "",
+          "InternalName": "spawnflags",
+          "VariableType": "Flags",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Not solid",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Model",
+          "InternalName": "model",
+          "VariableType": "Studio",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Body",
+          "InternalName": "body",
+          "VariableType": "Integer",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

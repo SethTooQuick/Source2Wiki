@@ -1,0 +1,57 @@
+{
+  "Name": "prop_magic_carpet",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "prop_magic_carpet",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Model",
+          "InternalName": "model",
+          "VariableType": "Studio",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Max Ride Speed",
+          "InternalName": "max_ride_speed",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    },
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "prop_magic_carpet",
+      "Description": "",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Model",
+          "InternalName": "model",
+          "VariableType": "Studio",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Max Ride Speed",
+          "InternalName": "max_ride_speed",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

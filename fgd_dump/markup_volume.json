@@ -1,0 +1,14 @@
+{
+  "Name": "markup_volume",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Mesh",
+      "Name": "markup_volume",
+      "Description": "Generic markup volume entity, can be queried in-game by name/type/location",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

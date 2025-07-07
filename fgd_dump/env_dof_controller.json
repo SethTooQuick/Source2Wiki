@@ -1,0 +1,182 @@
+{
+  "Name": "env_dof_controller",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "env_dof_controller",
+      "Description": "An entity that controls the depth of field settings for the player. Depth of field simulates camera blur of out-of-focus regions of the scene.",
+      "IconPath": "fgd_dump/img/steamvr/env_dof_controller.png",
+      "Properties": [
+        {
+          "FriendlyName": "Entity Scripts",
+          "InternalName": "vscripts",
+          "VariableType": "ScriptList",
+          "Description": "Name(s) of script files that are executed after all entities have spawned.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "RunScriptFile",
+          "Description": "Load and execute a script file",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptCode",
+          "Description": "Execute a fragment of script code",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallScriptFunction",
+          "Description": "Call a script function",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallPrivateScriptFunction",
+          "Description": "Calls a script function from this entity\u0027s private script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallGlobalScriptFunction",
+          "Description": "Calls a script function in the global script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Kill",
+          "Description": "Removes this entity from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillHierarchy",
+          "Description": "Removes this entity and all its children from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "AddOutput",
+          "Description": "Adds an entity I/O connection to this entity. Parameter format: outputname\u0026gt;targetname\u003Einputname\u0026gt;parameter\u0026gt;delay\u0026gt;max times to fire (-1 == infinite). Very dangerous, use with care.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser1",
+          "Description": "Causes this entity\u0027s OnUser1 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser2",
+          "Description": "Causes this entity\u0027s OnUser2 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser3",
+          "Description": "Causes this entity\u0027s OnUser3 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser4",
+          "Description": "Causes this entity\u0027s OnUser4 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnUser1",
+          "Description": "Fired in response to FireUser1 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser2",
+          "Description": "Fired in response to FireUser2 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser3",
+          "Description": "Fired in response to FireUser3 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser4",
+          "Description": "Fired in response to FireUser4 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnKilled",
+          "Description": "Fired when the entity is killed and removed from the game.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "SetNearBlurDepth",
+          "Description": "Set the distance in front of the focus region at which the scene will be completely blurred using the near blur radius. Must be smaller than NearFocusDepth.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetNearFocusDepth",
+          "Description": "The area between the near focus and far focus distances is perfectly in focus. Must be smaller than FarFocusDepth.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFarFocusDepth",
+          "Description": "The area between the near focus and far focus distances is perfectly in focus. Must be smaller than FarBlurDepth.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFarBlurDepth",
+          "Description": "Set the distance beyond the focus region at which the scene will be completely blurred using the far blur radius. Must be larger than FarFocusDepth.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetNearBlurRadius",
+          "Description": "Set the blur radius (in pixels) to use at the near blur distance. Set to 0 to disable near blur.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFarBlurRadius",
+          "Description": "Set the blur radius (in pixels) to use at the far blur distance. Set to 0 to disable far blur.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFocusTarget",
+          "Description": "Set the focal target for the effect.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFocusTargetRange",
+          "Description": "Set the distance behind the focal point that will remain in focus.",
+          "VariableType": "Float",
+          "Type": "Input"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,593 @@
+{
+  "Name": "light_rect",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "light_rect",
+      "Description": "A rectangular or disk shaped light",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Units",
+          "InternalName": "brightness_units",
+          "VariableType": "Choices",
+          "Description": "Brightness Units",
+          "Options": [
+            {
+              "Name": "Lumens",
+              "Description": ""
+            },
+            {
+              "Name": "Candelas",
+              "Description": ""
+            },
+            {
+              "Name": "Nits",
+              "Description": ""
+            },
+            {
+              "Name": "EV",
+              "Description": ""
+            },
+            {
+              "Name": "Legacy",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Candelas",
+          "InternalName": "brightness_candelas",
+          "VariableType": "Float",
+          "Description": "Brightness in candelas",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Nits",
+          "InternalName": "brightness_nits",
+          "VariableType": "Float",
+          "Description": "Brightness in nits",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Brightness (EV)",
+          "InternalName": "brightness",
+          "VariableType": "Float",
+          "Description": "Logarithmic Brightness",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Legacy",
+          "InternalName": "brightness_legacy",
+          "VariableType": "Float",
+          "Description": "Legacy brightness value",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Enabled",
+          "InternalName": "enabled",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Color",
+          "InternalName": "color",
+          "VariableType": "Color255",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Color Temperature (K)",
+          "InternalName": "colortemperature",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Brightness (Lumens)",
+          "InternalName": "brightness_lumens",
+          "VariableType": "Float",
+          "Description": "Brightness in lumens. (See Light Units group for alternative units of measurement).",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Range",
+          "InternalName": "range",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Falloff",
+          "InternalName": "skirt",
+          "VariableType": "Float",
+          "Description": "Light Falloff based on set range.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Indirect Light Type",
+          "InternalName": "bouncelight",
+          "VariableType": "Choices",
+          "Description": "How indirect (bounce) light should be represented",
+          "Options": [
+            {
+              "Name": "None",
+              "Description": ""
+            },
+            {
+              "Name": "Static",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Indirect Light Multiplier",
+          "InternalName": "bouncescale",
+          "VariableType": "Float",
+          "Description": "Increases the intensity of a lights\u0027 Indirect (bounce) light",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Light Shape",
+          "InternalName": "shape",
+          "VariableType": "Choices",
+          "Description": "Shape of the light",
+          "Options": [
+            {
+              "Name": "Rectangle",
+              "Description": ""
+            },
+            {
+              "Name": "Disk",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Light Size",
+          "InternalName": "size_params",
+          "VariableType": "Vector",
+          "Description": "Note: Larger sizes produce more diffuse light/shadows.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Bake Specular to Cubemaps",
+          "InternalName": "bakespeculartocubemaps",
+          "VariableType": "Bool",
+          "Description": "Bake specular into cubemaps. Only works when Direct Lighting Type is set to Baked.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Specular Softness",
+          "InternalName": "minroughness",
+          "VariableType": "Float",
+          "Description": "Artificially softens direct specular (not cubemaps) to simulate cheap, soft area lights. Note: Direct Lighting must be set to Stationary or Dynamic for this to have an effect.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Shadow Map Resolution",
+          "InternalName": "shadowmapsize",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "4096",
+              "Description": ""
+            },
+            {
+              "Name": "3584",
+              "Description": ""
+            },
+            {
+              "Name": "3072",
+              "Description": ""
+            },
+            {
+              "Name": "2560",
+              "Description": ""
+            },
+            {
+              "Name": "2048",
+              "Description": ""
+            },
+            {
+              "Name": "1536",
+              "Description": ""
+            },
+            {
+              "Name": "1024",
+              "Description": ""
+            },
+            {
+              "Name": "512",
+              "Description": ""
+            },
+            {
+              "Name": "Default",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Shadow Priority",
+          "InternalName": "shadowpriority",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Highest",
+              "Description": ""
+            },
+            {
+              "Name": "High",
+              "Description": ""
+            },
+            {
+              "Name": "Medium",
+              "Description": ""
+            },
+            {
+              "Name": "Low",
+              "Description": ""
+            },
+            {
+              "Name": "Default",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Transmit Shadow Casters to Client",
+          "InternalName": "pvs_modify_entity",
+          "VariableType": "Bool",
+          "Description": "When this light is visible to a player, add its shadow casters to the player\u0027s PVS.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Shadow Fade Out Start Size",
+          "InternalName": "shadowfade_size_start",
+          "VariableType": "Float",
+          "Description": "Screen size where the shadows will begin fading out",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Shadow Fade Out End Size",
+          "InternalName": "shadowfade_size_end",
+          "VariableType": "Float",
+          "Description": "Screen size where the shadows will be fully faded out",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Render Light Geometry",
+          "InternalName": "showlight",
+          "VariableType": "Bool",
+          "Description": "Render the light geometry in the world",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Render Light in Cubemaps",
+          "InternalName": "rendertocubemaps",
+          "VariableType": "Bool",
+          "Description": "If true, illumination from this light renders into baked cube maps.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Brightness Scale",
+          "InternalName": "brightnessscale",
+          "VariableType": "Float",
+          "Description": "Scale brightness by this amount, used for scripting direct light behaviour. NOTE: Only works on lights with Direct Lighting type set to Dynamic or Stationary.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Light Fade Out Start Size",
+          "InternalName": "fade_size_start",
+          "VariableType": "Float",
+          "Description": "Screen size where the light will begin fading out",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Light Fade Out End Size",
+          "InternalName": "fade_size_end",
+          "VariableType": "Float",
+          "Description": "Screen size where the light will be fully faded out",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style",
+          "InternalName": "light_style",
+          "VariableType": "VDataChoice",
+          "Description": "Light Style",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Output Event 0",
+          "InternalName": "light_style_output_event0",
+          "VariableType": "VDataChoice",
+          "Description": "Name of the event that triggers the OnStyleEvent0 output.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Output Event 1",
+          "InternalName": "light_style_output_event1",
+          "VariableType": "VDataChoice",
+          "Description": "Name of the event that triggers the OnStyleEvent1 output.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Output Event 2",
+          "InternalName": "light_style_output_event2",
+          "VariableType": "VDataChoice",
+          "Description": "Name of the event that triggers the OnStyleEvent2 output.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Output Event 3",
+          "InternalName": "light_style_output_event3",
+          "VariableType": "VDataChoice",
+          "Description": "Name of the event that triggers the OnStyleEvent3 output.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Target 0",
+          "InternalName": "light_style_target0",
+          "VariableType": "TargetDestination",
+          "Description": "Sets $light_emissive for use in material expressions. The emissive geometry\u0027s surface area should be approximately equal to the area light\u0027s surface area.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Target 1",
+          "InternalName": "light_style_target1",
+          "VariableType": "TargetDestination",
+          "Description": "Sets $light_emissive for use in material expressions. The emissive geometry\u0027s surface area should be approximately equal to the area light\u0027s surface area.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Target 2",
+          "InternalName": "light_style_target2",
+          "VariableType": "TargetDestination",
+          "Description": "Sets $light_emissive for use in material expressions. The emissive geometry\u0027s surface area should be approximately equal to the area light\u0027s surface area.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Style Target 3",
+          "InternalName": "light_style_target3",
+          "VariableType": "TargetDestination",
+          "Description": "Sets $light_emissive for use in material expressions. The emissive geometry\u0027s surface area should be approximately equal to the area light\u0027s surface area.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Color Mode",
+          "InternalName": "colormode",
+          "VariableType": "Choices",
+          "Description": "How to calculate the light\u0027s color",
+          "Options": [
+            {
+              "Name": "Color",
+              "Description": ""
+            },
+            {
+              "Name": "Color Temperature",
+              "Description": ""
+            },
+            {
+              "Name": "Color",
+              "Description": ""
+            },
+            {
+              "Name": "Color Temperature",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Create Client-Only Entity",
+          "InternalName": "clientSideEntity",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "No",
+              "Description": ""
+            },
+            {
+              "Name": "Yes",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Cast Shadows",
+          "InternalName": "castshadows",
+          "VariableType": "Choices",
+          "Description": "Whether this light casts shadow",
+          "Options": [
+            {
+              "Name": "No",
+              "Description": ""
+            },
+            {
+              "Name": "Baked \u0026 Dynamic",
+              "Description": ""
+            },
+            {
+              "Name": "Baked Only",
+              "Description": ""
+            },
+            {
+              "Name": "No",
+              "Description": ""
+            },
+            {
+              "Name": "Static \u0026 Dynamic",
+              "Description": ""
+            },
+            {
+              "Name": "Static Only",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Direct Lighting Type",
+          "InternalName": "directlight",
+          "VariableType": "Choices",
+          "Description": "How direct lighting should be represented: Static=Fully baked into lightmap (cheapest), Stationary=Dynamic direct light with baked shadows, Dynamic=Fully dynamic (Most expensive)",
+          "Options": [
+            {
+              "Name": "None",
+              "Description": ""
+            },
+            {
+              "Name": "Static",
+              "Description": ""
+            },
+            {
+              "Name": "None",
+              "Description": ""
+            },
+            {
+              "Name": "Static",
+              "Description": ""
+            },
+            {
+              "Name": "Stationary",
+              "Description": ""
+            },
+            {
+              "Name": "Dynamic",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "Enable",
+          "Description": "Turn on the light.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "Disable",
+          "Description": "Turn off the light.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "Toggle",
+          "Description": "Toggle the light.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetColor",
+          "Description": "Set the light\u0027s color.",
+          "VariableType": "Color255",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetColorTemperature",
+          "Description": "Set the light\u0027s color temperature in Kelvin.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetBrightness",
+          "Description": "Set the light\u0027s brightness in EV.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetBrightnessScale",
+          "Description": "Set the light\u0027s brightness multiplier, which defaults to 1.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetStyle",
+          "Description": "\u0027,\u0027 separated list of styles from light_styles.vdata to play in sequence. The last entry will loop. The last style can be \u0027on\u0027/\u0027off\u0027 to enable/disable the light with no light style.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFogStrength",
+          "Description": "Set the fog strength.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFogScale",
+          "Description": "Set the fog multiplier, which defaults to 1.",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnStyleEvent0",
+          "Description": "Fired when the current light style plays an event of the type specified by Style Output Event 0.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnStyleEvent1",
+          "Description": "Fired when the current light style plays an event of the type specified by Style Output Event 1.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnStyleEvent2",
+          "Description": "Fired when the current light style plays an event of the type specified by Style Output Event 2.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnStyleEvent3",
+          "Description": "Fired when the current light style plays an event of the type specified by Style Output Event 3.",
+          "VariableType": "Void",
+          "Type": "Output"
+        }
+      ]
+    }
+  ]
+}

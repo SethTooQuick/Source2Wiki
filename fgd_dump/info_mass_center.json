@@ -1,0 +1,23 @@
+{
+  "Name": "info_mass_center",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "info_mass_center",
+      "Description": "An entity that overrides the mass center of the target physics prop, or func_physbox, by moving it to the info_mass_center\u0027s location.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Target object",
+          "InternalName": "target",
+          "VariableType": "TargetDestination",
+          "Description": "The entity whose mass center will be overridden.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

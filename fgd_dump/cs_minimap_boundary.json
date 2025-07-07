@@ -1,0 +1,14 @@
+{
+  "Name": "cs_minimap_boundary",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "cs_minimap_boundary",
+      "Description": "One of two corners needed to define the minimap boundaries (extend to support multilevel maps).",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

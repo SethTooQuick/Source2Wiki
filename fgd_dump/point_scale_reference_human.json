@@ -1,0 +1,23 @@
+{
+  "Name": "point_scale_reference_human",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "point_scale_reference_human",
+      "Description": "Scale Reference (Human)",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Pitch Yaw Roll (Y Z X)",
+          "InternalName": "angles",
+          "VariableType": "Angle",
+          "Description": "This entity\u0027s orientation in the world. Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

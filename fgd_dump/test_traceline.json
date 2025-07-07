@@ -1,0 +1,23 @@
+{
+  "Name": "test_traceline",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "test_traceline",
+      "Description": "A debugging tool for testing tracelines.",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    },
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "test_traceline",
+      "Description": "A debugging tool for testing tracelines.",
+      "IconPath": "",
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

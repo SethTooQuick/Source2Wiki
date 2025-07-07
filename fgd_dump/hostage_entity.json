@@ -1,0 +1,715 @@
+{
+  "Name": "hostage_entity",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "hostage_entity",
+      "Description": "Hostage. A hostage NPC will spawn at this point.\n\nThere are usually four hostages placed in each hostage rescue map. The model for each Hostage is randomly chosen.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Pitch Yaw Roll (Y Z X)",
+          "InternalName": "angles",
+          "VariableType": "Angle",
+          "Description": "This entity\u0027s orientation in the world. Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Entity Scripts",
+          "InternalName": "vscripts",
+          "VariableType": "ScriptList",
+          "Description": "Name(s) of script files that are executed after all entities have spawned.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Model (int)",
+          "InternalName": "HostageType",
+          "VariableType": "Choices",
+          "Description": "Not used. Hostage models are chosen randomly by the game.",
+          "Options": [
+            {
+              "Name": "A",
+              "Description": ""
+            },
+            {
+              "Name": "B",
+              "Description": ""
+            },
+            {
+              "Name": "C",
+              "Description": ""
+            },
+            {
+              "Name": "D",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Random Factor (int)",
+          "InternalName": "HostageSpawnRandomFactor",
+          "VariableType": "Integer",
+          "Description": "Allows to increase probability of this hostage being picked during random spawn selection process, essentially considering this spawn point specified number of times.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 1",
+          "InternalName": "HostageSpawnExclusionGroup1",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 2",
+          "InternalName": "HostageSpawnExclusionGroup2",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 3",
+          "InternalName": "HostageSpawnExclusionGroup3",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 4",
+          "InternalName": "HostageSpawnExclusionGroup4",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 5",
+          "InternalName": "HostageSpawnExclusionGroup5",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 6",
+          "InternalName": "HostageSpawnExclusionGroup6",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 7",
+          "InternalName": "HostageSpawnExclusionGroup7",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 8",
+          "InternalName": "HostageSpawnExclusionGroup8",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 9",
+          "InternalName": "HostageSpawnExclusionGroup9",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 10",
+          "InternalName": "HostageSpawnExclusionGroup10",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 11",
+          "InternalName": "HostageSpawnExclusionGroup11",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 12",
+          "InternalName": "HostageSpawnExclusionGroup12",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 13",
+          "InternalName": "HostageSpawnExclusionGroup13",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 14",
+          "InternalName": "HostageSpawnExclusionGroup14",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 15",
+          "InternalName": "HostageSpawnExclusionGroup15",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 16",
+          "InternalName": "HostageSpawnExclusionGroup16",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 17",
+          "InternalName": "HostageSpawnExclusionGroup17",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 18",
+          "InternalName": "HostageSpawnExclusionGroup18",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 19",
+          "InternalName": "HostageSpawnExclusionGroup19",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 20",
+          "InternalName": "HostageSpawnExclusionGroup20",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 21",
+          "InternalName": "HostageSpawnExclusionGroup21",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 22",
+          "InternalName": "HostageSpawnExclusionGroup22",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 23",
+          "InternalName": "HostageSpawnExclusionGroup23",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 24",
+          "InternalName": "HostageSpawnExclusionGroup24",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 25",
+          "InternalName": "HostageSpawnExclusionGroup25",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 26",
+          "InternalName": "HostageSpawnExclusionGroup26",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 27",
+          "InternalName": "HostageSpawnExclusionGroup27",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 28",
+          "InternalName": "HostageSpawnExclusionGroup28",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 29",
+          "InternalName": "HostageSpawnExclusionGroup29",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hostage Spawn Exclusion Group 30",
+          "InternalName": "HostageSpawnExclusionGroup30",
+          "VariableType": "Choices",
+          "Description": "Hostages sharing same spawn exclusion group will never spawn together.",
+          "Options": [
+            {
+              "Name": "n/a",
+              "Description": ""
+            },
+            {
+              "Name": "Do not spawn together",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "RunScriptFile",
+          "Description": "Load and execute a script file",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptCode",
+          "Description": "Execute a fragment of script code",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallScriptFunction",
+          "Description": "Call a script function",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallPrivateScriptFunction",
+          "Description": "Calls a script function from this entity\u0027s private script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallGlobalScriptFunction",
+          "Description": "Calls a script function in the global script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Kill",
+          "Description": "Removes this entity from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillHierarchy",
+          "Description": "Removes this entity and all its children from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillConstrained",
+          "Description": "Removes this entity, all its children, and anything constrained to it, from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "AddOutput",
+          "Description": "Adds an entity I/O connection to this entity. Parameter format: outputname\u0026gt;targetname\u003Einputname\u0026gt;parameter\u0026gt;delay\u0026gt;max times to fire (-1 == infinite). Very dangerous, use with care.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser1",
+          "Description": "Causes this entity\u0027s OnUser1 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser2",
+          "Description": "Causes this entity\u0027s OnUser2 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser3",
+          "Description": "Causes this entity\u0027s OnUser3 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser4",
+          "Description": "Causes this entity\u0027s OnUser4 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnUser1",
+          "Description": "Fired in response to FireUser1 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser2",
+          "Description": "Fired in response to FireUser2 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser3",
+          "Description": "Fired in response to FireUser3 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser4",
+          "Description": "Fired in response to FireUser4 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnKilled",
+          "Description": "Fired when the entity is killed and removed from the game. Parameter is the inflictor.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnHostageBeginGrab",
+          "Description": "Fires when a player starts to use a hostage",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnFirstPickedUp",
+          "Description": "Fires when the hostage is first picked up",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnDroppedNotRescued",
+          "Description": "Fires when the hostage is dropped, but not rescued",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnRescued",
+          "Description": "Fires when the hostage is rescued",
+          "VariableType": "Void",
+          "Type": "Output"
+        }
+      ]
+    }
+  ]
+}

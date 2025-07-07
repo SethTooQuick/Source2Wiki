@@ -1,0 +1,23 @@
+{
+  "Name": "info_no_dynamic_shadow",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Point",
+      "Name": "info_no_dynamic_shadow",
+      "Description": "Use this entity to mark surfaces that shouldn\u0027t receive dynamic shadows. Useful to apply to walls and floors where shadows are drawn improperly, giving away the location of enemies.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Brush faces",
+          "InternalName": "sides",
+          "VariableType": "SideList",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

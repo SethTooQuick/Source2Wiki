@@ -1,0 +1,531 @@
+{
+  "Name": "worldspawn",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Mesh",
+      "Name": "worldspawn",
+      "Description": "This is the world entity. Each map can only contain one, and it\u0027s automatically created for you.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "SkyBox Texture Name",
+          "InternalName": "skyname",
+          "VariableType": "String",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Level Fade In",
+          "InternalName": "startdark",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Level Fade In Color (R G B)",
+          "InternalName": "startcolor",
+          "VariableType": "Color255",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Precomputed Visibility",
+          "InternalName": "pvstype",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Disabled",
+              "Description": ""
+            },
+            {
+              "Name": "Test map (open space, no skybox)",
+              "Description": ""
+            },
+            {
+              "Name": "Full visibility solve",
+              "Description": ""
+            },
+            {
+              "Name": "Partitioned solve (large map volume)",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "New Level Unit",
+          "InternalName": "newunit",
+          "VariableType": "Choices",
+          "Description": "Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.",
+          "Options": [
+            {
+              "Name": "No, keep current",
+              "Description": ""
+            },
+            {
+              "Name": "Yes, clear previous levels",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Start Fade Pixels",
+          "InternalName": "maxpropscreenwidth",
+          "VariableType": "Float",
+          "Description": "Number of pixels wide at which all props in the level start to fade (\u0026lt;0 = use fademaxdist). This number is ignored if the prop has a specific fade distance specified.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "End Fade Pixels",
+          "InternalName": "minpropscreenwidth",
+          "VariableType": "Float",
+          "Description": "Minimum number of pixels wide at which the prop is visible (0 = don\u0027t fade out). This number is ignored if the prop has a specific fade distance specified.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "VR Chaperone",
+          "InternalName": "vrchaperone",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Chaperone",
+              "Description": ""
+            },
+            {
+              "Name": "Chaperone \u002B Safe Zone",
+              "Description": ""
+            },
+            {
+              "Name": "No Chaperone",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "VR Movement",
+          "InternalName": "vrmovement",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "None",
+              "Description": ""
+            },
+            {
+              "Name": "Teleport",
+              "Description": ""
+            },
+            {
+              "Name": "Teleport (w/non-up floor)",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Maximum Lightmap Resolution",
+          "InternalName": "max_lightmap_resolution",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "No Maximum",
+              "Description": ""
+            },
+            {
+              "Name": "512",
+              "Description": ""
+            },
+            {
+              "Name": "1024",
+              "Description": ""
+            },
+            {
+              "Name": "2048",
+              "Description": ""
+            },
+            {
+              "Name": "4096",
+              "Description": ""
+            },
+            {
+              "Name": "8192",
+              "Description": ""
+            },
+            {
+              "Name": "16384",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Lightmap Queries",
+          "InternalName": "lightmap_queries",
+          "VariableType": "Bool",
+          "Description": "Generates data which can be used to lookup lightmap UVs at a given position, useful for high-fidelity illumination of bullet decals on lightmapped geometry.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Rebake Option",
+          "InternalName": "steamaudio_reverb_rebake_option",
+          "VariableType": "Choices",
+          "Description": "\u003Cb\u003ECleanup\u003C/b\u003E: Reverb bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.\u003Cbr /\u003E\u003Cb\u003EManual\u003C/b\u003E: Reverb needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.\u003Cbr /\u003E\u003Cb\u003EAuto\u003C/b\u003E: Reverb is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.",
+          "Options": [
+            {
+              "Name": "Cleanup",
+              "Description": ""
+            },
+            {
+              "Name": "Manual",
+              "Description": ""
+            },
+            {
+              "Name": "Auto",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Grid Type",
+          "InternalName": "steamaudio_reverb_grid_type",
+          "VariableType": "Choices",
+          "Description": "\u003Cb\u003EUniform Floor\u003C/b\u003E: Places probes at a specified height above the floor with a specified horizontal spacing between probes. \u003Cbr /\u003E\u003Cb\u003EManual Grid\u003C/b\u003E: Use manually generated probes in the map.\u003Cbr /\u003E\u003Cb\u003ENavMesh Grid\u003C/b\u003E: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.",
+          "Options": [
+            {
+              "Name": "Uniform Floor",
+              "Description": ""
+            },
+            {
+              "Name": "Manual Grid",
+              "Description": ""
+            },
+            {
+              "Name": "NavMesh Grid",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Grid Spacing",
+          "InternalName": "steamaudio_reverb_grid_spacing",
+          "VariableType": "Float",
+          "Description": "The horizontal distance (in meters) between adjacent probes.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Height Above Floor",
+          "InternalName": "steamaudio_reverb_height_above_floor",
+          "VariableType": "Float",
+          "Description": "The height (in meters) above the floor at which probes should be placed..",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Rays",
+          "InternalName": "steamaudio_reverb_rays",
+          "VariableType": "Integer",
+          "Description": "The number of rays traced from the listener when baking reflections or reverb. Increasing this value results in more accurate reflections, at the cost of increased bake times.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Bounces",
+          "InternalName": "steamaudio_reverb_bounces",
+          "VariableType": "Integer",
+          "Description": "The number of times each ray traced from the listener is reflected when baking reflections or reverb. Increasing this value results in longer, more accurate reverb tails, at the cost of increased bake times.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Duration",
+          "InternalName": "steamaudio_reverb_ir_duration",
+          "VariableType": "Float",
+          "Description": "The duration (in seconds) of the IRs generated when baking reflections or reverb. Increasing this value results in longer, more accurate reverb tails, at the cost of increased disk space usage.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Ambisonic Order",
+          "InternalName": "steamaudio_reverb_ambisonic_order",
+          "VariableType": "Integer",
+          "Description": "The Ambisonic order of the IRs generated when baking reflections or reverb. Increasing this value results in more accurate directional variation of reflected sound, at the cost of increased disk space usage.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Rebake Option",
+          "InternalName": "steamaudio_pathing_rebake_option",
+          "VariableType": "Choices",
+          "Description": "\u003Cb\u003ECleanup\u003C/b\u003E: Pathing bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.\u003Cbr /\u003E\u003Cb\u003EManual\u003C/b\u003E: Pathing needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.\u003Cbr /\u003E\u003Cb\u003EAuto\u003C/b\u003E: Pathing is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.",
+          "Options": [
+            {
+              "Name": "Cleanup",
+              "Description": ""
+            },
+            {
+              "Name": "Manual",
+              "Description": ""
+            },
+            {
+              "Name": "Auto",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Grid Type",
+          "InternalName": "steamaudio_pathing_grid_type",
+          "VariableType": "Choices",
+          "Description": "\u003Cb\u003EUniform Floor\u003C/b\u003E: Places probes at a specified height above the floor with a specified horizontal spacing between probes. \u003Cbr /\u003E\u003Cb\u003EManual Grid\u003C/b\u003E: Use manually generated probes in the map.\u003Cbr /\u003E\u003Cb\u003ENavMesh Grid\u003C/b\u003E: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.",
+          "Options": [
+            {
+              "Name": "Uniform Floor",
+              "Description": ""
+            },
+            {
+              "Name": "Manual Grid",
+              "Description": ""
+            },
+            {
+              "Name": "NavMesh Grid",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Grid Spacing",
+          "InternalName": "steamaudio_pathing_grid_spacing",
+          "VariableType": "Float",
+          "Description": "The horizontal distance (in meters) between adjacent probes.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Height Above Floor",
+          "InternalName": "steamaudio_pathing_height_above_floor",
+          "VariableType": "Float",
+          "Description": "The height (in meters) above the floor at which probes should be placed..",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Visibilty Samples",
+          "InternalName": "steamaudio_pathing_visibility_samples",
+          "VariableType": "Integer",
+          "Description": "Number of point samples to use around each probe when testing whether one probe can see another. To determine if two probes are mutually visible, rays are traced from each point sample of the first probe, to every other point sample of the second probe. Increasing this value prevents paths from being considered occluded by small objects, at the cost of increased bake times.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Visibility Radius",
+          "InternalName": "steamaudio_pathing_visibility_radius",
+          "VariableType": "Float",
+          "Description": "When testing for mutual visibility between a pair of probes, each probe is treated as a sphere of this radius (in meters), and point samples are generated within this sphere.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Visibility Threshold",
+          "InternalName": "steamaudio_pathing_visibility_threshold",
+          "VariableType": "Float",
+          "Description": "When tracing rays to test for mutual visibility between a pair of probes, the fraction of rays that are unoccluded must be greater than this threshold for the pair of probes to be considered mutually visible.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Baking Path Range",
+          "InternalName": "steamaudio_pathing_visibility_pathrange",
+          "VariableType": "Float",
+          "Description": "If the distance (in meters) between two probes is greater than this value, the probes are considered to not have any path between them. Increasing this value allows sound to propagate over greater distances, at the cost of increased bake times and memory usage.",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    },
+    {
+      "Game": "steamvr",
+      "EntityType": "Mesh",
+      "Name": "worldspawn",
+      "Description": "This is the world entity. Each map can only contain one, and it\u0027s automatically created for you.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "SkyBox Texture Name",
+          "InternalName": "skyname",
+          "VariableType": "String",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Level Fade In",
+          "InternalName": "startdark",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Precomputed Visibility",
+          "InternalName": "pvstype",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Disabled",
+              "Description": ""
+            },
+            {
+              "Name": "Test map (open space, no skybox)",
+              "Description": ""
+            },
+            {
+              "Name": "Full visibility solve",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "New Level Unit",
+          "InternalName": "newunit",
+          "VariableType": "Choices",
+          "Description": "Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.",
+          "Options": [
+            {
+              "Name": "No, keep current",
+              "Description": ""
+            },
+            {
+              "Name": "Yes, clear previous levels",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Start Fade Pixels",
+          "InternalName": "maxpropscreenwidth",
+          "VariableType": "Float",
+          "Description": "Number of pixels wide at which all props in the level start to fade (\u0026lt;0 = use fademaxdist). This number is ignored if the prop has a specific fade distance specified.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "End Fade Pixels",
+          "InternalName": "minpropscreenwidth",
+          "VariableType": "Float",
+          "Description": "Minimum number of pixels wide at which the prop is visible (0 = don\u0027t fade out). This number is ignored if the prop has a specific fade distance specified.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "VR Chaperone",
+          "InternalName": "vrchaperone",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Chaperone",
+              "Description": ""
+            },
+            {
+              "Name": "Chaperone \u002B Safe Zone",
+              "Description": ""
+            },
+            {
+              "Name": "No Chaperone",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "VR Movement",
+          "InternalName": "vrmovement",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "None",
+              "Description": ""
+            },
+            {
+              "Name": "Teleport",
+              "Description": ""
+            },
+            {
+              "Name": "Teleport (w/non-up floor)",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Precomputed Visibility",
+          "InternalName": "pvstype",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Disabled",
+              "Description": ""
+            },
+            {
+              "Name": "Test map (open space, no skybox)",
+              "Description": ""
+            },
+            {
+              "Name": "Full visibility solve",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Export Steam Audio Geometry",
+          "InternalName": "steamaudio_export",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    }
+  ]
+}

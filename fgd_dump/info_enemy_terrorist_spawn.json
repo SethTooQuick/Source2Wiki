@@ -1,0 +1,404 @@
+{
+  "Name": "info_enemy_terrorist_spawn",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "info_enemy_terrorist_spawn",
+      "Description": "This entity marks the start point for enemy terrorists in a coop game. Should be placed at least 80 units away from each other and surrounding walls.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Pitch Yaw Roll (Y Z X)",
+          "InternalName": "angles",
+          "VariableType": "Angle",
+          "Description": "This entity\u0027s orientation in the world. Pitch is rotation around the Y axis, yaw is the rotation around the Z axis, roll is the rotation around the X axis.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Entity Scripts",
+          "InternalName": "vscripts",
+          "VariableType": "ScriptList",
+          "Description": "Name(s) of script files that are executed after all entities have spawned.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Spawn Priority (int)",
+          "InternalName": "priority",
+          "VariableType": "Integer",
+          "Description": "Determines which spawn points get used first.  Smaller numbers are used before larger numbers.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Enabled by default?",
+          "InternalName": "enabled",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Override player model",
+          "InternalName": "model_to_use",
+          "VariableType": "Studio",
+          "Description": "Select a model to override the model used for enemies spawned at this spawn point.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Weapons to spawn with",
+          "InternalName": "weapons_to_give",
+          "VariableType": "String",
+          "Description": "Weapons and items to give to the bot on spawn. Ex. \u0027vesthelm, usp, awp, smokegreande, hegrenade\u0027",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Armor",
+          "InternalName": "armor_to_give",
+          "VariableType": "Choices",
+          "Description": "What armor should the bot spawn with.",
+          "Options": [
+            {
+              "Name": "None",
+              "Description": ""
+            },
+            {
+              "Name": "Vest and Helmet",
+              "Description": ""
+            },
+            {
+              "Name": "Heavy Armor",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Spawn alseep?",
+          "InternalName": "start_asleep",
+          "VariableType": "Bool",
+          "Description": "Do the bots that spawn here start alseep? If so, they will wait until they see or hear the player to move.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Default Behavior",
+          "InternalName": "default_behavior",
+          "VariableType": "Choices",
+          "Description": "What behavior the bot should have when idle.",
+          "Options": [
+            {
+              "Name": "Defend Camp",
+              "Description": ""
+            },
+            {
+              "Name": "Hunt",
+              "Description": ""
+            },
+            {
+              "Name": "Charge Enemy",
+              "Description": ""
+            },
+            {
+              "Name": "Defend Investigate",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Bot Difficulty (int)",
+          "InternalName": "bot_difficulty",
+          "VariableType": "Integer",
+          "Description": "How hard the bot is to fight and what his skill level is. [0-7] (0 = super easy, 7 = super human).",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Is agressive?",
+          "InternalName": "is_agressive",
+          "VariableType": "Bool",
+          "Description": "Is the bot agreesive for his difficulty level?",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Hide Radius",
+          "InternalName": "hide_radius",
+          "VariableType": "Float",
+          "Description": "Range around the spawn spot the bot will try to hide. Set to 0 to hold position and never try to hide.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[1]",
+          "InternalName": "PatrolArea01",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[2]",
+          "InternalName": "PatrolArea02",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[3]",
+          "InternalName": "PatrolArea03",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[4]",
+          "InternalName": "PatrolArea04",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[5]",
+          "InternalName": "PatrolArea05",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[6]",
+          "InternalName": "PatrolArea06",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[7]",
+          "InternalName": "PatrolArea07",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[8]",
+          "InternalName": "PatrolArea08",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[9]",
+          "InternalName": "PatrolArea09",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[10]",
+          "InternalName": "PatrolArea10",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[11]",
+          "InternalName": "PatrolArea11",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[12]",
+          "InternalName": "PatrolArea12",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[13]",
+          "InternalName": "PatrolArea13",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[14]",
+          "InternalName": "PatrolArea14",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[15]",
+          "InternalName": "PatrolArea15",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "PatrolArea[16]",
+          "InternalName": "PatrolArea16",
+          "VariableType": "TargetDestination",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "RunScriptFile",
+          "Description": "Load and execute a script file",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptCode",
+          "Description": "Execute a fragment of script code",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallScriptFunction",
+          "Description": "Call a script function",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallPrivateScriptFunction",
+          "Description": "Calls a script function from this entity\u0027s private script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallGlobalScriptFunction",
+          "Description": "Calls a script function in the global script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Kill",
+          "Description": "Removes this entity from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillHierarchy",
+          "Description": "Removes this entity and all its children from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillConstrained",
+          "Description": "Removes this entity, all its children, and anything constrained to it, from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "AddOutput",
+          "Description": "Adds an entity I/O connection to this entity. Parameter format: outputname\u0026gt;targetname\u003Einputname\u0026gt;parameter\u0026gt;delay\u0026gt;max times to fire (-1 == infinite). Very dangerous, use with care.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser1",
+          "Description": "Causes this entity\u0027s OnUser1 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser2",
+          "Description": "Causes this entity\u0027s OnUser2 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser3",
+          "Description": "Causes this entity\u0027s OnUser3 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser4",
+          "Description": "Causes this entity\u0027s OnUser4 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnUser1",
+          "Description": "Fired in response to FireUser1 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser2",
+          "Description": "Fired in response to FireUser2 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser3",
+          "Description": "Fired in response to FireUser3 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser4",
+          "Description": "Fired in response to FireUser4 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnKilled",
+          "Description": "Fired when the entity is killed and removed from the game. Parameter is the inflictor.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "SetEnabled",
+          "Description": "Sets this spawn point as enabled.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetDisabled",
+          "Description": "Sets this spawn point as disabled.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "ToggleEnabled",
+          "Description": "Toggle the enabled/disabled state of this spawn point.",
+          "VariableType": "Void",
+          "Type": "Input"
+        }
+      ]
+    }
+  ]
+}

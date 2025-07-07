@@ -1,0 +1,234 @@
+{
+  "Name": "func_dustmotes",
+  "Pages": [
+    {
+      "Game": "steamvr",
+      "EntityType": "Mesh",
+      "Name": "func_dustmotes",
+      "Description": "A brush entity that spawns sparkling dust motes within its volume.",
+      "IconPath": "",
+      "Properties": [
+        {
+          "FriendlyName": "Start Disabled",
+          "InternalName": "StartDisabled",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Particle Color (R G B)",
+          "InternalName": "Color",
+          "VariableType": "Color255",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Particle Per Second",
+          "InternalName": "SpawnRate",
+          "VariableType": "Integer",
+          "Description": "Number of particles to spawn, per second.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Maximum Particle Speed",
+          "InternalName": "SpeedMax",
+          "VariableType": "String",
+          "Description": "Maximum speed that the particles can move after spawning.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Minimum Particle Lifetime",
+          "InternalName": "LifetimeMin",
+          "VariableType": "String",
+          "Description": "Minimum number of seconds until each particle dies. Particles live for a random duration between this and \u0027Maximum Particle Lifetime\u0027.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Maximum Particle Lifetime",
+          "InternalName": "LifetimeMax",
+          "VariableType": "String",
+          "Description": "Maximum number of seconds until each particle dies. Particles live for a random duration between \u0027Minimum Particle Lifetime\u0027 and this.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Maximum Visible Distance",
+          "InternalName": "DistMax",
+          "VariableType": "Integer",
+          "Description": "Maximum distance at which particles are visible. They fade to translucent at this distance.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Frozen",
+          "InternalName": "Frozen",
+          "VariableType": "Bool",
+          "Description": "When set, this entity spawns the number of particles in SpawnRate immediately, and then goes inactive.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Entity Scripts",
+          "InternalName": "vscripts",
+          "VariableType": "ScriptList",
+          "Description": "Name(s) of script files that are executed after all entities have spawned.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Name",
+          "InternalName": "targetname",
+          "VariableType": "TargetSource",
+          "Description": "The name that other entities refer to this entity by.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Minimum Particle Size",
+          "InternalName": "SizeMin",
+          "VariableType": "String",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Maximum Particle Size",
+          "InternalName": "SizeMax",
+          "VariableType": "String",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Alpha",
+          "InternalName": "Alpha",
+          "VariableType": "Integer",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": [
+        {
+          "Name": "TurnOn",
+          "Description": "Turn on.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "TurnOff",
+          "Description": "Turn off.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptFile",
+          "Description": "Load and execute a script file",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "RunScriptCode",
+          "Description": "Execute a fragment of script code",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallScriptFunction",
+          "Description": "Call a script function",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallPrivateScriptFunction",
+          "Description": "Calls a script function from this entity\u0027s private script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "CallGlobalScriptFunction",
+          "Description": "Calls a script function in the global script scope.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "Kill",
+          "Description": "Removes this entity from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "KillHierarchy",
+          "Description": "Removes this entity and all its children from the world.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "AddOutput",
+          "Description": "Adds an entity I/O connection to this entity. Parameter format: outputname\u0026gt;targetname\u003Einputname\u0026gt;parameter\u0026gt;delay\u0026gt;max times to fire (-1 == infinite). Very dangerous, use with care.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser1",
+          "Description": "Causes this entity\u0027s OnUser1 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser2",
+          "Description": "Causes this entity\u0027s OnUser2 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser3",
+          "Description": "Causes this entity\u0027s OnUser3 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FireUser4",
+          "Description": "Causes this entity\u0027s OnUser4 output to be fired.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "OnUser1",
+          "Description": "Fired in response to FireUser1 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser2",
+          "Description": "Fired in response to FireUser2 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser3",
+          "Description": "Fired in response to FireUser3 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnUser4",
+          "Description": "Fired in response to FireUser4 input.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnKilled",
+          "Description": "Fired when the entity is killed and removed from the game.",
+          "VariableType": "Void",
+          "Type": "Output"
+        }
+      ]
+    }
+  ]
+}
