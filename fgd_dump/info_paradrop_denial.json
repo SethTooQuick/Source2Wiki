@@ -7,6 +7,7 @@
       "Name": "info_paradrop_denial",
       "Description": "Paradrop denial area.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

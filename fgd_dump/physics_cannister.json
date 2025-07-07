@@ -7,6 +7,7 @@
       "Name": "physics_cannister",
       "Description": "A physically simulated gas cannister that can have its cap shot off, at which point gas will start escaping and cause the cannister to fly around. If it takes enough damage, it will explode.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

@@ -7,6 +7,7 @@
       "Name": "trigger_survival_playarea",
       "Description": "A trigger used to define the survial play area.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

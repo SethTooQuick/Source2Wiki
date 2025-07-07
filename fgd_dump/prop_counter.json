@@ -7,6 +7,7 @@
       "Name": "prop_counter",
       "Description": "Door price counter",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

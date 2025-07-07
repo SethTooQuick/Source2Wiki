@@ -7,6 +7,7 @@
       "Name": "game_money",
       "Description": "An entity that awards money to a specific team.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

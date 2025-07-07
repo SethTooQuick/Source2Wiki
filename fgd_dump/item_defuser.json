@@ -7,6 +7,7 @@
       "Name": "item_defuser",
       "Description": "Defuse Kit",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

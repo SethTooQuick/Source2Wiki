@@ -7,6 +7,7 @@
       "Name": "csm_fov_override",
       "Description": "This entity indicates the FOV override for cascading shadow maps.   .",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Target Camera Name",

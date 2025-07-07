@@ -7,6 +7,7 @@
       "Name": "info_map_region",
       "Description": "DZ Named Map Region",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

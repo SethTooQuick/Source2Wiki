@@ -7,6 +7,7 @@
       "Name": "func_nav_gen_proj",
       "Description": "Generate nav inside this volume and in the direction of the arrow",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Markup Groups",

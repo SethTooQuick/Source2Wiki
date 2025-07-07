@@ -7,6 +7,7 @@
       "Name": "game_player_team",
       "Description": "An entity that changes the team of the player who activates it.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

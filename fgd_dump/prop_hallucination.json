@@ -7,6 +7,7 @@
       "Name": "prop_hallucination",
       "Description": "A prop that players can\u0027t get a good look at, hopefully making them unsure if it\u0027s there at all",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "World Model",

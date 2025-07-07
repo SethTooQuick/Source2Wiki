@@ -7,6 +7,7 @@
       "Name": "weapon_sg556",
       "Description": "SG 553",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

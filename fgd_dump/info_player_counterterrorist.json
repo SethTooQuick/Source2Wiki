@@ -7,6 +7,7 @@
       "Name": "info_player_counterterrorist",
       "Description": "This entity marks the start point for counter-terrorists. One of these needs to be placed for each team member. 20 start points is typical. Should be placed at least 128 units away from each other and surrounding walls",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

@@ -7,6 +7,7 @@
       "Name": "hostage_entity",
       "Description": "Hostage. A hostage NPC will spawn at this point.\n\nThere are usually four hostages placed in each hostage rescue map. The model for each Hostage is randomly chosen.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

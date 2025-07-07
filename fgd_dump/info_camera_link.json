@@ -7,6 +7,7 @@
       "Name": "info_camera_link",
       "Description": "An entity that can use point_cameras to render images for materials used by entities. To author the material, use the special identifier _rt_Camera for the $baseTexture (or whatever texture you want, like envmap, etc.) in the .vmat then connect the \u0027target\u0027 field to the entity which uses that material, and the \u0027PointCamera\u0027 field to the point_camera you want to have appear on that entity\u0027s material",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

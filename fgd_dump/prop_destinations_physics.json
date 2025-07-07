@@ -7,6 +7,7 @@
       "Name": "prop_destinations_physics",
       "Description": "A prop that is picked up on use.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Start Fade Dist",

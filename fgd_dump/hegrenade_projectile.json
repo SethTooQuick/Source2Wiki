@@ -7,6 +7,7 @@
       "Name": "hegrenade_projectile",
       "Description": "HE Grenade Projectile",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Team Number (int)",

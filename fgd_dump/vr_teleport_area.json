@@ -7,6 +7,7 @@
       "Name": "vr_teleport_area",
       "Description": "",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Start Disabled",

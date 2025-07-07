@@ -7,6 +7,7 @@
       "Name": "env_time_of_day",
       "Description": "",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Time of Day",

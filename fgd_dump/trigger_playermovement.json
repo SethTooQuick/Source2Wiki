@@ -7,6 +7,7 @@
       "Name": "trigger_playermovement",
       "Description": "An entity that can be used to disable player\u0027s automatic ducking/unducking when jumping.",
       "IconPath": "fgd_dump/img/steamvr/trigger_playermovement.png",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Global Entity Name",

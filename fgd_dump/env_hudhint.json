@@ -7,6 +7,7 @@
       "Name": "env_hudhint",
       "Description": "An entity to control the display of HUD hints. HUD hints are used to show the player what key is bound to a particular command.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",
@@ -162,6 +163,7 @@
       "Name": "env_hudhint",
       "Description": "An entity to control the display of HUD hints. HUD hints are used to show the player what key is bound to a particular command.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

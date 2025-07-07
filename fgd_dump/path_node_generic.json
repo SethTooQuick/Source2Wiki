@@ -7,6 +7,17 @@
       "Name": "path_node_generic",
       "Description": "",
       "IconPath": "",
+      "PageAnnotation": null,
+      "Properties": [],
+      "InputOutputs": []
+    },
+    {
+      "Game": "dota2",
+      "EntityType": "Point",
+      "Name": "path_node_generic",
+      "Description": "",
+      "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [],
       "InputOutputs": []
     }

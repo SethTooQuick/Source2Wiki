@@ -7,6 +7,7 @@
       "Name": "env_cs_place",
       "Description": "An entity used to define a place on a CSGO map.",
       "IconPath": "fgd_dump/img/cs2/env_cs_place.png",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

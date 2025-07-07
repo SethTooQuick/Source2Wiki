@@ -7,6 +7,7 @@
       "Name": "weapon_mp9",
       "Description": "MP9",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

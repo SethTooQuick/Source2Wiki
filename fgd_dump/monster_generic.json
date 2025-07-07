@@ -7,6 +7,7 @@
       "Name": "monster_generic",
       "Description": "Generic Script NPC",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "",

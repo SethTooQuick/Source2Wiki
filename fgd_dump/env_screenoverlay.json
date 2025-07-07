@@ -7,6 +7,7 @@
       "Name": "env_screenoverlay",
       "Description": "An entity that can display and control a set of screen overlays, to be displayed over the player\u0027s view. Useful for view effects like drunkenness, or teleporter afterimages, etc.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

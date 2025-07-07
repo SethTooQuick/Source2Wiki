@@ -7,6 +7,7 @@
       "Name": "env_lightglow",
       "Description": "An entity that puts an additive glow in the world, mostly used over light sources.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

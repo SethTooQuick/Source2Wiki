@@ -7,6 +7,7 @@
       "Name": "func_dustcloud",
       "Description": "A brush entity that spawns a translucent dust cloud within its volume.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Start Disabled",

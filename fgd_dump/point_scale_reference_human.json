@@ -7,6 +7,7 @@
       "Name": "point_scale_reference_human",
       "Description": "Scale Reference (Human)",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

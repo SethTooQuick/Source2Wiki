@@ -7,6 +7,7 @@
       "Name": "func_clip_vphysics",
       "Description": "A brush entity that\u0027s considered solid to vphysics.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Start Disabled",

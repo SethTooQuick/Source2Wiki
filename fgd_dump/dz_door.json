@@ -7,6 +7,7 @@
       "Name": "dz_door",
       "Description": "A security door.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Glow State",

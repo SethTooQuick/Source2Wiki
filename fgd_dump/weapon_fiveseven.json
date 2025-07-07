@@ -7,6 +7,7 @@
       "Name": "weapon_fiveseven",
       "Description": "Five-SeveN",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

@@ -7,6 +7,7 @@
       "Name": "info_radial_link_controller",
       "Description": "This entity automatically severs node connections that pass through its radius. If it moves, it will restore those connections.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Parent",

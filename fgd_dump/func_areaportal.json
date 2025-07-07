@@ -7,6 +7,7 @@
       "Name": "func_areaportal",
       "Description": "A portal brush used to manage visibility in maps. Portals define areas, which are spaces that are connected in the map. Both sides of a portal cannot touch the same area, for example, a doughnut shaped map would require at least two portals to divide the map into two areas. A linear map could be divided into two areas with a single area portal.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

@@ -7,6 +7,7 @@
       "Name": "func_occluder",
       "Description": "A func_occluder occludes objects behind it. It is used for rendering performance optimization. One use case is to put it into a doorway and toggle it based on whether the door is open or not. Note that geometry surrounding the doorway should have occluders as well, otherwise the benefit of the func_occluder is limited.\u003Cbr\u003Efunc_occluders should be as large as possible for best occlusion.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Start Disabled",

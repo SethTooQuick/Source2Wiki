@@ -7,6 +7,7 @@
       "Name": "info_deathmatch_spawn",
       "Description": "This entity marks a deathmatch spawn point. This is the entity that populates the map when mp_random_spawn is used.Manually adding them to the map will guarantee that these spawn points are included in the set",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

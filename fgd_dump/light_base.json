@@ -7,6 +7,7 @@
       "Name": "light_base",
       "Description": "",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Parent",

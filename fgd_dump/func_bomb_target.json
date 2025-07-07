@@ -7,6 +7,7 @@
       "Name": "func_bomb_target",
       "Description": "Bomb Target. The terrorists can place C4 explosives while standing in this zone.\n\nWhen the bomb is planted and explodes inside this area, the BombExplode outputs are fired. The game handles all of the bomb planting and scoring logic \u2013 the BombExplode outputs are provided to add visual and damage effects.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Parent",

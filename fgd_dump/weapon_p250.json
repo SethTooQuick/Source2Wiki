@@ -7,6 +7,7 @@
       "Name": "weapon_p250",
       "Description": "P250",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

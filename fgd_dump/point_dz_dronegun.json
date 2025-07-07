@@ -7,6 +7,7 @@
       "Name": "point_dz_dronegun",
       "Description": "Drone Gun",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

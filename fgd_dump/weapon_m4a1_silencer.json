@@ -7,6 +7,7 @@
       "Name": "weapon_m4a1_silencer",
       "Description": "M4A1 Silenced",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

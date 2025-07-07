@@ -7,6 +7,7 @@
       "Name": "func_ladderendpoint",
       "Description": "An entity used to specify the endpoints of a ladder. This entity is functional, but has been replaced by the easier-to-use func_useableladder entity. Left in only for backwards-compatibility!\u003Cbr\u003E\u003Cbr\u003ETo be valid, a full sized player hull traced between the start and end points must not be obstructed at level activation time. The angle determines in which direction the player leaves the ladder if the player presses the \u002Bjump button.\u003Cbr\u003E\u003Cbr\u003ENote: This entity is non-functional in Counter-Strike: Source. In CS:S, use func_ladder instead.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Parent",

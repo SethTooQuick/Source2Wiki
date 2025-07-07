@@ -7,6 +7,7 @@
       "Name": "info_mass_center",
       "Description": "An entity that overrides the mass center of the target physics prop, or func_physbox, by moving it to the info_mass_center\u0027s location.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Target object",

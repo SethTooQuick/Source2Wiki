@@ -7,6 +7,7 @@
       "Name": "prop_magic_carpet",
       "Description": "",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Model",
@@ -33,6 +34,34 @@
       "Name": "prop_magic_carpet",
       "Description": "",
       "IconPath": "",
+      "PageAnnotation": null,
+      "Properties": [
+        {
+          "FriendlyName": "Model",
+          "InternalName": "model",
+          "VariableType": "Studio",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Max Ride Speed",
+          "InternalName": "max_ride_speed",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        }
+      ],
+      "InputOutputs": []
+    },
+    {
+      "Game": "dota2",
+      "EntityType": "Point",
+      "Name": "prop_magic_carpet",
+      "Description": "",
+      "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Model",

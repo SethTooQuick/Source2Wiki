@@ -7,6 +7,7 @@
       "Name": "point_dz_weaponspawn_group",
       "Description": "Weapon spawn group.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

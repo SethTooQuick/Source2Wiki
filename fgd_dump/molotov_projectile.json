@@ -7,6 +7,7 @@
       "Name": "molotov_projectile",
       "Description": "Molotov Projectile",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Team Number (int)",

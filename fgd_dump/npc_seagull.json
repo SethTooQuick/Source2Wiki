@@ -7,6 +7,7 @@
       "Name": "npc_seagull",
       "Description": "Seagull",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Disable shadows",

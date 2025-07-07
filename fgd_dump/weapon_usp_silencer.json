@@ -7,6 +7,7 @@
       "Name": "weapon_usp_silencer",
       "Description": "USP Silenced",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

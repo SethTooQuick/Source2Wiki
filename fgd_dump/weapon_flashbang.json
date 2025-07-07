@@ -7,6 +7,7 @@
       "Name": "weapon_flashbang",
       "Description": "Flashbang",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

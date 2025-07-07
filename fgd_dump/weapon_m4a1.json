@@ -7,6 +7,7 @@
       "Name": "weapon_m4a1",
       "Description": "M4A4",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Pitch Yaw Roll (Y Z X)",

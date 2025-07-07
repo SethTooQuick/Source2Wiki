@@ -7,6 +7,7 @@
       "Name": "env_player_surface_trigger",
       "Description": "An entity that monitors the material of the surface the player is standing on, and fires outputs whenever it changes to/from a specific material.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

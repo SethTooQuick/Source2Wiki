@@ -7,6 +7,7 @@
       "Name": "counterterrorist_team_intro",
       "Description": "In-map counter-terrorist team intro variant #1.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

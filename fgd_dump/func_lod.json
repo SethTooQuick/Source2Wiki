@@ -7,6 +7,7 @@
       "Name": "func_lod",
       "Description": "Brush-built model that fades out over a specified distance. Useful for creating world detail that doesn\u0027t need to be drawn far away, for performance reasons.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

@@ -7,6 +7,7 @@
       "Name": "env_dustpuff",
       "Description": "An entity that can emit dust puffs.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Parent",

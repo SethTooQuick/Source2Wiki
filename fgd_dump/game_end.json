@@ -7,6 +7,7 @@
       "Name": "game_end",
       "Description": "An entity that ends a multiplayer game.",
       "IconPath": "fgd_dump/img/cs2/game_end.png",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",
@@ -156,6 +157,7 @@
       "Name": "game_end",
       "Description": "An entity that ends a multiplayer game.",
       "IconPath": "fgd_dump/img/steamvr/game_end.png",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

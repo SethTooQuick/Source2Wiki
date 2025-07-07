@@ -1,0 +1,9 @@
+{
+    "Name": "info_null",
+    "EntityType": "Point",
+    "PageAnnotation": {
+        "InternalName": "nullAnnotation",
+        "Message": "Legacy Entity.",
+        "Type": "danger"
+    }
+}

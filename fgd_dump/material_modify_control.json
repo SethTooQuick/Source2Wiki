@@ -7,6 +7,7 @@
       "Name": "material_modify_control",
       "Description": "An entity that can be used to directly control material vars. To use it, you need to read the .vmat of the material you intend to change. Parent this entity to a brush model entity who\u0027s material you want to control.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

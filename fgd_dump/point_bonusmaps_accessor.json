@@ -7,6 +7,7 @@
       "Name": "point_bonusmaps_accessor",
       "Description": "An entity that relays bonus maps changes.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

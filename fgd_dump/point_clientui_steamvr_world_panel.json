@@ -7,6 +7,7 @@
       "Name": "point_clientui_steamvr_world_panel",
       "Description": "An entity used to place one of the SteamVR breakout panels in the world",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Entity Scripts",

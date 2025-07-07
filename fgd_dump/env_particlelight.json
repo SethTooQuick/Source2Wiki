@@ -7,6 +7,7 @@
       "Name": "env_particlelight",
       "Description": "An entity that can be used to light the smoke particles emitted by env_smokestack entities. Does not light any other particle types.",
       "IconPath": "",
+      "PageAnnotation": null,
       "Properties": [
         {
           "FriendlyName": "Parent",
