@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type {PluginOptions} from '@easyops-cn/docusaurus-search-local';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -36,6 +37,31 @@ const config: Config = {
     locales: ['en'],
   },
 
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        
+        // Language settings
+        language: ["en"],
+        
+        // What to index
+        indexDocs: true,
+        indexBlog: false, // You have blog disabled, so this should be false
+        indexPages: false, // Set to true if you want to index standalone pages
+        
+        docsRouteBasePath: '/',
+        
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50,
+        
+        highlightSearchTermsOnTargetPage: true,
+        
+      } satisfies PluginOptions,
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -55,7 +81,6 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
   themeConfig: {
     // Replace with your project's social card
     image: 'img/social-card.jpg',
