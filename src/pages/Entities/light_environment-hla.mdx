@@ -12,26 +12,19 @@ In order to make edits, you can make an annotation file in /fgd_dump_overrides
 -->
 
 
-import light_environmentIcon from '@site/fgd_dump/img/cs2/env_shake.png';
-
-<img src={light_environmentIcon} alt="light_environment icon" style={{height: '80px'}} />
-
 Point Entity
-   :::info
-   Do not stare right into it.
-   :::
-Custom edit example.
+
+Sets the color and angle of the light from the sun and sky.
+
+Typical setup:
+1. Create an <b>env_sky</b> entity to use as your skybox
+2. Create a <b>light_environment</b> entity and set <b>Sky IBL Source</b> to the name of the <b>env_sky</b> entity
+3. Right-click on your <b>light_environment</b> entity and select 'Selected environment light -&gt; Estimate lighting from HDR skybox'
+4. Adjust angle and brightness of the sunlight as you see fit
 
 <details open>
 <summary><h2>Keyvalues</h2></summary>
-- **Keyvalue override example** (`bouncescale`) \<`Int`\>\
-A test for overriding keyvalues in entity pages.
-   :::danger
-   Very dangerous.
-   :::
-  - option example\
-    example of a keyvalue option
-
+- **Indirect Light Multiplier** (`bouncescale`) \<`Float`\>
 
 - **Render Diffuse** (`renderdiffuse`) \<`Boolean`\>
 
@@ -268,15 +261,12 @@ Set appearance 0=Normal 1=Flicker A, 2=Slow, strong pulse 3=Candle A ...
 - SetCustomAppearance \<`String`\>\
 Set a custom pattern of light brightness for this light. Pattern format is a string of characters, where 'a' is total darkness, 'z' fully bright. i.e. 'aaggnnttzz' would be a steppy fade in from dark to light.
 
-- InputExample \<`String`\>\
-This is a new input.
-
 
  </details>
 <details open>
 <summary><h2>Outputs</h2></summary>
-- OnUser1 \<`String`\>\
-This is an overriden output.
+- OnUser1 \<`Void`\>\
+Fired in response to FireUser1 input.
 
 - OnUser2 \<`Void`\>\
 Fired in response to FireUser2 input.

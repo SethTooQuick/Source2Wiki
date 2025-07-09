@@ -13,6 +13,7 @@ In order to make edits, you can make an annotation file in /fgd_dump_overrides
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import '@site/src/css/tabs.css';
 
 # snd_opvar_set_auto_room
 
@@ -22,11 +23,21 @@ import DOTA2Page from '@site/src/pages/Entities/snd_opvar_set_auto_room-dota2.md
 
 <Tabs queryString="game">
     
-<TabItem value="cs2" label="Counter-Strike 2">
+<TabItem value="cs2" label={
+    <span>
+        <img src="/img/cs2_icon.png" alt="Counter-Strike 2" className="tab-icon" />
+        Counter-Strike 2
+    </span>
+    }>
     <CS2Page />
 </TabItem>
 
-<TabItem value="dota2" label="Dota 2">
+<TabItem value="dota2" label={
+    <span>
+        <img src="/img/dota2_icon.png" alt="Dota 2" className="tab-icon" />
+        Dota 2
+    </span>
+    }>
     <DOTA2Page />
 </TabItem>
 

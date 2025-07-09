@@ -13,6 +13,7 @@ In order to make edits, you can make an annotation file in /fgd_dump_overrides
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import '@site/src/css/tabs.css';
 
 # commentary_auto
 
@@ -23,15 +24,30 @@ import HLAPage from '@site/src/pages/Entities/commentary_auto-hla.mdx';
 
 <Tabs queryString="game">
     
-<TabItem value="cs2" label="Counter-Strike 2">
+<TabItem value="cs2" label={
+    <span>
+        <img src="/img/cs2_icon.png" alt="Counter-Strike 2" className="tab-icon" />
+        Counter-Strike 2
+    </span>
+    }>
     <CS2Page />
 </TabItem>
 
-<TabItem value="dota2" label="Dota 2">
+<TabItem value="dota2" label={
+    <span>
+        <img src="/img/dota2_icon.png" alt="Dota 2" className="tab-icon" />
+        Dota 2
+    </span>
+    }>
     <DOTA2Page />
 </TabItem>
 
-<TabItem value="hla" label="Half-Life: Alyx">
+<TabItem value="hla" label={
+    <span>
+        <img src="/img/hla_icon.png" alt="Half-Life: Alyx" className="tab-icon" />
+        Half-Life: Alyx
+    </span>
+    }>
     <HLAPage />
 </TabItem>
 

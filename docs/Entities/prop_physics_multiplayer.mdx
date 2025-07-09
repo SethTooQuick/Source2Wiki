@@ -13,6 +13,7 @@ In order to make edits, you can make an annotation file in /fgd_dump_overrides
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import '@site/src/css/tabs.css';
 
 # prop_physics_multiplayer
 
@@ -23,15 +24,30 @@ import DOTA2Page from '@site/src/pages/Entities/prop_physics_multiplayer-dota2.m
 
 <Tabs queryString="game">
     
-<TabItem value="cs2" label="Counter-Strike 2">
+<TabItem value="cs2" label={
+    <span>
+        <img src="/img/cs2_icon.png" alt="Counter-Strike 2" className="tab-icon" />
+        Counter-Strike 2
+    </span>
+    }>
     <CS2Page />
 </TabItem>
 
-<TabItem value="steamvr" label="SteamVR Home">
+<TabItem value="steamvr" label={
+    <span>
+        <img src="/img/steamvr_icon.png" alt="SteamVR Home" className="tab-icon" />
+        SteamVR Home
+    </span>
+    }>
     <STEAMVRPage />
 </TabItem>
 
-<TabItem value="dota2" label="Dota 2">
+<TabItem value="dota2" label={
+    <span>
+        <img src="/img/dota2_icon.png" alt="Dota 2" className="tab-icon" />
+        Dota 2
+    </span>
+    }>
     <DOTA2Page />
 </TabItem>
 

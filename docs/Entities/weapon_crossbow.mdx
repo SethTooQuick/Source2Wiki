@@ -13,6 +13,7 @@ In order to make edits, you can make an annotation file in /fgd_dump_overrides
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import '@site/src/css/tabs.css';
 
 # weapon_crossbow
 
@@ -21,7 +22,12 @@ import HLAPage from '@site/src/pages/Entities/weapon_crossbow-hla.mdx';
 
 <Tabs queryString="game">
     
-<TabItem value="hla" label="Half-Life: Alyx">
+<TabItem value="hla" label={
+    <span>
+        <img src="/img/hla_icon.png" alt="Half-Life: Alyx" className="tab-icon" />
+        Half-Life: Alyx
+    </span>
+    }>
     <HLAPage />
 </TabItem>
 

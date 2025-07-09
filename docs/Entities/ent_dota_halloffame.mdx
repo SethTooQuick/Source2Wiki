@@ -13,6 +13,7 @@ In order to make edits, you can make an annotation file in /fgd_dump_overrides
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import '@site/src/css/tabs.css';
 
 # ent_dota_halloffame
 
@@ -21,7 +22,12 @@ import DOTA2Page from '@site/src/pages/Entities/ent_dota_halloffame-dota2.mdx';
 
 <Tabs queryString="game">
     
-<TabItem value="dota2" label="Dota 2">
+<TabItem value="dota2" label={
+    <span>
+        <img src="/img/dota2_icon.png" alt="Dota 2" className="tab-icon" />
+        Dota 2
+    </span>
+    }>
     <DOTA2Page />
 </TabItem>
 
