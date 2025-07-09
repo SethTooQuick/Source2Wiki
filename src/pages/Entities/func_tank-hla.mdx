@@ -24,125 +24,75 @@ Brush Gun Turret
 Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state.
 
 - **Minimum CPU Level** (`mincpulevel`) \<`Choices`\>
-  - default (low)\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (low)
+  - low
+  - medium
+  - high
 
 
 - **Maximum CPU Level** (`maxcpulevel`) \<`Choices`\>
-  - default (high)\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (high)
+  - low
+  - medium
+  - high
 
 
 - **Minimum GPU Level** (`mingpulevel`) \<`Choices`\>
-  - default (very low)\
-    
-  - very low\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (very low)
+  - very low
+  - low
+  - medium
+  - high
 
 
 - **Maximum GPU Level** (`maxgpulevel`) \<`Choices`\>
-  - default (high)\
-    
-  - very low\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (high)
+  - very low
+  - low
+  - medium
+  - high
 
 
 - **Disable X360** (`disableX360`) \<`Choices`\>
-  - No\
-    
-  - Yes\
-    
+  - No
+  - Yes
 
 
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal\
-    
-  - Color\
-    
-  - Texture\
-    
-  - Glow\
-    
-  - Solid\
-    
-  - Additive\
-    
-  - Additive Fractional Frame\
-    
-  - World Space Glow\
-    
-  - Dont Render\
-    
-  - Dev Visualizer\
-    
+  - Normal
+  - Color
+  - Texture
+  - Glow
+  - Solid
+  - Additive
+  - Additive Fractional Frame
+  - World Space Glow
+  - Dont Render
+  - Dev Visualizer
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal\
-    
-  - Slow Pulse\
-    
-  - Fast Pulse\
-    
-  - Slow Wide Pulse\
-    
-  - Fast Wide Pulse\
-    
-  - Slow Strobe\
-    
-  - Fast Strobe\
-    
-  - Faster Strobe\
-    
-  - Slow Flicker\
-    
-  - Fast Flicker\
-    
-  - Slow Fade Away\
-    
-  - Fast Fade Away\
-    
-  - Slow Become Solid\
-    
-  - Fast Become Solid\
-    
-  - Constant Glow\
-    
-  - Distort\
-    
-  - Hologram (Distort + fade)\
-    
-  - Cull By Distance (TEST)\
-    
-  - Spotlight FX\
-    
-  - Fade Near\
-    
+  - Normal
+  - Slow Pulse
+  - Fast Pulse
+  - Slow Wide Pulse
+  - Fast Wide Pulse
+  - Slow Strobe
+  - Fast Strobe
+  - Faster Strobe
+  - Slow Flicker
+  - Fast Flicker
+  - Slow Fade Away
+  - Fast Fade Away
+  - Slow Become Solid
+  - Fast Become Solid
+  - Constant Glow
+  - Distort
+  - Hologram (Distort + fade)
+  - Cull By Distance (TEST)
+  - Spotlight FX
+  - Fade Near
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -170,12 +120,9 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 How this geometry influences baked lighting.
-  - No\
-    
-  - Yes\
-    
-  - Bounce Only\
-    
+  - No
+  - Yes
+  - Bounce Only
 
 
 - **Parent** (`parentname`) \<`TargetDestination`\>\
@@ -203,24 +150,15 @@ Name(s) of script files that are executed after all entities have spawned.
 The name that other entities refer to this entity by.
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Active\
-    
-  - Only Direct\
-    
-  - Controllable\
-    
-  - Damage Kick\
-    
-  - NPC Controllable\
-    
-  - NPC Set Controller\
-    
-  - Allow friendlies to hit player\
-    
-  - Non-solid.\
-    
-  - Perfect accuracy every 3rd shot at player\
-    
+  - Active
+  - Only Direct
+  - Controllable
+  - Damage Kick
+  - NPC Controllable
+  - NPC Set Controller
+  - Allow friendlies to hit player
+  - Non-solid.
+  - Perfect accuracy every 3rd shot at player
 
 
 - **Control Volume** (`control_volume`) \<`TargetDestination`\>\
@@ -273,16 +211,11 @@ If set to 0, it'll use the Damage Per Bullet value.
 (Seconds) After lost enemy and persistence time has passed, how long to occasionally fire at enemy's last known position
 
 - **Bullet accuracy** (`firespread`) \<`Choices`\>
-  - Perfect Shot\
-    
-  - Small cone\
-    
-  - Medium cone\
-    
-  - Large cone\
-    
-  - Extra-large cone\
-    
+  - Perfect Shot
+  - Small cone
+  - Medium cone
+  - Large cone
+  - Extra-large cone
 
 
 - **Minmum target range** (`minRange`) \<`String`\>
@@ -327,32 +260,22 @@ The player grace period is ignored if the player's under this distance from the 
 The tank must have the player as a target for this amount of time before it's allowed to fire.
 
 - **Effect Handling** (`effecthandling`) \<`Choices`\>
-  - Use Individual Settings.\
-    
-  - AR2\
-    
-  - Combine Cannon\
-    
+  - Use Individual Settings.
+  - AR2
+  - Combine Cannon
 
 
 - **Ammo type** (`ammotype`) \<`Choices`\>
-  - None\
-    
-  - Pistol\
-    
-  - SMG1\
-    
-  - AR2\
-    
-  - Combine Heavy Cannon\
-    
+  - None
+  - Pistol
+  - SMG1
+  - AR2
+  - Combine Heavy Cannon
 
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Ignore range when making viewcone checks\
-    
-  - Aiming Assistance (Player Only)\
-    
+  - Ignore range when making viewcone checks
+  - Aiming Assistance (Player Only)
 
 
 

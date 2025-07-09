@@ -27,125 +27,75 @@ Response system context(s) for this entity. Format should be: 'key:value,key2:va
 Name of the filter entity that controls which entities can damage us.
 
 - **Minimum CPU Level** (`mincpulevel`) \<`Choices`\>
-  - default (low)\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (low)
+  - low
+  - medium
+  - high
 
 
 - **Maximum CPU Level** (`maxcpulevel`) \<`Choices`\>
-  - default (high)\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (high)
+  - low
+  - medium
+  - high
 
 
 - **Minimum GPU Level** (`mingpulevel`) \<`Choices`\>
-  - default (very low)\
-    
-  - very low\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (very low)
+  - very low
+  - low
+  - medium
+  - high
 
 
 - **Maximum GPU Level** (`maxgpulevel`) \<`Choices`\>
-  - default (high)\
-    
-  - very low\
-    
-  - low\
-    
-  - medium\
-    
-  - high\
-    
+  - default (high)
+  - very low
+  - low
+  - medium
+  - high
 
 
 - **Disable X360** (`disableX360`) \<`Choices`\>
-  - No\
-    
-  - Yes\
-    
+  - No
+  - Yes
 
 
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal\
-    
-  - Color\
-    
-  - Texture\
-    
-  - Glow\
-    
-  - Solid\
-    
-  - Additive\
-    
-  - Additive Fractional Frame\
-    
-  - World Space Glow\
-    
-  - Dont Render\
-    
-  - Dev Visualizer\
-    
+  - Normal
+  - Color
+  - Texture
+  - Glow
+  - Solid
+  - Additive
+  - Additive Fractional Frame
+  - World Space Glow
+  - Dont Render
+  - Dev Visualizer
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal\
-    
-  - Slow Pulse\
-    
-  - Fast Pulse\
-    
-  - Slow Wide Pulse\
-    
-  - Fast Wide Pulse\
-    
-  - Slow Strobe\
-    
-  - Fast Strobe\
-    
-  - Faster Strobe\
-    
-  - Slow Flicker\
-    
-  - Fast Flicker\
-    
-  - Slow Fade Away\
-    
-  - Fast Fade Away\
-    
-  - Slow Become Solid\
-    
-  - Fast Become Solid\
-    
-  - Constant Glow\
-    
-  - Distort\
-    
-  - Hologram (Distort + fade)\
-    
-  - Cull By Distance (TEST)\
-    
-  - Spotlight FX\
-    
-  - Fade Near\
-    
+  - Normal
+  - Slow Pulse
+  - Fast Pulse
+  - Slow Wide Pulse
+  - Fast Wide Pulse
+  - Slow Strobe
+  - Fast Strobe
+  - Faster Strobe
+  - Slow Flicker
+  - Fast Flicker
+  - Slow Fade Away
+  - Fast Fade Away
+  - Slow Become Solid
+  - Fast Become Solid
+  - Constant Glow
+  - Distort
+  - Hologram (Distort + fade)
+  - Cull By Distance (TEST)
+  - Spotlight FX
+  - Fade Near
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -173,12 +123,9 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 How this geometry influences baked lighting.
-  - No\
-    
-  - Yes\
-    
-  - Bounce Only\
-    
+  - No
+  - Yes
+  - Bounce Only
 
 
 - **Entity Scripts** (`vscripts`) \<`ScriptList`\>\
@@ -202,68 +149,39 @@ Limits NPC to using specified hint group for navigation requests, but does not l
 - **If a Hint Group is specified, whether to also allow the use of generic nodes.** (`allowgenericnodes`) \<`Boolean`\>
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Wait Till Seen\
-    
-  - Gag (No IDLE sounds until angry)\
-    
-  - Fall to ground (unchecked means *teleport* to ground)\
-    
-  - Drop Healthkit\
-    
-  - Efficient - Don't acquire enemies or avoid obstacles\
-    
-  - Wait For Script\
-    
-  - Long Visibility/Shoot\
-    
-  - Fade Corpse\
-    
-  - Think outside PVS\
-    
-  - Template NPC (used by npc_maker, will not spawn)\
-    
-  - Do Alternate collision for this NPC (player avoidance)\
-    
-  - Don't drop weapons\
-    
-  - Ignore player push (dont give way to player)\
-    
-  - Start hidden\
-    
-  - Start hanging from ceiling\
-    
-  - No Rotorwash\
-    
-  - Await Input\
-    
-  - Enable Teleport Blocker\
-    
-  - Don't release headcrab upon death\
-    
-  - No Dynamic Light\
-    
-  - Strider Scout Scanner\
-    
-  - Can Stomp Player\
-    
-  - Minimal damage taken from NPCs (1 point per missile)\
-    
+  - Wait Till Seen
+  - Gag (No IDLE sounds until angry)
+  - Fall to ground (unchecked means *teleport* to ground)
+  - Drop Healthkit
+  - Efficient - Don't acquire enemies or avoid obstacles
+  - Wait For Script
+  - Long Visibility/Shoot
+  - Fade Corpse
+  - Think outside PVS
+  - Template NPC (used by npc_maker, will not spawn)
+  - Do Alternate collision for this NPC (player avoidance)
+  - Don't drop weapons
+  - Ignore player push (dont give way to player)
+  - Start hidden
+  - Start hanging from ceiling
+  - No Rotorwash
+  - Await Input
+  - Enable Teleport Blocker
+  - Don't release headcrab upon death
+  - No Dynamic Light
+  - Strider Scout Scanner
+  - Can Stomp Player
+  - Minimal damage taken from NPCs (1 point per missile)
 
 
 - **Sleep State** (`sleepstate`) \<`Choices`\>\
 Holds the NPC in stasis until specified condition. See also 'Wake Radius' and 'Wake Squad'.
-  - None\
-    
-  - Waiting for threat\
-    
-  - Waiting for PVS\
-    
-  - Waiting for input, ignore PVS\
-    
-  - Auto PVS\
-    
-  - Auto PVS after PVS\
-    
+  - None
+  - Waiting for threat
+  - Waiting for PVS
+  - Waiting for input, ignore PVS
+  - Auto PVS
+  - Auto PVS after PVS
 
 
 - **Wake Radius** (`wakeradius`) \<`Float`\>\
@@ -286,30 +204,23 @@ Markup volume entity to restrict unit navigation
 
 - **Spawn as Temp Ragdoll** (`spawnasragdoll`) \<`Choices`\>\
 Specifies if the NPC will spawn as a temporary ragdoll and the behavior after becoming a ragdoll.
-  - Disabled\
-    
-  - Ragdoll and get up when settled\
-    
-  - Ragdoll and remain ragdoll\
-    
+  - Disabled
+  - Ragdoll and get up when settled
+  - Ragdoll and remain ragdoll
 
 
 - **Use Alt NPC Avoidance** (`UseAltNpcAvoid`) \<`Choices`\>\
 Specifies if the NPC should be using any algorithm variants when avoiding other NPCs.
-  - Disabled\
-    
-  - Alt 1\
-    
+  - Disabled
+  - Alt 1
 
 
 - **Preview Animation** (`DefaultAnim`) \<`Sequence`\>\
 Name of an animation to preview in Hammer, does not do anything in game.
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - No Dynamic Light\
-    
-  - Strider Scout Scanner\
-    
+  - No Dynamic Light
+  - Strider Scout Scanner
 
 
 - **SpotlightLength** (`spotlightlength`) \<`Integer`\>

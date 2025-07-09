@@ -27,10 +27,8 @@ To spawn the template in other places, use an env_entity_maker.
 <details open>
 <summary><h2>Keyvalues</h2></summary>
 - **Create Client-Only Entity** (`clientSideEntity`) \<`Choices`\>
-  - No\
-    
-  - Yes\
-    
+  - No
+  - Yes
 
 
 - **Entity Scripts** (`vscripts`) \<`ScriptList`\>\
@@ -40,10 +38,8 @@ Name(s) of script files that are executed after all entities have spawned.
 The name that other entities refer to this entity by.
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Don't remove template entities\
-    
-  - Preserve entity names (Don't do name fixup)\
-    
+  - Don't remove template entities
+  - Preserve entity names (Don't do name fixup)
 
 
 - **Asynchronous Spawn** (`asynchronous`) \<`Boolean`\>\
@@ -56,20 +52,15 @@ The amount of seconds after which, if any client hasn't finished streaming the n
 Name of an entity filter that can be run on the entities in the template to modify, add, or remove the entities. These filters can be defined in code or in script.
 
 - **Spawn Group Type** (`spawnGroupType`) \<`Choices`\>
-  - Spawn into point_template's spawn group\
-    
-  - Spawn into the currently active spawn group\
-    
-  - Spawn into a newly created spawn group\
-    
+  - Spawn into point_template's spawn group
+  - Spawn into the currently active spawn group
+  - Spawn into a newly created spawn group
 
 
 - **Client Only Entity Behavior** (`clientOnlyEntityBehavior`) \<`Choices`\>\
 This controls the behavior of client only entities spawned by the point_template. Either you can create them only for clients that are currently connected at the point the point_template is spawned (good for transient things like explosions), or you can create them for clients who connect after the point_template is spawned. This behavior only affects point_templates that create their own spawn groups.
-  - Only create for clients connected at the time at which point_template spawns its contents\
-    
-  - Create for clients who connect after the point_template spawns its contents\
-    
+  - Only create for clients connected at the time at which point_template spawns its contents
+  - Create for clients who connect after the point_template spawns its contents
 
 
 - **Template 1** (`Template01`) \<`TargetDestination`\>

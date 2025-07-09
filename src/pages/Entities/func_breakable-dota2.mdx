@@ -20,69 +20,39 @@ A brush entity that can be broken from damage, or an input.
 <summary><h2>Keyvalues</h2></summary>
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal\
-    
-  - Color\
-    
-  - Texture\
-    
-  - Glow\
-    
-  - Solid\
-    
-  - Additive\
-    
-  - Additive Fractional Frame\
-    
-  - World Space Glow\
-    
-  - Dont Render\
-    
-  - Dev Visualizer\
-    
+  - Normal
+  - Color
+  - Texture
+  - Glow
+  - Solid
+  - Additive
+  - Additive Fractional Frame
+  - World Space Glow
+  - Dont Render
+  - Dev Visualizer
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal\
-    
-  - Slow Pulse\
-    
-  - Fast Pulse\
-    
-  - Slow Wide Pulse\
-    
-  - Fast Wide Pulse\
-    
-  - Slow Strobe\
-    
-  - Fast Strobe\
-    
-  - Faster Strobe\
-    
-  - Slow Flicker\
-    
-  - Fast Flicker\
-    
-  - Slow Fade Away\
-    
-  - Fast Fade Away\
-    
-  - Slow Become Solid\
-    
-  - Fast Become Solid\
-    
-  - Constant Glow\
-    
-  - Distort\
-    
-  - Hologram (Distort + fade)\
-    
-  - Cull By Distance (TEST)\
-    
-  - Spotlight FX\
-    
-  - Fade Near\
-    
+  - Normal
+  - Slow Pulse
+  - Fast Pulse
+  - Slow Wide Pulse
+  - Fast Wide Pulse
+  - Slow Strobe
+  - Fast Strobe
+  - Faster Strobe
+  - Slow Flicker
+  - Fast Flicker
+  - Slow Fade Away
+  - Fast Fade Away
+  - Slow Become Solid
+  - Fast Become Solid
+  - Constant Glow
+  - Distort
+  - Hologram (Distort + fade)
+  - Cull By Distance (TEST)
+  - Spotlight FX
+  - Fade Near
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -101,14 +71,10 @@ Maximum distance at which the overlay is visible (0 = don't fade out).
 
 - **Culling Behaviour** (`object_culling`) \<`Choices`\>\
 Modifies culling behaviour when the object is small / distant
-  - Default\
-    
-  - Smaller than default\
-    
-  - Much smaller than default\
-    
-  - When extremely small\
-    
+  - Default
+  - Smaller than default
+  - Much smaller than default
+  - When extremely small
 
 
 - **Render to Cubemaps** (`rendertocubemaps`) \<`Boolean`\>\
@@ -116,12 +82,9 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 Determines if this geometry be considered static & cast shadows/bounce light when baking lightmaps?
-  - No\
-    
-  - Yes\
-    
-  - Bounce Only\
-    
+  - No
+  - Yes
+  - Bounce Only
 
 
 - **Global Entity Name** (`globalname`) \<`String`\>\
@@ -147,14 +110,10 @@ Scale in the local space of the parent model's attachment/bone to use in hierarc
 
 - **Cast Shadows** (`disableshadows`) \<`Choices`\>\
 Used to disable shadow casting from this entity.
-  - Enabled\
-    
-  - No Shadows\
-    
-  - Only Realtime Shadows\
-    
-  - Only Baked Shadows\
-    
+  - Enabled
+  - No Shadows
+  - Only Realtime Shadows
+  - Only Baked Shadows
 
 
 - **Damage Filter** (`damagefilter`) \<`TargetDestination`\>\
@@ -174,83 +133,49 @@ If non-zero, when this entity breaks it will create an explosion with a radius o
 
 - **Performance Mode** (`PerformanceMode`) \<`Choices`\>\
 Used to limit the amount of gibs produced when this entity breaks, for performance reasons.
-  - Normal\
-    
-  - No Gibs\
-    
+  - Normal
+  - No Gibs
 
 
 - **Disable Client-Side Interpolation** (`NoInterpolate`) \<`Boolean`\>
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Only Break on Trigger\
-    
-  - Break on Touch\
-    
-  - Break on Pressure\
-    
-  - Break immediately on Physics\
-    
-  - Don't take physics damage\
-    
-  - Don't allow bullet penetration\
-    
-  - Don't allow hand physics damage\
-    
+  - Only Break on Trigger
+  - Break on Touch
+  - Break on Pressure
+  - Break immediately on Physics
+  - Don't take physics damage
+  - Don't allow bullet penetration
+  - Don't allow hand physics damage
 
 
 - **Prop Data** (`propdata`) \<`Choices`\>\
 Set to the best approximation of the size and material of this entity's brushes. If set, it will override this entity's health and damage taken from various weapons. See the propdata.txt file in the scripts directory of your MOD to get a detailed list of what each entry specifies.
-  - None\
-    
-  - Wooden.Tiny\
-    
-  - Wooden.Small\
-    
-  - Wooden.Medium\
-    
-  - Wooden.Large\
-    
-  - Wooden.Huge\
-    
-  - Metal.Small\
-    
-  - Metal.Medium\
-    
-  - Metal.Large\
-    
-  - Cardboard.Small\
-    
-  - Cardboard.Medium\
-    
-  - Cardboard.Large\
-    
-  - Stone.Small\
-    
-  - Stone.Medium\
-    
-  - Stone.Large\
-    
-  - Stone.Huge\
-    
-  - Glass.Small\
-    
-  - Plastic.Small\
-    
-  - Plastic.Medium\
-    
-  - Plastic.Large\
-    
-  - Pottery.Small\
-    
-  - Pottery.Medium\
-    
-  - Pottery.Large\
-    
-  - Pottery.Huge\
-    
-  - Glass.Window\
-    
+  - None
+  - Wooden.Tiny
+  - Wooden.Small
+  - Wooden.Medium
+  - Wooden.Large
+  - Wooden.Huge
+  - Metal.Small
+  - Metal.Medium
+  - Metal.Large
+  - Cardboard.Small
+  - Cardboard.Medium
+  - Cardboard.Large
+  - Stone.Small
+  - Stone.Medium
+  - Stone.Large
+  - Stone.Huge
+  - Glass.Small
+  - Plastic.Small
+  - Plastic.Medium
+  - Plastic.Large
+  - Pottery.Small
+  - Pottery.Medium
+  - Pottery.Large
+  - Pottery.Huge
+  - Glass.Window
 
 
 - **Strength** (`health`) \<`Integer`\>\
@@ -258,36 +183,23 @@ Number of points of damage to take before breaking. 0 means don't break.
 
 - **Material Type** (`material`) \<`Choices`\>\
 Set to the material type of the brush. Used to decide what sounds to make when damaged, and what gibs to produce when broken.
-  - Glass\
-    
-  - Wood\
-    
-  - Metal\
-    
-  - Flesh\
-    
-  - CinderBlock\
-    
-  - Ceiling Tile\
-    
-  - Computer\
-    
-  - Unbreakable Glass\
-    
-  - Rocks\
-    
-  - None\
-    
+  - Glass
+  - Wood
+  - Metal
+  - Flesh
+  - CinderBlock
+  - Ceiling Tile
+  - Computer
+  - Unbreakable Glass
+  - Rocks
+  - None
 
 
 - **Gibs Direction** (`explosion`) \<`Choices`\>\
 Used to decide which direction to throw gibs when broken.
-  - Random\
-    
-  - Relative to Attack\
-    
-  - Use Precise Gib Dir\
-    
+  - Random
+  - Relative to Attack
+  - Use Precise Gib Dir
 
 
 - **Damaging it Doesn't Push It** (`nodamageforces`) \<`Boolean`\>\
@@ -295,60 +207,33 @@ Used to determine whether or not damage should cause the brush to move.
 
 - **Spawn On Break** (`spawnobject`) \<`Choices`\>\
 When broken, an entity of the selected type will be created.
-  - \
-    
-  - item_battery\
-    
-  - item_healthkit\
-    
-  - item_ammo_pistol\
-    
-  - item_ammo_pistol_large\
-    
-  - item_ammo_smg1\
-    
-  - item_ammo_smg1_large\
-    
-  - item_ammo_ar2\
-    
-  - item_ammo_ar2_large\
-    
-  - item_box_buckshot\
-    
-  - item_flare_round\
-    
-  - item_box_flare_rounds\
-    
-  - item_ml_grenade\
-    
-  - item_smg1_grenade\
-    
-  - item_box_sniper_rounds\
-    
-  - unused1\
-    
-  - weapon_stunstick\
-    
-  - weapon_ar1\
-    
-  - weapon_ar2\
-    
-  - unused2\
-    
-  - weapon_ml\
-    
-  - weapon_smg1\
-    
-  - weapon_smg2\
-    
-  - weapon_slam\
-    
-  - weapon_shotgun\
-    
-  - weapon_molotov\
-    
-  - item_dynamic_resupply\
-    
+  - 
+  - item_battery
+  - item_healthkit
+  - item_ammo_pistol
+  - item_ammo_pistol_large
+  - item_ammo_smg1
+  - item_ammo_smg1_large
+  - item_ammo_ar2
+  - item_ammo_ar2_large
+  - item_box_buckshot
+  - item_flare_round
+  - item_box_flare_rounds
+  - item_ml_grenade
+  - item_smg1_grenade
+  - item_box_sniper_rounds
+  - unused1
+  - weapon_stunstick
+  - weapon_ar1
+  - weapon_ar2
+  - unused2
+  - weapon_ml
+  - weapon_smg1
+  - weapon_smg2
+  - weapon_slam
+  - weapon_shotgun
+  - weapon_molotov
+  - item_dynamic_resupply
 
 
 - **Explode Magnitude** (`explodemagnitude`) \<`Integer`\>\
@@ -365,12 +250,9 @@ Set the game mass by hand instead of using the code defaults.
 
 - **Block LOS override** (`overrideBlockLOS`) \<`Choices`\>\
 Should this entity block or not-block LOS
-  - use default\
-    
-  - Force no block LOS\
-    
-  - Force block LOS\
-    
+  - use default
+  - Force no block LOS
+  - Force block LOS
 
 
 - **Minimum Light Level** (`_minlight`) \<`String`\>\

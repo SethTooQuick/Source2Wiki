@@ -26,69 +26,39 @@ The name that other entities refer to this entity by.
 
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal\
-    
-  - Color\
-    
-  - Texture\
-    
-  - Glow\
-    
-  - Solid\
-    
-  - Additive\
-    
-  - Additive Fractional Frame\
-    
-  - World Space Glow\
-    
-  - Dont Render\
-    
-  - Dev Visualizer\
-    
+  - Normal
+  - Color
+  - Texture
+  - Glow
+  - Solid
+  - Additive
+  - Additive Fractional Frame
+  - World Space Glow
+  - Dont Render
+  - Dev Visualizer
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal\
-    
-  - Slow Pulse\
-    
-  - Fast Pulse\
-    
-  - Slow Wide Pulse\
-    
-  - Fast Wide Pulse\
-    
-  - Slow Strobe\
-    
-  - Fast Strobe\
-    
-  - Faster Strobe\
-    
-  - Slow Flicker\
-    
-  - Fast Flicker\
-    
-  - Slow Fade Away\
-    
-  - Fast Fade Away\
-    
-  - Slow Become Solid\
-    
-  - Fast Become Solid\
-    
-  - Constant Glow\
-    
-  - Distort\
-    
-  - Hologram (Distort + fade)\
-    
-  - Cull By Distance (TEST)\
-    
-  - Spotlight FX\
-    
-  - Fade Near\
-    
+  - Normal
+  - Slow Pulse
+  - Fast Pulse
+  - Slow Wide Pulse
+  - Fast Wide Pulse
+  - Slow Strobe
+  - Fast Strobe
+  - Faster Strobe
+  - Slow Flicker
+  - Fast Flicker
+  - Slow Fade Away
+  - Fast Fade Away
+  - Slow Become Solid
+  - Fast Become Solid
+  - Constant Glow
+  - Distort
+  - Hologram (Distort + fade)
+  - Cull By Distance (TEST)
+  - Spotlight FX
+  - Fade Near
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -107,14 +77,10 @@ Maximum distance at which the overlay is visible (0 = don't fade out).
 
 - **Culling Behaviour** (`object_culling`) \<`Choices`\>\
 Modifies culling behaviour when the object is small / distant
-  - Default\
-    
-  - Smaller than default\
-    
-  - Much smaller than default\
-    
-  - When extremely small\
-    
+  - Default
+  - Smaller than default
+  - Much smaller than default
+  - When extremely small
 
 
 - **Render to Cubemaps** (`rendertocubemaps`) \<`Boolean`\>\
@@ -122,12 +88,9 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 Determines if this geometry be considered static & cast shadows/bounce light when baking lightmaps?
-  - No\
-    
-  - Yes\
-    
-  - Bounce Only\
-    
+  - No
+  - Yes
+  - Bounce Only
 
 
 - **World Model** (`model`) \<`Studio`\>
@@ -139,22 +102,14 @@ Some models have multiple versions of their textures, called skins.
 
 - **Cast Shadows** (`disableshadows`) \<`Choices`\>\
 Used to disable shadow casting from this entity.
-  - Enabled\
-    
-  - No Shadows\
-    
-  - Only Realtime Shadows\
-    
-  - Only Baked Shadows\
-    
-  - Enabled\
-    
-  - No Shadows\
-    
-  - Only Realtime Shadows\
-    
-  - Only Baked Shadows\
-    
+  - Enabled
+  - No Shadows
+  - Only Realtime Shadows
+  - Only Baked Shadows
+  - Enabled
+  - No Shadows
+  - Only Realtime Shadows
+  - Only Baked Shadows
 
 
 - **Add Attribute** (`add_attribute`) \<`String`\>\
@@ -167,10 +122,8 @@ Will add this modifier when the entity spawns.
 Name by which this entity is linked to another entity in a different map. When the player transitions to a new map, entities in the new map with globalnames matching entities in the previous map will have the previous map's state copied over their state.
 
 - **Create Client-Only Entity** (`clientSideEntity`) \<`Choices`\>
-  - No\
-    
-  - Yes\
-    
+  - No
+  - Yes
 
 
 - **Parent** (`parentname`) \<`TargetDestination`\>\
@@ -195,17 +148,13 @@ Scale in the local space of the parent model's attachment/bone to use in hierarc
 The name of the idle animation that this prop will revert to whenever it finishes a random or forced animation.
 
 - **Show during day** (`showatday`) \<`Choices`\>
-  - No\
-    
-  - Yes\
-    
+  - No
+  - Yes
 
 
 - **Show at night** (`showatnight`) \<`Choices`\>
-  - No\
-    
-  - Yes\
-    
+  - No
+  - Yes
 
 
 - **Show in Fog of War** (`show_in_fog`) \<`Boolean`\>
