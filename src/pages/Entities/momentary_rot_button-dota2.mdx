@@ -20,39 +20,69 @@ A brush entity that's designed to be used for rotating wheels, where the player 
 <summary><h2>Keyvalues</h2></summary>
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal 
-  - Color 
-  - Texture 
-  - Glow 
-  - Solid 
-  - Additive 
-  - Additive Fractional Frame 
-  - World Space Glow 
-  - Dont Render 
-  - Dev Visualizer 
+  - Normal\
+    
+  - Color\
+    
+  - Texture\
+    
+  - Glow\
+    
+  - Solid\
+    
+  - Additive\
+    
+  - Additive Fractional Frame\
+    
+  - World Space Glow\
+    
+  - Dont Render\
+    
+  - Dev Visualizer\
+    
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal 
-  - Slow Pulse 
-  - Fast Pulse 
-  - Slow Wide Pulse 
-  - Fast Wide Pulse 
-  - Slow Strobe 
-  - Fast Strobe 
-  - Faster Strobe 
-  - Slow Flicker 
-  - Fast Flicker 
-  - Slow Fade Away 
-  - Fast Fade Away 
-  - Slow Become Solid 
-  - Fast Become Solid 
-  - Constant Glow 
-  - Distort 
-  - Hologram (Distort + fade) 
-  - Cull By Distance (TEST) 
-  - Spotlight FX 
-  - Fade Near 
+  - Normal\
+    
+  - Slow Pulse\
+    
+  - Fast Pulse\
+    
+  - Slow Wide Pulse\
+    
+  - Fast Wide Pulse\
+    
+  - Slow Strobe\
+    
+  - Fast Strobe\
+    
+  - Faster Strobe\
+    
+  - Slow Flicker\
+    
+  - Fast Flicker\
+    
+  - Slow Fade Away\
+    
+  - Fast Fade Away\
+    
+  - Slow Become Solid\
+    
+  - Fast Become Solid\
+    
+  - Constant Glow\
+    
+  - Distort\
+    
+  - Hologram (Distort + fade)\
+    
+  - Cull By Distance (TEST)\
+    
+  - Spotlight FX\
+    
+  - Fade Near\
+    
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -71,10 +101,14 @@ Maximum distance at which the overlay is visible (0 = don't fade out).
 
 - **Culling Behaviour** (`object_culling`) \<`Choices`\>\
 Modifies culling behaviour when the object is small / distant
-  - Default 
-  - Smaller than default 
-  - Much smaller than default 
-  - When extremely small 
+  - Default\
+    
+  - Smaller than default\
+    
+  - Much smaller than default\
+    
+  - When extremely small\
+    
 
 
 - **Render to Cubemaps** (`rendertocubemaps`) \<`Boolean`\>\
@@ -82,9 +116,12 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 Determines if this geometry be considered static & cast shadows/bounce light when baking lightmaps?
-  - No 
-  - Yes 
-  - Bounce Only 
+  - No\
+    
+  - Yes\
+    
+  - Bounce Only\
+    
 
 
 - **Parent** (`parentname`) \<`TargetDestination`\>\
@@ -121,21 +158,36 @@ Legacy support: The name of a master entity. If the master hasn't been activated
 The name of an entity that will get the +use glow for this button.
 
 - **Sounds** (`sounds`) \<`Choices`\>
-  - None 
-  - Big zap & Warmup 
-  - Access Denied 
-  - Access Granted 
-  - Quick Combolock 
-  - Power Deadbolt 1 
-  - Power Deadbolt 2 
-  - Plunger 
-  - Small zap 
-  - Keycard Sound 
-  - Squeaky 
-  - Squeaky Pneumatic 
-  - Ratchet Groan 
-  - Clean Ratchet 
-  - Gas Clunk 
+  - None\
+    
+  - Big zap & Warmup\
+    
+  - Access Denied\
+    
+  - Access Granted\
+    
+  - Quick Combolock\
+    
+  - Power Deadbolt 1\
+    
+  - Power Deadbolt 2\
+    
+  - Plunger\
+    
+  - Small zap\
+    
+  - Keycard Sound\
+    
+  - Squeaky\
+    
+  - Squeaky Pneumatic\
+    
+  - Ratchet Groan\
+    
+  - Clean Ratchet\
+    
+  - Gas Clunk\
+    
 
 
 - **Distance** (`distance`) \<`Integer`\>\
@@ -145,13 +197,20 @@ The maximum amount, in degrees, that the wheel is allowed to rotate.
 If the 'Toggle' spawnflag is not set, the speed at which the wheel auto-returns when left alone, in degrees per second.
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Not Solid 
-  - Toggle (Disable Auto Return) 
-  - X Axis 
-  - Y Axis 
-  - Use Activates 
-  - Starts locked 
-  - Jiggle when used while locked 
+  - Not Solid\
+    
+  - Toggle (Disable Auto Return)\
+    
+  - X Axis\
+    
+  - Y Axis\
+    
+  - Use Activates\
+    
+  - Starts locked\
+    
+  - Jiggle when used while locked\
+    
 
 
 - **Minimum Light Level** (`_minlight`) \<`String`\>\
@@ -161,8 +220,10 @@ The minimum level of ambient light that hits this brush.
 Postion when spawned. The value is a range between 0.0 and 1.0, where 0 is the unrotated position and 1 is the rotated position + 'Distance'.
 
 - **Start Direction** (`startdirection`) \<`Choices`\>
-  - Forward 
-  - Backward 
+  - Forward\
+    
+  - Backward\
+    
 
 
 - **Solid BSP** (`solidbsp`) \<`Boolean`\>

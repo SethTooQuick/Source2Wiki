@@ -28,16 +28,22 @@ The name that other entities refer to this entity by.
 - **Level Fade In Color (R G B)** (`startcolor`) \<`Color255`\>
 
 - **Precomputed Visibility** (`pvstype`) \<`Choices`\>
-  - Disabled 
-  - Test map (open space, no skybox) 
-  - Full visibility solve 
-  - Partitioned solve (large map volume) 
+  - Disabled\
+    
+  - Test map (open space, no skybox)\
+    
+  - Full visibility solve\
+    
+  - Partitioned solve (large map volume)\
+    
 
 
 - **New Level Unit** (`newunit`) \<`Choices`\>\
 Used to clear out savegame data of previous levels to keep the savegame size as small as possible. Only set it to Yes if the player cannot return to any previous levels.
-  - No, keep current 
-  - Yes, clear previous levels 
+  - No, keep current\
+    
+  - Yes, clear previous levels\
+    
 
 
 - **Start Fade Pixels** (`maxpropscreenwidth`) \<`Float`\>\
@@ -47,25 +53,38 @@ Number of pixels wide at which all props in the level start to fade (&lt;0 = use
 Minimum number of pixels wide at which the prop is visible (0 = don't fade out). This number is ignored if the prop has a specific fade distance specified.
 
 - **VR Chaperone** (`vrchaperone`) \<`Choices`\>
-  - Chaperone 
-  - Chaperone + Safe Zone 
-  - No Chaperone 
+  - Chaperone\
+    
+  - Chaperone + Safe Zone\
+    
+  - No Chaperone\
+    
 
 
 - **VR Movement** (`vrmovement`) \<`Choices`\>
-  - None 
-  - Teleport 
-  - Teleport (w/non-up floor) 
+  - None\
+    
+  - Teleport\
+    
+  - Teleport (w/non-up floor)\
+    
 
 
 - **Maximum Lightmap Resolution** (`max_lightmap_resolution`) \<`Choices`\>
-  - No Maximum 
-  - 512 
-  - 1024 
-  - 2048 
-  - 4096 
-  - 8192 
-  - 16384 
+  - No Maximum\
+    
+  - 512\
+    
+  - 1024\
+    
+  - 2048\
+    
+  - 4096\
+    
+  - 8192\
+    
+  - 16384\
+    
 
 
 - **Lightmap Queries** (`lightmap_queries`) \<`Boolean`\>\
@@ -73,16 +92,22 @@ Generates data which can be used to lookup lightmap UVs at a given position, use
 
 - **Rebake Option** (`steamaudio_reverb_rebake_option`) \<`Choices`\>\
 <b>Cleanup</b>: Reverb bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br /><b>Manual</b>: Reverb needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br /><b>Auto</b>: Reverb is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.
-  - Cleanup 
-  - Manual 
-  - Auto 
+  - Cleanup\
+    
+  - Manual\
+    
+  - Auto\
+    
 
 
 - **Grid Type** (`steamaudio_reverb_grid_type`) \<`Choices`\>\
 <b>Uniform Floor</b>: Places probes at a specified height above the floor with a specified horizontal spacing between probes. <br /><b>Manual Grid</b>: Use manually generated probes in the map.<br /><b>NavMesh Grid</b>: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.
-  - Uniform Floor 
-  - Manual Grid 
-  - NavMesh Grid 
+  - Uniform Floor\
+    
+  - Manual Grid\
+    
+  - NavMesh Grid\
+    
 
 
 - **Grid Spacing** (`steamaudio_reverb_grid_spacing`) \<`Float`\>\
@@ -105,16 +130,22 @@ The Ambisonic order of the IRs generated when baking reflections or reverb. Incr
 
 - **Rebake Option** (`steamaudio_pathing_rebake_option`) \<`Choices`\>\
 <b>Cleanup</b>: Pathing bake is disabled. Baked data will be cleaned up during map compile in Hammer or mapbuilder.<br /><b>Manual</b>: Pathing needs to be baked manually. Baked data is added or updated during map compile in Hammer but untouched by mapbuilder.<br /><b>Auto</b>: Pathing is baked automatically during map compile. Baked data is added or updated during map compile in Hammer or mapbuilder.
-  - Cleanup 
-  - Manual 
-  - Auto 
+  - Cleanup\
+    
+  - Manual\
+    
+  - Auto\
+    
 
 
 - **Grid Type** (`steamaudio_pathing_grid_type`) \<`Choices`\>\
 <b>Uniform Floor</b>: Places probes at a specified height above the floor with a specified horizontal spacing between probes. <br /><b>Manual Grid</b>: Use manually generated probes in the map.<br /><b>NavMesh Grid</b>: Places probes at a specified height above the NavMesh with a specified horizontal spacing between probes.
-  - Uniform Floor 
-  - Manual Grid 
-  - NavMesh Grid 
+  - Uniform Floor\
+    
+  - Manual Grid\
+    
+  - NavMesh Grid\
+    
 
 
 - **Grid Spacing** (`steamaudio_pathing_grid_spacing`) \<`Float`\>\

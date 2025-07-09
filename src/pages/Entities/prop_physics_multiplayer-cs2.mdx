@@ -23,39 +23,69 @@ If set this entity will not particpate in the physics pre-settle during compile,
 
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal 
-  - Color 
-  - Texture 
-  - Glow 
-  - Solid 
-  - Additive 
-  - Additive Fractional Frame 
-  - World Space Glow 
-  - Dont Render 
-  - Dev Visualizer 
+  - Normal\
+    
+  - Color\
+    
+  - Texture\
+    
+  - Glow\
+    
+  - Solid\
+    
+  - Additive\
+    
+  - Additive Fractional Frame\
+    
+  - World Space Glow\
+    
+  - Dont Render\
+    
+  - Dev Visualizer\
+    
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal 
-  - Slow Pulse 
-  - Fast Pulse 
-  - Slow Wide Pulse 
-  - Fast Wide Pulse 
-  - Slow Strobe 
-  - Fast Strobe 
-  - Faster Strobe 
-  - Slow Flicker 
-  - Fast Flicker 
-  - Slow Fade Away 
-  - Fast Fade Away 
-  - Slow Become Solid 
-  - Fast Become Solid 
-  - Constant Glow 
-  - Distort 
-  - Hologram (Distort + fade) 
-  - Cull By Distance (TEST) 
-  - Spotlight FX 
-  - Fade Near 
+  - Normal\
+    
+  - Slow Pulse\
+    
+  - Fast Pulse\
+    
+  - Slow Wide Pulse\
+    
+  - Fast Wide Pulse\
+    
+  - Slow Strobe\
+    
+  - Fast Strobe\
+    
+  - Faster Strobe\
+    
+  - Slow Flicker\
+    
+  - Fast Flicker\
+    
+  - Slow Fade Away\
+    
+  - Fast Fade Away\
+    
+  - Slow Become Solid\
+    
+  - Fast Become Solid\
+    
+  - Constant Glow\
+    
+  - Distort\
+    
+  - Hologram (Distort + fade)\
+    
+  - Cull By Distance (TEST)\
+    
+  - Spotlight FX\
+    
+  - Fade Near\
+    
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -74,10 +104,14 @@ Maximum distance at which the overlay is visible (0 = don't fade out).
 
 - **Culling Behaviour** (`object_culling`) \<`Choices`\>\
 Modifies culling behaviour when the object is small / distant
-  - Default 
-  - Smaller than default 
-  - Much smaller than default 
-  - When extremely small 
+  - Default\
+    
+  - Smaller than default\
+    
+  - Much smaller than default\
+    
+  - When extremely small\
+    
 
 
 - **Render to Cubemaps** (`rendertocubemaps`) \<`Boolean`\>\
@@ -85,16 +119,23 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 Determines if this geometry be considered static & cast shadows/bounce light when baking lightmaps?
-  - No 
-  - Yes 
-  - Bounce Only 
+  - No\
+    
+  - Yes\
+    
+  - Bounce Only\
+    
 
 
 - **Glow State** (`glowstate`) \<`Choices`\>
-  - OFF 
-  - +use 
-  - look-at 
-  - ON 
+  - OFF\
+    
+  - +use\
+    
+  - look-at\
+    
+  - ON\
+    
 
 
 - **Glow Range** (`glowrange`) \<`Integer`\>\
@@ -120,28 +161,45 @@ If non-zero, when this entity breaks it will create an explosion with a radius o
 
 - **Performance Mode** (`PerformanceMode`) \<`Choices`\>\
 Used to limit the amount of gibs produced when this entity breaks, for performance reasons.
-  - Normal 
-  - No Gibs 
-  - Full Gibs on All Platforms 
-  - Reduced gibs 
+  - Normal\
+    
+  - No Gibs\
+    
+  - Full Gibs on All Platforms\
+    
+  - Reduced gibs\
+    
 
 
 - **Disable Client-Side Interpolation** (`NoInterpolate`) \<`Boolean`\>
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Break on Touch 
-  - Break on Pressure 
-  - Use Hitboxes for Renderbox 
-  - Start with collision disabled 
-  - Set to Nav Ignore 
-  - Set to Local-Nav Ignore (NPC will not try to avoid this entity) 
-  - Start Asleep 
-  - Don't take physics damage 
-  - Debris - Don't collide with the player or other debris 
-  - Motion Disabled 
-  - Prevent motion enable on player bump 
-  - Debris with trigger interaction 
-  - Force non-solid to players 
+  - Break on Touch\
+    
+  - Break on Pressure\
+    
+  - Use Hitboxes for Renderbox\
+    
+  - Start with collision disabled\
+    
+  - Set to Nav Ignore\
+    
+  - Set to Local-Nav Ignore (NPC will not try to avoid this entity)\
+    
+  - Start Asleep\
+    
+  - Don't take physics damage\
+    
+  - Debris - Don't collide with the player or other debris\
+    
+  - Motion Disabled\
+    
+  - Prevent motion enable on player bump\
+    
+  - Debris with trigger interaction\
+    
+  - Force non-solid to players\
+    
 
 
 - **Pressure Delay** (`pressuredelay`) \<`Float`\>\
@@ -155,10 +213,14 @@ Location in local space where the burst force is applied.
 
 - **Contents Type** (`BreakableContentsType`) \<`Choices`\>\
 Set the type of contents inside this breakable.
-  - Default 
-  - Empty 
-  - Prop Group Override 
-  - Particle System Override 
+  - Default\
+    
+  - Empty\
+    
+  - Prop Group Override\
+    
+  - Particle System Override\
+    
 
 
 - **Breakable Contents Prop Group Override** (`BreakableContentsPropGroupOverride`) \<`VDataChoice`\>\
@@ -180,8 +242,10 @@ Will add an additional attribute that AI/player entities can query when checking
 Will add this modifier when the entity spawns.
 
 - **Create Client-Only Entity** (`clientSideEntity`) \<`Choices`\>
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **Global Entity Name** (`globalname`) \<`String`\>\
@@ -222,14 +286,18 @@ Scales damage energy when this object is hit by a physics object. NOTE: 0 means 
 Set to 1.0 for materials as strong as flesh, smaller numbers indicate stronger materials.
 
 - **Impact damage type** (`Damagetype`) \<`Choices`\>
-  - Blunt 
-  - Sharp 
+  - Blunt\
+    
+  - Sharp\
+    
 
 
 - **Damaging it Doesn't Push It** (`nodamageforces`) \<`Choices`\>\
 Used to determine whether or not damage should cause the brush to move.
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **Accept damage from player held objects** (`acceptdamagefromheldobjects`) \<`Boolean`\>\
@@ -280,8 +348,10 @@ If set, nav mesh will be constantly updated while this obstacle is moving, and n
 If set, this obstacle will cut the mesh causing NPC's to avoid it regardless of its mass.
 
 - **Removal Allowed for Ammo Balancing** (`ammobalancing_removable`) \<`Choices`\>
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **Item Subclass 1** (`ItemClass1`) \<`VDataChoice`\>\
@@ -309,33 +379,50 @@ Subclass name of the entity to spawn when the crate is broken
 Number of items to emit upon breakage
 
 - **Exploitable by Player** (`ExploitableByPlayer`) \<`Choices`\>
-  - Default 
-  - Explosive 
+  - Default\
+    
+  - Explosive\
+    
 
 
 - **Silent To Zombies** (`SilentToZombies`) \<`Boolean`\>\
 Should this prop generate sounds that blind zombies can hear.
 
 - **Physics Mode** (`physicsmode`) \<`Choices`\>
-  - Auto Detect 
-  - Solid, Server-side 
-  - Non-Solid, Server-side 
+  - Auto Detect\
+    
+  - Solid, Server-side\
+    
+  - Non-Solid, Server-side\
+    
 
 
 - **Cast Shadows** (`disableshadows`) \<`Choices`\>\
 Used to disable shadow casting from this entity.
-  - Enabled 
-  - No Shadows 
-  - Only Realtime Shadows 
-  - Only Baked Shadows 
-  - Enabled 
-  - No Shadows 
-  - Only Realtime Shadows 
-  - Only Baked Shadows 
-  - Enabled 
-  - No Shadows 
-  - Only Realtime Shadows 
-  - Only Baked Shadows 
+  - Enabled\
+    
+  - No Shadows\
+    
+  - Only Realtime Shadows\
+    
+  - Only Baked Shadows\
+    
+  - Enabled\
+    
+  - No Shadows\
+    
+  - Only Realtime Shadows\
+    
+  - Only Baked Shadows\
+    
+  - Enabled\
+    
+  - No Shadows\
+    
+  - Only Realtime Shadows\
+    
+  - Only Baked Shadows\
+    
 
 
 

@@ -25,8 +25,10 @@ NPC's that should act busy
 
 - **Search Type** (`SearchType`) \<`Choices`\>\
 How to search for the entities using the targetname.
-  - Entity Name 
-  - Classname 
+  - Entity Name\
+    
+  - Classname\
+    
 
 
 - **Search Range for Busy Hints** (`busysearchrange`) \<`Float`\>
@@ -41,33 +43,44 @@ If you provide a Sight Entity, the Actor will leave the current ActBusy if the A
 
 - **Disable Active Searching** (`disablesearch`) \<`Choices`\>\
 If set, Actors won't search for act busy opportunities, even when the act busy goal is enabled. Instead, they'll require the NPC AI code to trigger act busies opportunistically (i.e. like zombies with unreachable enemies do).
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **Sight Enemy Method** (`sightmethod`) \<`Choices`\>\
 The method to use to determine whether the Sight enemy is visible.
-  - Default. LOS -and- Viewcone 
-  - LOS Only. Disregard Viewcone 
+  - Default. LOS -and- Viewcone\
+    
+  - LOS Only. Disregard Viewcone\
+    
 
 
 - **Forced** (`forcetype`) \<`Choices`\>
-  - Not forced 
-  - Forced but not held 
-  - Forced and held until deactivated via input 
+  - Not forced\
+    
+  - Forced but not held\
+    
+  - Forced and held until deactivated via input\
+    
 
 
 - **Actbusy Type** (`type`) \<`Choices`\>
-  - Default (Standard) 
-  - Combat 
+  - Default (Standard)\
+    
+  - Combat\
+    
 
 
 - **Combat Safe Zone** (`safezone`) \<`TargetDestination`\>\
 Only for combat actbusy. Lets you specify a volume which is the 'safe zone'. The Combat ActBusy will cancel if any enemies are seen in the safe zone.
 
 - **Allow actor to teleport?** (`allowteleport`) \<`Choices`\>
-  - No 
-  - Yes (Only for Combat Actbusy) 
+  - No\
+    
+  - Yes (Only for Combat Actbusy)\
+    
 
 
 

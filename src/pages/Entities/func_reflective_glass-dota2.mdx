@@ -20,20 +20,28 @@ Used to produce perfectly reflective glass that renders world + entities. Typica
 <summary><h2>Keyvalues</h2></summary>
 - **Cast Shadows** (`disableshadows`) \<`Choices`\>\
 Used to disable shadow casting from this entity.
-  - Enabled 
-  - No Shadows 
-  - Only Realtime Shadows 
-  - Only Baked Shadows 
+  - Enabled\
+    
+  - No Shadows\
+    
+  - Only Realtime Shadows\
+    
+  - Only Baked Shadows\
+    
 
 
 - **Start Disabled** (`StartDisabled`) \<`Boolean`\>
 
 - **Input Filter** (`InputFilter`) \<`Choices`\>\
 Used to specify which inputs this entity will accept.
-  - Allow all inputs 
-  - Ignore Touch/Untouch 
-  - Ignore Use 
-  - Ignore All 
+  - Allow all inputs\
+    
+  - Ignore Touch/Untouch\
+    
+  - Ignore Use\
+    
+  - Ignore All\
+    
 
 
 - **Global Entity Name** (`globalname`) \<`String`\>\
@@ -41,39 +49,69 @@ Name by which this entity is linked to another entity in a different map. When t
 
 - **Render Mode** (`rendermode`) \<`Choices`\>\
 Used to set a non-standard rendering mode on this entity. See also 'FX Amount' and 'FX Color'.
-  - Normal 
-  - Color 
-  - Texture 
-  - Glow 
-  - Solid 
-  - Additive 
-  - Additive Fractional Frame 
-  - World Space Glow 
-  - Dont Render 
-  - Dev Visualizer 
+  - Normal\
+    
+  - Color\
+    
+  - Texture\
+    
+  - Glow\
+    
+  - Solid\
+    
+  - Additive\
+    
+  - Additive Fractional Frame\
+    
+  - World Space Glow\
+    
+  - Dont Render\
+    
+  - Dev Visualizer\
+    
 
 
 - **Render FX** (`renderfx`) \<`Choices`\>
-  - Normal 
-  - Slow Pulse 
-  - Fast Pulse 
-  - Slow Wide Pulse 
-  - Fast Wide Pulse 
-  - Slow Strobe 
-  - Fast Strobe 
-  - Faster Strobe 
-  - Slow Flicker 
-  - Fast Flicker 
-  - Slow Fade Away 
-  - Fast Fade Away 
-  - Slow Become Solid 
-  - Fast Become Solid 
-  - Constant Glow 
-  - Distort 
-  - Hologram (Distort + fade) 
-  - Cull By Distance (TEST) 
-  - Spotlight FX 
-  - Fade Near 
+  - Normal\
+    
+  - Slow Pulse\
+    
+  - Fast Pulse\
+    
+  - Slow Wide Pulse\
+    
+  - Fast Wide Pulse\
+    
+  - Slow Strobe\
+    
+  - Fast Strobe\
+    
+  - Faster Strobe\
+    
+  - Slow Flicker\
+    
+  - Fast Flicker\
+    
+  - Slow Fade Away\
+    
+  - Fast Fade Away\
+    
+  - Slow Become Solid\
+    
+  - Fast Become Solid\
+    
+  - Constant Glow\
+    
+  - Distort\
+    
+  - Hologram (Distort + fade)\
+    
+  - Cull By Distance (TEST)\
+    
+  - Spotlight FX\
+    
+  - Fade Near\
+    
 
 
 - **FX Amount (0 - 255)** (`renderamt`) \<`Integer`\>\
@@ -92,10 +130,14 @@ Maximum distance at which the overlay is visible (0 = don't fade out).
 
 - **Culling Behaviour** (`object_culling`) \<`Choices`\>\
 Modifies culling behaviour when the object is small / distant
-  - Default 
-  - Smaller than default 
-  - Much smaller than default 
-  - When extremely small 
+  - Default\
+    
+  - Smaller than default\
+    
+  - Much smaller than default\
+    
+  - When extremely small\
+    
 
 
 - **Render to Cubemaps** (`rendertocubemaps`) \<`Boolean`\>\
@@ -103,9 +145,12 @@ If true, this geometry renders into baked cube maps
 
 - **Lightmap Static** (`lightmapstatic`) \<`Choices`\>\
 Determines if this geometry be considered static & cast shadows/bounce light when baking lightmaps?
-  - No 
-  - Yes 
-  - Bounce Only 
+  - No\
+    
+  - Yes\
+    
+  - Bounce Only\
+    
 
 
 - **Parent** (`parentname`) \<`TargetDestination`\>\
@@ -133,7 +178,8 @@ Name(s) of script files that are executed after all entities have spawned.
 The name that other entities refer to this entity by.
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Ignore player +USE 
+  - Ignore player +USE\
+    
 
 
 - **Add Attribute** (`add_attribute`) \<`String`\>\
@@ -144,9 +190,12 @@ The minimum level of ambient light that hits this brush.
 
 - **Solidity** (`Solidity`) \<`Choices`\>\
 Used to control the solidity/collision of these brushes.
-  - Toggle 
-  - Never Solid 
-  - Always Solid 
+  - Toggle\
+    
+  - Never Solid\
+    
+  - Always Solid\
+    
 
 
 - **NPC class excluded from collisions** (`excludednpc`) \<`String`\>\
@@ -154,8 +203,10 @@ If an NPC classname is specified here, NPCs of that type won't collide with thes
 
 - **Invert NPC class exclusion** (`invert_exclusion`) \<`Choices`\>\
 If set, then the excluded NPC class will consider this brush solid, and all other NPC classes will consider it non-solid.
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **interactAs** (`interactAs`) \<`String`\>\

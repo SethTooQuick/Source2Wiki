@@ -59,14 +59,18 @@ If set, identifier used to match other scripted sequences to synchronze with (al
 
 - **Script Conflict Response** (`conflict_response`) \<`Choices`\>\
 What to do if this scripted sequence begins and the actor is already executing a scripted sequence.
-  - Enqueue 
-  - Interrupt 
+  - Enqueue\
+    
+  - Interrupt\
+    
 
 
 - **Ground IK Preference** (`m_nGroundIKPreference`) \<`Choices`\>\
 If this NPC has ground IK; whether we disable it for the playthrough of the sequence or not.
-  - No change 
-  - Disable for this sequence 
+  - No change\
+    
+  - Disable for this sequence\
+    
 
 
 - **Search Radius (0=everywhere)** (`m_flRadius`) \<`Integer`\>\
@@ -75,12 +79,18 @@ Radius to search within for an NPC to use. 0 searches everywhere.
 - **Repeat Rate ms** (`m_flRepeat`) \<`Integer`\>
 
 - **Move to Position** (`m_fMoveTo`) \<`Choices`\>
-  - No 
-  - Walk 
-  - Run 
-  - Custom movement 
-  - Instantaneous 
-  - No - Turn to Face 
+  - No\
+    
+  - Walk\
+    
+  - Run\
+    
+  - Custom movement\
+    
+  - Instantaneous\
+    
+  - No - Turn to Face\
+    
 
 
 - **Next Script** (`m_iszNextScript`) \<`TargetDestination`\>\
@@ -96,41 +106,60 @@ Useful for when NPCs playing scripts must interpenetrate while riding on trains,
 If set, the animgraph will remain locked in the Direct Playback node after this sequence finishes. This is only useful if you have a 'Next Script' set, and you don't want the animgraph to return to Idle during the transition. Note that the 'Next Script' cannot require the NPC to animate/move to it, because the NPC will be unable to move while in the Direct Playback node. In that case, or if you have no 'Next Script' set, selecting this will simply cause the NPC to freeze after it finishes the sequence.
 
 - **Spawnflags** (`spawnflags`) \<`Flags`\>
-  - Repeatable 
-  - Leave Corpse (if not, fade) 
-  - Start on Spawn 
-  - No Interruptions 
-  - Override AI 
-  - Don't Teleport NPC On End 
-  - Loop in Post Idle 
-  - Priority Script 
-  - Hide Debug Complaints 
-  - Allow other NPC actors to continue after this NPC actor's death 
+  - Repeatable\
+    
+  - Leave Corpse (if not, fade)\
+    
+  - Start on Spawn\
+    
+  - No Interruptions\
+    
+  - Override AI\
+    
+  - Don't Teleport NPC On End\
+    
+  - Loop in Post Idle\
+    
+  - Priority Script\
+    
+  - Hide Debug Complaints\
+    
+  - Allow other NPC actors to continue after this NPC actor's death\
+    
 
 
 - **On player death** (`onplayerdeath`) \<`Choices`\>\
 What this entity should do if the player dies.
-  - Do Nothing 
-  - Cancel Script and return to AI 
+  - Do Nothing\
+    
+  - Cancel Script and return to AI\
+    
 
 
 - **On NPC actor death** (`onnpcdeath`) \<`Choices`\>\
 What the NPC performing this script should do if it dies.
-  - LEGACY - Use old settings 
-  - Ragdoll immediately 
-  - Perform a death animation 
+  - LEGACY - Use old settings\
+    
+  - Ragdoll immediately\
+    
+  - Perform a death animation\
+    
 
 
 - **Prevent Yaw Update on Finish** (`prevent_update_yaw_on_finish`) \<`Choices`\>\
 By default, when finishing the sequence, the NPC has its ideal yaw updated to maintain the current forward facing. This allows you to prevent that if you want to return to the facing prior to starting the sequence.
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **Ensure on Nav Mesh on Finish** (`ensure_on_navmesh_on_finish`) \<`Choices`\>\
 When finishing the sequence, if the NPC uses the navmesh, ensure the NPC is on a valid location on the navmesh.
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 

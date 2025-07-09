@@ -20,9 +20,12 @@ A cinematic barn door style light
 <summary><h2>Keyvalues</h2></summary>
 - **Units** (`brightness_units`) \<`Choices`\>\
 Brightness Units
-  - Lumens 
-  - EV 
-  - Legacy 
+  - Lumens\
+    
+  - EV\
+    
+  - Legacy\
+    
 
 
 - **Brightness (EV)** (`brightness`) \<`Float`\>\
@@ -51,8 +54,10 @@ Controls the light falloff from the light source.
 
 - **Indirect Light Type** (`bouncelight`) \<`Choices`\>\
 How Indirect (bounce) light should be represented
-  - None 
-  - Static 
+  - None\
+    
+  - Static\
+    
 
 
 - **Indirect Light Multiplier** (`bouncescale`) \<`Float`\>\
@@ -82,9 +87,12 @@ Choose a light cookie texture (.vtex) to represent your light shape.
 
 - **Bake Specular to Cubemaps** (`bakespeculartocubemaps`) \<`Choices`\>\
 Bake specular into cubemaps. Only works when Direct Lighting Type is set to Baked.
-  - None 
-  - Disk 
-  - Rectangle 
+  - None\
+    
+  - Disk\
+    
+  - Rectangle\
+    
 
 
 - **Bake Specular to Cubemaps Size** (`bakespeculartocubemaps_size`) \<`Vector`\>
@@ -93,23 +101,37 @@ Bake specular into cubemaps. Only works when Direct Lighting Type is set to Bake
 USE WITH CAUTION: Artificially softens direct specular (not cubemaps) to simulate cheap, soft area lights. Note: Direct Lighting must be set to Stationary or Dynamic for this to have an effect.
 
 - **Shadow Map Resolution** (`shadowmapsize`) \<`Choices`\>
-  - 4096 
-  - 3584 
-  - 3072 
-  - 2560 
-  - 2048 
-  - 1536 
-  - 1024 
-  - 512 
-  - Default 
+  - 4096\
+    
+  - 3584\
+    
+  - 3072\
+    
+  - 2560\
+    
+  - 2048\
+    
+  - 1536\
+    
+  - 1024\
+    
+  - 512\
+    
+  - Default\
+    
 
 
 - **Shadow Priority** (`shadowpriority`) \<`Choices`\>
-  - Highest 
-  - High 
-  - Medium 
-  - Low 
-  - Default 
+  - Highest\
+    
+  - High\
+    
+  - Medium\
+    
+  - Low\
+    
+  - Default\
+    
 
 
 - **Transmit Shadow Casters to Client** (`pvs_modify_entity`) \<`Boolean`\>\
@@ -162,46 +184,71 @@ Sets $light_emissive for use in material expressions. The emissive geometry's su
 
 - **Color Mode** (`colormode`) \<`Choices`\>\
 How to calculate the light's color
-  - Color 
-  - Color Temperature 
-  - Color 
-  - Color Temperature 
+  - Color\
+    
+  - Color Temperature\
+    
+  - Color\
+    
+  - Color Temperature\
+    
 
 
 - **Create Client-Only Entity** (`clientSideEntity`) \<`Choices`\>
-  - No 
-  - Yes 
+  - No\
+    
+  - Yes\
+    
 
 
 - **Cast Shadows** (`castshadows`) \<`Choices`\>\
 Whether this light casts shadow
-  - No 
-  - Baked & Dynamic 
-  - Baked Only 
-  - No 
-  - Static & Dynamic 
-  - Static Only 
+  - No\
+    
+  - Baked & Dynamic\
+    
+  - Baked Only\
+    
+  - No\
+    
+  - Static & Dynamic\
+    
+  - Static Only\
+    
 
 
 - **Direct Lighting Type** (`directlight`) \<`Choices`\>\
 How direct lighting should be represented: Static=Fully baked into lightmap (cheapest), Stationary=Dynamic direct light with baked shadows, Dynamic=Fully dynamic (Most expensive)
-  - None 
-  - Static 
-  - Stationary 
-  - Dynamic 
-  - None 
-  - Static 
-  - Stationary 
-  - Dynamic 
+  - None\
+    
+  - Static\
+    
+  - Stationary\
+    
+  - Dynamic\
+    
+  - None\
+    
+  - Static\
+    
+  - Stationary\
+    
+  - Dynamic\
+    
 
 
 - **Light Source Type** (`luminaire_shape`) \<`Choices`\>\
 Point or area light shapes. Point produces sharp shadows whereas Disk and Rectangle are area lights, with shadow softness/falloff influenced by the Area Light Size/Width.
-  - Disk (Area Light) 
-  - Rectangle (Area Light) 
-  - Point 
-  - Disk (Area Light) 
-  - Rectangle (Area Light) 
+  - Disk (Area Light)\
+    
+  - Rectangle (Area Light)\
+    
+  - Point\
+    
+  - Disk (Area Light)\
+    
+  - Rectangle (Area Light)\
+    
 
 
 
