@@ -1,0 +1,1 @@
+set "GIT_USER=<source2wiki>" && npm run deploy

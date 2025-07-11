@@ -16,16 +16,16 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://angel-foxxo.github.io',
+  url: 'https://source2wiki.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Source2Wiki/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'angel-foxxo', // Usually your GitHub org/user name.
-  projectName: 'Source2Wiki', // Usually your repo name.
-  deploymentBranch: 'deployment',
+  organizationName: 'Source2Wiki', // Usually your GitHub org/user name.
+  projectName: 'source2wiki.github.io', // Usually your repo name.
+  deploymentBranch: 'main',
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
