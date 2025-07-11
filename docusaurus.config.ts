@@ -114,7 +114,11 @@ const config: Config = {
     },
     colorMode: {
       respectPrefersColorScheme: true,
-    }
+    },
+    metadata: [
+      {name: 'og:description', content: 'A community driven documentation for everything Source2.'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
   } satisfies Preset.ThemeConfig,
 };
 
