@@ -18,15 +18,18 @@ import '@site/src/css/tabs.css';
 # info_ladder_dismount
 
 import STEAMVRPage from '@site/src/pages/Entities/info_ladder_dismount-steamvr.mdx';
+import steamvrIcon from '@site/static/img/steamvr_icon.png';
 import DOTA2Page from '@site/src/pages/Entities/info_ladder_dismount-dota2.mdx';
+import dota2Icon from '@site/static/img/dota2_icon.png';
 import HLAPage from '@site/src/pages/Entities/info_ladder_dismount-hla.mdx';
+import hlaIcon from '@site/static/img/hla_icon.png';
 
 
 <Tabs queryString="game">
     
 <TabItem value="steamvr" label={
     <span>
-        <img src="/img/steamvr_icon.png" alt="SteamVR Home" className="tab-icon" />
+        <img src={steamvrIcon} alt="SteamVR Home" className="tab-icon" />
         SteamVR Home
     </span>
     }>
@@ -35,7 +38,7 @@ import HLAPage from '@site/src/pages/Entities/info_ladder_dismount-hla.mdx';
 
 <TabItem value="dota2" label={
     <span>
-        <img src="/img/dota2_icon.png" alt="Dota 2" className="tab-icon" />
+        <img src={dota2Icon} alt="Dota 2" className="tab-icon" />
         Dota 2
     </span>
     }>
@@ -44,7 +47,7 @@ import HLAPage from '@site/src/pages/Entities/info_ladder_dismount-hla.mdx';
 
 <TabItem value="hla" label={
     <span>
-        <img src="/img/hla_icon.png" alt="Half-Life: Alyx" className="tab-icon" />
+        <img src={hlaIcon} alt="Half-Life: Alyx" className="tab-icon" />
         Half-Life: Alyx
     </span>
     }>
