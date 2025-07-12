@@ -86,3 +86,9 @@ html[data-theme='dark'] .alert--legacy {
   --ifm-alert-foreground-color: rgb(255, 255, 255);
   --ifm-alert-border-color: #d4351c;
 }
+
+.legacy_item a::before {
+  color: var(--ifm-color-emphasis-300);
+  padding-right: 0.5rem;
+  content: '[LEGACY]';
+}
