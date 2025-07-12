@@ -72,3 +72,17 @@ details summary::before {
 [class*="collapsibleContent"] {
   border-top-color: currentColor !important;
 }
+
+.alert--legacy {
+  --ifm-alert-background-color: rgba(212, 53, 28, 0.5);
+  --ifm-alert-background-color-highlight: rgba(212, 53, 28, 0.15);
+  --ifm-alert-foreground-color: rgb(66, 69, 73);
+  --ifm-alert-border-color: #d4351c;
+}
+
+html[data-theme='dark'] .alert--legacy {
+  --ifm-alert-background-color: rgba(212, 53, 28, 0.5);
+  --ifm-alert-background-color-highlight: rgba(212, 53, 28, 0.15);
+  --ifm-alert-foreground-color: rgb(255, 255, 255);
+  --ifm-alert-border-color: #d4351c;
+}

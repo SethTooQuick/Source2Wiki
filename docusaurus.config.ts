@@ -1,7 +1,7 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import type {PluginOptions} from '@easyops-cn/docusaurus-search-local';
+import type { PluginOptions } from '@easyops-cn/docusaurus-search-local';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -45,22 +45,22 @@ const config: Config = {
       {
         // `hashed` is recommended as long-term-cache of index file is possible.
         hashed: true,
-        
+
         // Language settings
         language: ["en"],
-        
+
         // What to index
         indexDocs: true,
         indexBlog: false, // You have blog disabled, so this should be false
         indexPages: false, // Set to true if you want to index standalone pages
-        
+
         docsRouteBasePath: '/',
-        
+
         searchResultLimits: 8,
         searchResultContextMaxLength: 50,
-        
+
         highlightSearchTermsOnTargetPage: true,
-        
+
       } satisfies PluginOptions,
     ],
   ],
@@ -75,6 +75,10 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          admonitions: {
+            keywords: ['note', 'tip', 'info', 'warning', 'danger', 'legacy'],
+            extendDefaults: true
+          }
         },
         blog: false,
         theme: {
@@ -116,8 +120,8 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     metadata: [
-      {name: 'og:description', content: 'A community driven documentation for everything Source2.'},
-      {name: 'twitter:card', content: 'summary_large_image'},
+      { name: 'og:description', content: 'A community driven documentation for everything Source2.' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
   } satisfies Preset.ThemeConfig,
 };
