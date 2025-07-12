@@ -8,6 +8,15 @@
 .docusaurus
 .cache-loader
 
+# Entity Page generator territory
+src/pages/Entities/*
+docs/Entities/*
+!docs/Entities/_category_.json
+
+# README to explain
+!src/pages/Entities/Readme.txt
+!docs/Entities/Readme.txt
+
 # Misc
 .DS_Store
 .env.local
