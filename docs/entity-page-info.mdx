@@ -123,7 +123,7 @@ The path to a .png file for the entity icon, if you're adding a new icon, try to
 }
 ```
 
-### PageAnnotation \<[Annotation](#Annotation)\>
+### PageAnnotation \<[Annotation](#annotation)\>
 An annotation for adding extra info to the page.
 ```json
 {
@@ -132,7 +132,7 @@ An annotation for adding extra info to the page.
     "Message": "Do not stare right into it."
 }
 ```
-See [Annotation](#Annotation)
+See [Annotation](#annotation)
 
 
 ### Properties `<PropertyList>`
@@ -188,14 +188,14 @@ The friendly name of the property, the one that hammer will display in smart edi
 }
 ```
 
-### Property->VariableType \<[VariableType](#VariableType)\>
+### Property->VariableType \<[VariableType](#variabletype)\>
 The type of the property.
 ```json
 {
     "VariableType": "Int",
 }
 ```
-See [VariableType](#VariableType)
+See [VariableType](#variabletype)
 
 ### Property->Description `<string>`
 The description of the property.
@@ -258,7 +258,7 @@ A list of property annotations.
     ]
 }
 ```
-See [Annotation](#Annotation)
+See [Annotation](#annotation)
 
 ### InputOutputs `<InputOutputList>`
 A list of inputs and outputs.
@@ -309,14 +309,14 @@ The description of the input/output.
 },
 ```
 
-### InputOutput->VariableType \<[VariableType](#VariableType)\>
+### InputOutput->VariableType \<[VariableType](#variabletype)\>
 The type of the input/output.
 ```json
 {
     "VariableType": "String",
 }
 ```
-See [VariableType](#VariableType)
+See [VariableType](#variabletype)
 
 ### InputOutput->Type `<Type>`
 whether this is an input or an output.
@@ -329,7 +329,7 @@ Possible values:
 - Input
 - Output
 
-### <a name="Annotation"></a>Annotation
+### Annotation
 An annotation.
 ```json
 {
@@ -370,7 +370,7 @@ The message of the annotation.
 }
 ```
 
-### <a name="VariableType"></a>VariableType
+### VariableType
 Possible values:
 - `Axis`
 - `Angle`
