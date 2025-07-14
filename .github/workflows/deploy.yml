@@ -49,7 +49,7 @@ jobs:
       - name: Clone FGDDumper
         run: git clone https://github.com/Source2Wiki/FGDDumper
       - name: Run FGDDumper
-        run: dotnet run --project FGDDumper/EntityPageTools -- --root ./Source2Wiki/Source2Wiki --generate_mdx --no_listen
+        run: dotnet run --project FGDDumper/EntityPageTools -- --root /Source2Wiki --generate_mdx --no_listen
 
       - name: Deploy to GitHub Pages
         env:
