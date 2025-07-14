@@ -24,7 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Test build website
-        run: npm run build
+        run: |
+          EntityPageTools.exe --root ./ --generate_mdx --no_listen
+          npm run build
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
@@ -43,7 +45,8 @@ jobs:
         env:
           USE_SSH: true
         run: |
+          EntityPageTools.exe --root ./ --generate_mdx --no_listen
           git config --global user.email "angelcazacu8@gmail.com"
           git config --global user.name "angel_foxxo"
           npm ci
-          yarn deploy
+          npm run deploy
