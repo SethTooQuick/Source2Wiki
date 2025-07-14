@@ -45,18 +45,6 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
-      - name: Set up SSH
-        shell: powershell
-        run: |
-          $sshDir = "$HOME\.ssh"
-          if (-Not (Test-Path $sshDir)) {
-            New-Item -ItemType Directory -Path $sshDir | Out-Null
-          }
-
-          Set-Content -Path "$sshDir\id_rsa" -Value "${{ secrets.DEPLOY_KEY }}"
-          icacls "$sshDir\id_rsa" /inheritance:r /grant:r "$env:USERNAME:F"
-
-          ssh-keyscan github.com | Out-File -FilePath "$sshDir\known_hosts" -Encoding ascii -Append
       
       - name: Clone FGDDumper
         run: git clone https://github.com/Source2Wiki/FGDDumper
@@ -70,4 +58,4 @@ jobs:
           git config --global user.email "angelcazacu8@gmail.com"
           git config --global user.name "angel_foxxo"
           npm ci
-          npm run deploy
+          yarn deploy
