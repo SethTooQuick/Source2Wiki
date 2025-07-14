@@ -27,7 +27,7 @@ jobs:
         run: chmod +x ./EntityPageTools-linux
       - name: Test build website
         run: |
-          ./EntityPageTools-linux ./
+          ./EntityPageTools-linux --root ./ --generate_mdx --no_listen
           npm run build
   deploy:
     if: github.event_name != 'pull_request'
@@ -49,7 +49,7 @@ jobs:
         env:
           USE_SSH: true
         run: |
-          ./EntityPageTools-linux ./
+          ./EntityPageTools-linux --root ./ --generate_mdx --no_listen
           git config --global user.email "angelcazacu8@gmail.com"
           git config --global user.name "angel_foxxo"
           npm ci
