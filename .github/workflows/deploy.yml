@@ -46,11 +46,17 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Set up SSH
+        shell: powershell
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.GH_PAGES_DEPLOY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts      
+          $sshDir = "$HOME\.ssh"
+          if (-Not (Test-Path $sshDir)) {
+            New-Item -ItemType Directory -Path $sshDir | Out-Null
+          }
+
+          Set-Content -Path "$sshDir\id_rsa" -Value "${{ secrets.DEPLOY_KEY }}"
+          icacls "$sshDir\id_rsa" /inheritance:r /grant:r "$env:USERNAME:F"
+
+          ssh-keyscan github.com | Out-File -FilePath "$sshDir\known_hosts" -Encoding ascii -Append
       
       - name: Clone FGDDumper
         run: git clone https://github.com/Source2Wiki/FGDDumper
