@@ -12,7 +12,7 @@ permissions:
 jobs:
   test-deploy:
     if: github.event_name != 'push'
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,15 +23,13 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Make executable
-        run: chmod +x ./EntityPageTools-linux
       - name: Test build website
         run: |
-          ./EntityPageTools-linux --root ./ --generate_mdx --no_listen
+          .\EntityPageTools.exe --root .\ --generate_mdx --no_listen
           npm run build
   deploy:
     if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,13 +41,11 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
-      - name: Make executable
-        run: chmod +x ./EntityPageTools-linux
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
         run: |
-          ./EntityPageTools-linux --root ./ --generate_mdx --no_listen
+          .\EntityPageTools.exe --root .\ --generate_mdx --no_listen
           git config --global user.email "angelcazacu8@gmail.com"
           git config --global user.name "angel_foxxo"
           npm ci
