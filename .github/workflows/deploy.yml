@@ -39,6 +39,12 @@ jobs:
       - uses: webfactory/ssh-agent@v0.5.0
         with:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+
+      - name: Clone FGDDumper
+        run: git clone https://github.com/Source2Wiki/FGDDumper
+      - name: Run FGDDumper
+        run: dotnet run --configuration Release --project FGDDumper/EntityPageTools -- --root . --generate_mdx --no_listen
+
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
