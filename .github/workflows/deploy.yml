@@ -47,7 +47,7 @@ jobs:
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       
       - name: Clone FGDDumper
-        run: git clone git@github.com:Source2Wiki/FGDDumper.git
+        run: git clone https://github.com/Source2Wiki/FGDDumper
       - name: Run FGDDumper
         run: dotnet run --project FGDDumper/EntityPageTools -- --root . --generate_mdx --no_listen
 
