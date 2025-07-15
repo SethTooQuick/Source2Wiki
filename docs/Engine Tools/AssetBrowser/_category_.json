@@ -3,6 +3,8 @@
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Asset Battleground"
+    "title": "Asset Browser",
+    "description": "Asset Battleground",
+    "image": "/img/app_icons/assetbrowser.png"
   }
 }

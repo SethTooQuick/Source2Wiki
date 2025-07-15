@@ -3,6 +3,8 @@
   "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "Model Editor for SteamVR"
+    "description": "Model Editor for SteamVR",
+    "title": "Model Editor (SteamVR)",
+    "image": "/img/app_icons/model_doc_editor.png"
   }
 }

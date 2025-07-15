@@ -3,6 +3,8 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Explore the Hammer Editor"
+    "description": "Explore the Hammer Editor",
+    "title": "Material Editor",
+    "image": "/img/app_icons/material_editor.png"
   }
 }

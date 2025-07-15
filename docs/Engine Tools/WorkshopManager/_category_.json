@@ -3,6 +3,8 @@
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "Manage your Steam Workshop uploads."
+    "description": "Manage your Steam Workshop uploads.",
+    "title": "Workshop Manager",
+    "image": "/img/app_icons/workshop_manager.png"
   }
 }
