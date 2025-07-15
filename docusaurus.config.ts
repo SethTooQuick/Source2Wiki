@@ -73,7 +73,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: ({locale, docPath}) => {
+          editUrl: ({ locale, docPath }) => {
             return `https://github.com/Source2Wiki/Source2Wiki/blob/master/docs/${docPath}?plain=1`;
           },
           admonitions: {
@@ -97,6 +97,10 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
+        {
+          type: 'custom-game-selector',
+          position: 'left'
+        },
       ],
     },
     footer: {
