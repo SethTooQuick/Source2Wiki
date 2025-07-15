@@ -102,15 +102,25 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        // {
-        //   title: 'More',
-        //   items: [
-        //     {
-        //       label: 'GitHub',
-        //       href: 'https://github.com/facebook/docusaurus',
-        //     },
-        //   ],
-        // },
+        {
+          items: [
+            {
+              html: `
+              <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; flex-wrap: wrap;">
+
+                  <div style="text-align: left; gap: 4px;">
+                    <span>Created and maintained by <a href="https://github.com/Source2Wiki/Source2Wiki/graphs/contributors">various contributors</a>.</span>
+                  </div>
+
+                  <div style="text-align: right; gap: 4px;">
+                    <span>This project is not affiliated with Valve Software.</br>Source 2 is a trademark and/or registered trademark of Valve Corporation. </span>
+                  </div>
+                 
+              </div>
+              `,
+            },
+          ],
+        }
       ],
     },
     prism: {
