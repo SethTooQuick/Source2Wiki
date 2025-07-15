@@ -1,10 +1,10 @@
 {
   "label": "Hammer Level Editor",
   "position": 2,
+  "description": "Explore the Hammer Editor",
   "link": {
     "type": "generated-index",
     "title": "Hammer Level Editor",
-    "description": "Explore the Hammer Editor",
     "image": "/img/app_icons/hammer.png"
   }
 }
