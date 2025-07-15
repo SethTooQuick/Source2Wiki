@@ -1,0 +1,8 @@
+{
+  "label": "Workshop Manager",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Manage your Steam Workshop uploads."
+  }
+}
