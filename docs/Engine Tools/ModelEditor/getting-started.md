@@ -1,1 +1,1 @@
-# Model Editor (Deprecated)
+# Model Editor (SteamVR)
