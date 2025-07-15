@@ -3,6 +3,8 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Explore the Hammer Editor"
+    "title": "Hammer Level Editor",
+    "description": "Explore the Hammer Editor",
+    "image": "/img/app_icons/hammer.png"
   }
 }
