@@ -1,10 +1,4 @@
 {
   "label": "VConsole",
-  "position": 7,
-  "link": {
-    "type": "generated-index",
-    "description": "Enter some shit",
-    "title": "VConsole",
-    "image": "/img/app_icons/vconsole.png"
-  }
+  "position": 7
 }

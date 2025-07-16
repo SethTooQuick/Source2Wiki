@@ -1,8 +1,5 @@
 {
   "label": "Editor Tools",
   "position": 3,
-  "collapsed": false,
-  "link": {
-    "description": "Explore engine tools."
-  }
+  "collapsed": false
 }

@@ -1,10 +1,4 @@
 {
-  "label": "ModelDoc",
-  "position": 4,
-  "link": {
-    "type": "generated-index",
-    "description": "Make fancy models.",
-    "title": "ModelDoc",
-    "image": "/img/app_icons/model_doc_editor.png"
-  }
+  "label": "Model Doc",
+  "position": 4
 }

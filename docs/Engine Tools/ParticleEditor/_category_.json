@@ -1,10 +1,4 @@
 {
   "label": "Particle Editor",
-  "position": 5,
-  "link": {
-    "type": "generated-index",
-    "description": "Make fancy particles.",
-    "title": "Particle Editor",
-    "image": "/img/app_icons/particle_editor.png"
-  }
+  "position": 5
 }
