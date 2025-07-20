@@ -89,6 +89,25 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  headTags: [
+    // Declare some json-ld structured data
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org/',
+        '@type': 'WebSite',
+        name: 'Source2 Wiki',
+        url: 'https://source2.wiki/',
+        logo: 'https://www.source2.wiki/img/logo.svg',
+        isAccessibleForFree: true,
+        screenshot: "https://www.source2.wiki/img/docusaurus-social-card.jpg",
+        image: "https://www.source2.wiki/img/social-icon.png",
+      }),
+    },
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -160,6 +179,7 @@ const config: Config = {
     },
     metadata: [
       { name: 'description', content: 'A community driven documentation for everything Source2.' },
+      { name: 'keywords', content: 'source2, wiki, source2wiki' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
   } satisfies Preset.ThemeConfig,
