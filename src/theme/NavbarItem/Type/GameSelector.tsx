@@ -1,5 +1,7 @@
 import GameDropDown from '@site/src/components/GameDropDown';
 import { useState } from 'react';
+import { useGameParam } from '@site/src/contexts/GameParamContext';
+import { useHistory, useLocation } from '@docusaurus/router';
 
 interface Props {
     readonly mobile?: boolean;
@@ -7,8 +9,12 @@ interface Props {
 }
 
 export default function GameSelectorNavbarItem(props: Props): React.JSX.Element {
+
+    const { gameParam, setGameParam } = useGameParam();
+    const history = useHistory();
+    const location = useLocation();
+
     const [showDropDown, setShowDropDown] = useState<boolean>(false);
-    const [selectGame, setSelectGame] = useState<string>("any");
     const games = () => {
         return ["any", "cs2", "hla", "dota", "steamvr"];
     };
@@ -23,8 +29,15 @@ export default function GameSelectorNavbarItem(props: Props): React.JSX.Element 
         }
     };
 
-    const gameSelection = (game: string): void => {
-        setSelectGame(game);
+    const setGame = (game: string): void => {
+        const params = new URLSearchParams(location.search);
+
+        params.set('game', game);
+        history.push({
+            pathname: location.pathname,
+            search: params.toString(),
+        });
+        setGameParam(game);
     };
 
     return (
@@ -36,14 +49,16 @@ export default function GameSelectorNavbarItem(props: Props): React.JSX.Element 
                     dismissHandler(e)
                 }
             >
-                <div>{selectGame != "any" ? `Game: ${selectGame}` : `Select Game...`}</div>
+                <div>{gameParam != "any" ? `Game: ${gameParam}` : `Select Game...`}</div>
                 {showDropDown && (
                     <GameDropDown
                         games={games()}
                         showDropDown={false}
                         toggleDropDown={(): void => toggleDropDown()}
-                        gameSelection={gameSelection}
+                        gameSelection={setGame}
                     />
+
+
                 )}
             </button>
         </>

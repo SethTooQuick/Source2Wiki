@@ -3,9 +3,13 @@ import { useLocation } from "@docusaurus/router";
 
 interface GameParamContextType {
     gameParam: string;
+    setGameParam: (value: string) => void;
 }
 
-const GameParamContext = createContext<GameParamContextType>({ gameParam: "any" });
+const GameParamContext = createContext<GameParamContextType>({
+    gameParam: "any",
+    setGameParam: () => { },
+});
 
 
 export function GameParamProvider({ children }: { children: ReactNode }) {
@@ -15,11 +19,11 @@ export function GameParamProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         const params = new URLSearchParams(location.search);
         let game = params.get('game');
-        setGameParam(game);
+        if (game) setGameParam(game);
     }, [location.search]);
 
     return (
-        <GameParamContext.Provider value={{ gameParam }}>
+        <GameParamContext.Provider value={{ gameParam, setGameParam }}>
             {children}
         </GameParamContext.Provider>
     );
