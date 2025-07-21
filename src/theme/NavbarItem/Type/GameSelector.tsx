@@ -1,4 +1,5 @@
 import GameDropDown from '@site/src/components/GameDropDown';
+import { Games } from '@site/src/components/GameDropDown';
 import { useState } from 'react';
 import { useGameParam } from '@site/src/contexts/GameParamContext';
 import { useHistory, useLocation } from '@docusaurus/router';
@@ -15,9 +16,6 @@ export default function GameSelectorNavbarItem(props: Props): React.JSX.Element 
     const location = useLocation();
 
     const [showDropDown, setShowDropDown] = useState<boolean>(false);
-    const games = () => {
-        return ["any", "cs2", "hla", "dota", "steamvr"];
-    };
 
     const toggleDropDown = () => {
         setShowDropDown(!showDropDown);
@@ -49,16 +47,14 @@ export default function GameSelectorNavbarItem(props: Props): React.JSX.Element 
                     dismissHandler(e)
                 }
             >
-                <div>{gameParam != "any" ? `Game: ${gameParam}` : `Select Game...`}</div>
+                <div>{gameParam != "any" && gameParam in Games ? `Game: ${Games[gameParam].PrettyName}` : `Select Game...`}</div>
                 {showDropDown && (
                     <GameDropDown
-                        games={games()}
+                        games={Games}
                         showDropDown={false}
                         toggleDropDown={(): void => toggleDropDown()}
                         gameSelection={setGame}
                     />
-
-
                 )}
             </button>
         </>
