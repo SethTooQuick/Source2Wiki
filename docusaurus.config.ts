@@ -64,6 +64,7 @@ const config: Config = {
       } satisfies PluginOptions,
     ],
   ],
+  plugins: [require.resolve('docusaurus-plugin-image-zoom')],
   presets: [
     [
       'classic',
@@ -73,7 +74,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: ({locale, docPath}) => {
+          editUrl: ({ locale, docPath }) => {
             return `https://github.com/Source2Wiki/Source2Wiki/blob/master/docs/${docPath}?plain=1`;
           },
           admonitions: {
@@ -88,9 +89,35 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  headTags: [
+    // Declare some json-ld structured data
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org/',
+        '@type': 'WebSite',
+        name: 'Source2 Wiki',
+        url: 'https://source2.wiki/',
+        logo: 'https://www.source2.wiki/img/logo.svg',
+        isAccessibleForFree: true,
+        screenshot: "https://www.source2.wiki/img/docusaurus-social-card.jpg",
+        image: "https://www.source2.wiki/img/social-icon.png",
+      }),
+    },
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    zoom: {
+      selector: '.markdown :not(em) > img, .markdown img',
+      background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+      },
+    },
     navbar: {
       title: 'Source2 Wiki',
       logo: {
@@ -116,6 +143,10 @@ const config: Config = {
           </div>
           `,
           href: 'https://github.com/Source2Wiki/Source2Wiki'
+        },
+        {
+          type: 'custom-game-selector',
+          position: 'left'
         }
       ],
     },
@@ -152,6 +183,7 @@ const config: Config = {
     },
     metadata: [
       { name: 'description', content: 'A community driven documentation for everything Source2.' },
+      { name: 'keywords', content: 'source2, wiki, source2wiki' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
   } satisfies Preset.ThemeConfig,
