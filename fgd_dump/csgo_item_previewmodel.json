@@ -435,6 +435,12 @@
           "Type": "Output"
         },
         {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Output"
+        },
+        {
           "Name": "SetItem",
           "Description": "Set the itemid for this preview.",
           "VariableType": "Void",

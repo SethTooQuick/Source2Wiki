@@ -2,7 +2,7 @@
   "Name": "game_ui",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "game_ui",
       "Description": "An entity used to override player input when the player is looking at it.",
@@ -285,7 +285,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "game_ui",
       "Description": "An entity used to override player input when the player is looking at it.",

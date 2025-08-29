@@ -2,7 +2,7 @@
   "Name": "ai_changetarget",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_changetarget",
       "Description": "Change Target",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_changetarget",
       "Description": "Change Target",

@@ -160,7 +160,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_entity_igniter",
       "Description": "An entity that catches a target entity on fire. If the entity is an animating model, it will have sprite flames attached to its skeleton. Otherwise the entity will emit particle flame puffs.",
@@ -470,7 +470,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_entity_igniter",
       "Description": "An entity that catches a target entity on fire. If the entity is an animating model, it will have sprite flames attached to its skeleton. Otherwise the entity will emit particle flame puffs.",

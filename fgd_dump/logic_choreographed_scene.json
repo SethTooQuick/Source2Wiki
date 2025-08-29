@@ -2,11 +2,11 @@
   "Name": "logic_choreographed_scene",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_choreographed_scene",
       "Description": "Manages a choreographed scene of one or more actors.",
-      "IconPath": "fgd_dump/img/steamvr/logic_choreographed_scene.png",
+      "IconPath": "fgd_dump/img/hla/logic_choreographed_scene.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -320,11 +320,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_choreographed_scene",
       "Description": "Manages a choreographed scene of one or more actors.",
-      "IconPath": "fgd_dump/img/hla/logic_choreographed_scene.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_choreographed_scene.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -2,11 +2,11 @@
   "Name": "info_npc_spawn_destination",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_npc_spawn_destination",
       "Description": "NPC Spawn Destination. (Consult npc_template_maker help for more info)",
-      "IconPath": "fgd_dump/img/steamvr/info_npc_spawn_destination.png",
+      "IconPath": "fgd_dump/img/hla/info_npc_spawn_destination.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -226,11 +226,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_npc_spawn_destination",
       "Description": "NPC Spawn Destination. (Consult npc_template_maker help for more info)",
-      "IconPath": "fgd_dump/img/hla/info_npc_spawn_destination.png",
+      "IconPath": "fgd_dump/img/steamvr/info_npc_spawn_destination.png",
       "PageAnnotation": null,
       "Properties": [
         {

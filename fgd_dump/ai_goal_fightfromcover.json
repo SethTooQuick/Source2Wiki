@@ -2,11 +2,11 @@
   "Name": "ai_goal_fightfromcover",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_fightfromcover",
       "Description": "AI Fight from Cover",
-      "IconPath": "fgd_dump/img/steamvr/ai_goal_fightfromcover.png",
+      "IconPath": "fgd_dump/img/hla/ai_goal_fightfromcover.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -104,11 +104,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_fightfromcover",
       "Description": "AI Fight from Cover",
-      "IconPath": "fgd_dump/img/hla/ai_goal_fightfromcover.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_goal_fightfromcover.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -243,7 +243,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "math_remap",
       "Description": "An entity that remaps a range of input values to a given range of output values.",
@@ -719,7 +719,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "math_remap",
       "Description": "An entity that remaps a range of input values to a given range of output values.",

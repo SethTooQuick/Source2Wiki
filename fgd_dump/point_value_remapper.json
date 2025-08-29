@@ -500,7 +500,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_value_remapper",
       "Description": "",
@@ -1490,7 +1490,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_value_remapper",
       "Description": "",

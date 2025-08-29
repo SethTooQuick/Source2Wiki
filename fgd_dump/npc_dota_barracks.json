@@ -781,6 +781,12 @@
           "Type": "Output"
         },
         {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Output"
+        },
+        {
           "Name": "SetParent",
           "Description": "Changes the entity\u0027s parent in the movement hierarchy.",
           "VariableType": "TargetDestination",

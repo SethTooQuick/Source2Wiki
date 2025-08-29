@@ -21,7 +21,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "dota2",
       "EntityType": "Point",
       "Name": "info_intermission",
       "Description": "An entity that defines an intermission spot where dead players will float until they respawn.",
@@ -40,7 +40,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "dota2",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_intermission",
       "Description": "An entity that defines an intermission spot where dead players will float until they respawn.",

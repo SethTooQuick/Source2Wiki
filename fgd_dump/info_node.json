@@ -2,7 +2,7 @@
   "Name": "info_node",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_node",
       "Description": "A navigation node for ground moving NPCs. Navigation nodes are baked into the nodegraph so that NPCs can move to them. Ground nodes fall to the ground when they spawn.",
@@ -101,7 +101,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_node",
       "Description": "A navigation node for ground moving NPCs. Navigation nodes are baked into the nodegraph so that NPCs can move to them. Ground nodes fall to the ground when they spawn.",

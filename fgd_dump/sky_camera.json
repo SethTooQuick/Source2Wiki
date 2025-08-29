@@ -21,7 +21,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "sky_camera",
       "Description": "An entity used to control the 3D Skybox. Its origin is used to determine the 3D Skybox\u0027s position relative to the map. Place this entity, in the 3D Skybox, at the point where the origin of the map should be.",
@@ -267,7 +267,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "sky_camera",
       "Description": "An entity used to control the 3D Skybox. Its origin is used to determine the 3D Skybox\u0027s position relative to the map. Place this entity, in the 3D Skybox, at the point where the origin of the map should be.",

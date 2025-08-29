@@ -78,11 +78,11 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "visibility_hint",
       "Description": "",
-      "IconPath": "fgd_dump/img/steamvr/visibility_hint.png",
+      "IconPath": "fgd_dump/img/hla/visibility_hint.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -113,6 +113,10 @@
             },
             {
               "Name": "Use Low Resolution (64 unit grid)",
+              "Description": ""
+            },
+            {
+              "Name": "Z-axis split",
               "Description": ""
             }
           ],
@@ -198,11 +202,11 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "visibility_hint",
       "Description": "",
-      "IconPath": "fgd_dump/img/hla/visibility_hint.png",
+      "IconPath": "fgd_dump/img/steamvr/visibility_hint.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -233,10 +237,6 @@
             },
             {
               "Name": "Use Low Resolution (64 unit grid)",
-              "Description": ""
-            },
-            {
-              "Name": "Z-axis split",
               "Description": ""
             }
           ],

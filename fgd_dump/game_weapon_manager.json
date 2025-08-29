@@ -168,7 +168,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "game_weapon_manager",
       "Description": "An entity used to limit the number of a particular weapon type in the world. Useful in places where NPCs are spawning rapidly, dying, and dropping weapons.",
@@ -494,7 +494,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "game_weapon_manager",
       "Description": "An entity used to limit the number of a particular weapon type in the world. Useful in places where NPCs are spawning rapidly, dying, and dropping weapons.",

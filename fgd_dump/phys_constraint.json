@@ -99,6 +99,22 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Entity 1 Bone Name",
+          "InternalName": "bonename1",
+          "VariableType": "String",
+          "Description": "If set, search for a physics body that corresponds with the given bone.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Entity 2 Bone Name",
+          "InternalName": "bonename2",
+          "VariableType": "String",
+          "Description": "If set, search for a physics body that corresponds with the given bone.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Linear Frequency",
           "InternalName": "linearfrequency",
           "VariableType": "Float",
@@ -283,7 +299,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_constraint",
       "Description": "Constrain an entity to the world or another entity at a fixed relative position.",
@@ -855,7 +871,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_constraint",
       "Description": "Constrain an entity to the world or another entity at a fixed relative position.",

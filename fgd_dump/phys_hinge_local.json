@@ -447,7 +447,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_hinge_local",
       "Description": "A physically simulated hinge. Use the helper to define the axis of rotation.",
@@ -686,6 +686,14 @@
           "Description": "Scale of the load connected to this hinge (1=just the objects directly connected)",
           "Options": [],
           "Annotations": []
+        },
+        {
+          "FriendlyName": "Threshold for move events",
+          "InternalName": "AngleSpeedThreshold",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
         }
       ],
       "InputOutputs": [
@@ -860,6 +868,18 @@
         {
           "Name": "NotifyMaxLimitReached",
           "Description": "The max limit has been reached.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnStartMoving",
+          "Description": "Fires if the attached objects start rotating around the hinge axis relatively to each other.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnStopMoving",
+          "Description": "Fires if the attached objects stip rotating around the hinge axis relatively to each other.",
           "VariableType": "Void",
           "Type": "Output"
         }
@@ -1311,7 +1331,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_hinge_local",
       "Description": "A physically simulated hinge. Use the helper to define the axis of rotation.",
@@ -1550,14 +1570,6 @@
           "Description": "Scale of the load connected to this hinge (1=just the objects directly connected)",
           "Options": [],
           "Annotations": []
-        },
-        {
-          "FriendlyName": "Threshold for move events",
-          "InternalName": "AngleSpeedThreshold",
-          "VariableType": "Float",
-          "Description": "",
-          "Options": [],
-          "Annotations": []
         }
       ],
       "InputOutputs": [
@@ -1732,18 +1744,6 @@
         {
           "Name": "NotifyMaxLimitReached",
           "Description": "The max limit has been reached.",
-          "VariableType": "Void",
-          "Type": "Output"
-        },
-        {
-          "Name": "OnStartMoving",
-          "Description": "Fires if the attached objects start rotating around the hinge axis relatively to each other.",
-          "VariableType": "Void",
-          "Type": "Output"
-        },
-        {
-          "Name": "OnStopMoving",
-          "Description": "Fires if the attached objects stip rotating around the hinge axis relatively to each other.",
           "VariableType": "Void",
           "Type": "Output"
         }

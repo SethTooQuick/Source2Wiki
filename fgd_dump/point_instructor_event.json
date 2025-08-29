@@ -172,11 +172,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_instructor_event",
       "Description": "An entity that fires simple game events from map logic for game instructor",
-      "IconPath": "fgd_dump/img/steamvr/point_instructor_event.png",
+      "IconPath": "fgd_dump/img/hla/point_instructor_event.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -506,11 +506,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_instructor_event",
       "Description": "An entity that fires simple game events from map logic for game instructor",
-      "IconPath": "fgd_dump/img/hla/point_instructor_event.png",
+      "IconPath": "fgd_dump/img/steamvr/point_instructor_event.png",
       "PageAnnotation": null,
       "Properties": [
         {

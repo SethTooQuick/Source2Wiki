@@ -2,7 +2,7 @@
   "Name": "env_sprite",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_sprite",
       "Description": "An entity that controls the drawing of a sprite in the world.",
@@ -1220,7 +1220,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_sprite",
       "Description": "An entity that controls the drawing of a sprite in the world.",

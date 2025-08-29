@@ -616,11 +616,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_case",
       "Description": "Compares an input to up to 16 preset values. If the input value is the same as any of the preset values, an output corresponding to that value is fired.\u003Cbr\u003E\u003Cbr\u003EFor example: if Case01 is set to 2 and Case02 is set to 5, and the input value is 5, the OnCase02 output will be fired.\u003Cbr\u003E\u003Cbr\u003EThis entity can also be used to select from a number of random targets via the PickRandom input. One of the OnCase outputs that is connected to another entity will be picked at random and fired.",
-      "IconPath": "fgd_dump/img/steamvr/logic_case.png",
+      "IconPath": "fgd_dump/img/hla/logic_case.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -1614,11 +1614,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_case",
       "Description": "Compares an input to up to 16 preset values. If the input value is the same as any of the preset values, an output corresponding to that value is fired.\u003Cbr\u003E\u003Cbr\u003EFor example: if Case01 is set to 2 and Case02 is set to 5, and the input value is 5, the OnCase02 output will be fired.\u003Cbr\u003E\u003Cbr\u003EThis entity can also be used to select from a number of random targets via the PickRandom input. One of the OnCase outputs that is connected to another entity will be picked at random and fired.",
-      "IconPath": "fgd_dump/img/hla/logic_case.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_case.png",
       "PageAnnotation": null,
       "Properties": [
         {

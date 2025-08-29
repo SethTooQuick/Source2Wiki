@@ -144,7 +144,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_servercommand",
       "Description": "An entity that issues commands to the server console.",
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_servercommand",
       "Description": "An entity that issues commands to the server console.",

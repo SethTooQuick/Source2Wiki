@@ -188,7 +188,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_velocitysensor",
       "Description": "An entity that detects and outputs an entity\u0027s velocity.",
@@ -554,7 +554,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_velocitysensor",
       "Description": "An entity that detects and outputs an entity\u0027s velocity.",

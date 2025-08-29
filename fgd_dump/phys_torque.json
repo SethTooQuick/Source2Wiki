@@ -217,7 +217,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_torque",
       "Description": "An angular thruster. Use it to apply angular force to an entity.",
@@ -641,7 +641,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_torque",
       "Description": "An angular thruster. Use it to apply angular force to an entity.",

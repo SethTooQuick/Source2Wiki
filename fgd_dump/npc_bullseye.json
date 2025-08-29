@@ -2,11 +2,11 @@
   "Name": "npc_bullseye",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "npc_bullseye",
       "Description": "Bullseye",
-      "IconPath": "fgd_dump/img/steamvr/npc_bullseye.png",
+      "IconPath": "fgd_dump/img/hla/npc_bullseye.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -91,11 +91,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "npc_bullseye",
       "Description": "Bullseye",
-      "IconPath": "fgd_dump/img/hla/npc_bullseye.png",
+      "IconPath": "fgd_dump/img/steamvr/npc_bullseye.png",
       "PageAnnotation": null,
       "Properties": [
         {

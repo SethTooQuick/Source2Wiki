@@ -187,7 +187,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_keepupright",
       "Description": "A controller that tries to keep an entity facing a particular direction.",
@@ -543,7 +543,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_keepupright",
       "Description": "A controller that tries to keep an entity facing a particular direction.",

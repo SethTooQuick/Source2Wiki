@@ -1,0 +1,50 @@
+
+.game-tabs {
+  display: flex;
+}
+
+.tabs__item {
+  flex-shrink: 0;
+}
+
+/* Nudge items above horizontal scroll bar so highlight doesnt overlap */
+@media screen and (max-width: 996px) {
+  .game-tabs {
+    padding-top: 8px;
+  }
+
+  .tabs__item {
+    transform: translateY(-8px);
+  }
+}
+
+.tabs__item::before {
+  content: '';
+  display: inline-block;
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.game-tabs .steamvr::before {
+  background-image: url('@site/static/img/steamvr_icon.png');
+}
+
+
+.game-tabs .hla::before {
+  background-image: url('@site/static/img/hla_icon.png');
+}
+
+.game-tabs .dota2::before {
+  background-image: url('@site/static/img/dota2_icon.png');
+}
+
+.game-tabs .cs2::before {
+  background-image: url('@site/static/img/cs2_icon.png');
+}

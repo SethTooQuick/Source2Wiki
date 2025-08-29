@@ -266,15 +266,23 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Parent Model Bone/Attachment Name",
+          "FriendlyName": "Parent Bone/Attachment Name",
           "InternalName": "parentAttachmentName",
           "VariableType": "ParentAttachment",
-          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.",
+          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if \u0027Use Local Transform\u0027 is NOT specified (in that case local transform will be identity)",
           "Options": [],
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment position offset",
+          "FriendlyName": "Use Local Transform",
+          "InternalName": "useLocalOffset",
+          "VariableType": "Bool",
+          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Origin",
           "InternalName": "local.origin",
           "VariableType": "Vector",
           "Description": "Offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -282,7 +290,7 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment angular offset",
+          "FriendlyName": "Local Angles",
           "InternalName": "local.angles",
           "VariableType": "Angle",
           "Description": "Angular offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -290,18 +298,10 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment scale",
+          "FriendlyName": "Local Scale",
           "InternalName": "local.scales",
           "VariableType": "Vector",
           "Description": "Scale in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Use Model Attachment Offset",
-          "InternalName": "useLocalOffset",
-          "VariableType": "Bool",
-          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
           "Options": [],
           "Annotations": []
         },
@@ -382,14 +382,6 @@
             },
             {
               "Name": "No Gibs",
-              "Description": ""
-            },
-            {
-              "Name": "Full Gibs on All Platforms",
-              "Description": ""
-            },
-            {
-              "Name": "Reduced gibs",
               "Description": ""
             }
           ],
@@ -791,10 +783,6 @@
               "Description": ""
             },
             {
-              "Name": "Use Preferred Carry Angles",
-              "Description": ""
-            },
-            {
               "Name": "Start Asleep",
               "Description": ""
             },
@@ -807,6 +795,14 @@
               "Description": ""
             }
           ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Add Modifier",
+          "InternalName": "add_modifier",
+          "VariableType": "String",
+          "Description": "Will add this modifier when the entity spawns.",
+          "Options": [],
           "Annotations": []
         },
         {
@@ -831,10 +827,34 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Mass Override",
+          "InternalName": "gamemass",
+          "VariableType": "Integer",
+          "Description": "Override the mass of the object instead of calculating it based on the size / shape and material.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Mass Scale",
           "InternalName": "massScale",
           "VariableType": "Float",
-          "Description": "A scale multiplier for the object\u0027s mass.",
+          "Description": "A scale multiplier for the object\u0027s mass. 0 = use auto-calculated mass based on the object\u0027s size / shape and material",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Center of Mass Offset",
+          "InternalName": "masscenteroffset",
+          "VariableType": "Vector",
+          "Description": "Offset in local space applied to the object\u0027s center of mass.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Buoyancy Scale",
+          "InternalName": "buoyancyscale",
+          "VariableType": "Float",
+          "Description": "Scale on the buoyancy / fluid forces applied to this object",
           "Options": [],
           "Annotations": []
         },
@@ -871,10 +891,35 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Preferred Player-carry Angles",
-          "InternalName": "preferredcarryangles",
+          "FriendlyName": "",
+          "InternalName": "hoverposeflags",
+          "VariableType": "Flags",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Position",
+              "Description": ""
+            },
+            {
+              "Name": "Angles",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Player-carry Hover Position",
+          "InternalName": "hoverposeposition",
           "VariableType": "Vector",
-          "Description": "If the \u0027Use Preferred Carry Angles\u0027 spawnflag is set, this angle is the angle which the object should orient to when the player picks it up, with the physgun or \u002BUSE.",
+          "Description": "If the hoverposeflags Position flag is set, this position is the position which the object should move when the player picks it up, with the physgun or \u002BUSE.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Player-carry Hover Angles",
+          "InternalName": "hoverposeangles",
+          "VariableType": "Vector",
+          "Description": "If the hoverposeflags Angles flag is set, this angle is the angle which the object should orient to when the player picks it up, with the physgun or \u002BUSE.",
           "Options": [],
           "Annotations": []
         },
@@ -890,23 +935,6 @@
             },
             {
               "Name": "Passes through World",
-              "Description": ""
-            }
-          ],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Exploitable by Player",
-          "InternalName": "ExploitableByPlayer",
-          "VariableType": "Choices",
-          "Description": "",
-          "Options": [
-            {
-              "Name": "Default",
-              "Description": ""
-            },
-            {
-              "Name": "Explosive",
               "Description": ""
             }
           ],
@@ -1121,6 +1149,12 @@
           "Type": "Input"
         },
         {
+          "Name": "OnStartDeath",
+          "Description": "Fired when this prop has begun dying (breaking) before other death-related callbacks.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
           "Name": "OnBreak",
           "Description": "Fired when this breakable breaks.",
           "VariableType": "Void",
@@ -1175,12 +1209,6 @@
           "Type": "Input"
         },
         {
-          "Name": "DisableFloating",
-          "Description": "Turn off floating simulation (and cost).",
-          "VariableType": "Void",
-          "Type": "Input"
-        },
-        {
           "Name": "OnDamaged",
           "Description": "Fired when this entity is damaged.",
           "VariableType": "Void",
@@ -1213,7 +1241,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "func_physbox",
       "Description": "A brush entity that\u0027s physically simulated.",
@@ -1738,6 +1766,50 @@
             {
               "Name": "Don\u0027t allow hand physics damage",
               "Description": ""
+            },
+            {
+              "Name": "Debris - Don\u0027t collide with the player or other debris",
+              "Description": ""
+            },
+            {
+              "Name": "Motion Disabled",
+              "Description": ""
+            },
+            {
+              "Name": "Use Preferred Carry Angles",
+              "Description": ""
+            },
+            {
+              "Name": "Enable motion on Physcannon grab",
+              "Description": ""
+            },
+            {
+              "Name": "Ignore \u002BUSE for Pickup",
+              "Description": ""
+            },
+            {
+              "Name": "Generate output on \u002BUSE ",
+              "Description": ""
+            },
+            {
+              "Name": "Start Asleep",
+              "Description": ""
+            },
+            {
+              "Name": "Physgun is NOT allowed to pick this up.",
+              "Description": ""
+            },
+            {
+              "Name": "Physgun is NOT allowed to punt this object.",
+              "Description": ""
+            },
+            {
+              "Name": "Prevent motion enable on player bump",
+              "Description": ""
+            },
+            {
+              "Name": "Force nav-ignore",
+              "Description": ""
             }
           ],
           "Annotations": []
@@ -2083,64 +2155,15 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "",
-          "InternalName": "spawnflags",
-          "VariableType": "Flags",
-          "Description": "",
-          "Options": [
-            {
-              "Name": "Debris - Don\u0027t collide with the player or other debris",
-              "Description": ""
-            },
-            {
-              "Name": "Motion Disabled",
-              "Description": ""
-            },
-            {
-              "Name": "Use Preferred Carry Angles",
-              "Description": ""
-            },
-            {
-              "Name": "Enable motion on Physcannon grab",
-              "Description": ""
-            },
-            {
-              "Name": "Ignore \u002BUSE for Pickup",
-              "Description": ""
-            },
-            {
-              "Name": "Generate output on \u002BUSE ",
-              "Description": ""
-            },
-            {
-              "Name": "Start Asleep",
-              "Description": ""
-            },
-            {
-              "Name": "Physgun is NOT allowed to pick this up.",
-              "Description": ""
-            },
-            {
-              "Name": "Physgun is NOT allowed to punt this object.",
-              "Description": ""
-            },
-            {
-              "Name": "Prevent motion enable on player bump",
-              "Description": ""
-            },
-            {
-              "Name": "Force nav-ignore",
-              "Description": ""
-            }
-          ],
-          "Annotations": []
-        },
-        {
           "FriendlyName": "Impact Damage Type",
           "InternalName": "Damagetype",
           "VariableType": "Choices",
           "Description": "",
           "Options": [
+            {
+              "Name": "Disabled",
+              "Description": ""
+            },
             {
               "Name": "Blunt",
               "Description": ""
@@ -2173,14 +2196,6 @@
           "InternalName": "forcetoenablemotion",
           "VariableType": "Float",
           "Description": "If specified, this object will start motion disabled. Any impact that imparts a force greater than this value on the physbox will enable motion.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Strength",
-          "InternalName": "health",
-          "VariableType": "Integer",
-          "Description": "Number of points of damage to take before breaking.  0 means don\u0027t break.",
           "Options": [],
           "Annotations": []
         },
@@ -2231,6 +2246,14 @@
           "InternalName": "touchoutputperentitydelay",
           "VariableType": "Float",
           "Description": "When set to 0 OnStartTouch events are never sent. Otherwise it\u0027s a delay in seconds before another OnStartTouch is sent for the same entity.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Bias Lighting Origin Towards Player",
+          "InternalName": "fixup_lighting_origin_to_player_side",
+          "VariableType": "Bool",
+          "Description": "For windows and doors and other dynamic things that straddle lighting volume boundaries - bias the lighting origin toward whichever side the local player is on",
           "Options": [],
           "Annotations": []
         }
@@ -3335,6 +3358,14 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Add Modifier",
+          "InternalName": "add_modifier",
+          "VariableType": "String",
+          "Description": "Will add this modifier when the entity spawns.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Impact Damage Type",
           "InternalName": "Damagetype",
           "VariableType": "Choices",
@@ -3356,6 +3387,14 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Mass Override",
+          "InternalName": "gamemass",
+          "VariableType": "Integer",
+          "Description": "Override the mass of the object instead of calculating it based on the size / shape and material.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Mass Scale",
           "InternalName": "massScale",
           "VariableType": "Float",
@@ -3364,10 +3403,10 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Mass Override",
-          "InternalName": "gamemass",
-          "VariableType": "Integer",
-          "Description": "Override the mass of the object instead of calculating it based on the size / shape and material.",
+          "FriendlyName": "Center of Mass Offset",
+          "InternalName": "masscenteroffset",
+          "VariableType": "Vector",
+          "Description": "Offset in local space applied to the object\u0027s center of mass.",
           "Options": [],
           "Annotations": []
         },
@@ -3762,8 +3801,8 @@
       ]
     },
     {
-      "Game": "hla",
-      "EntityType": "Point",
+      "Game": "steamvr",
+      "EntityType": "Mesh",
       "Name": "func_physbox",
       "Description": "A brush entity that\u0027s physically simulated.",
       "IconPath": "",
@@ -4287,50 +4326,6 @@
             {
               "Name": "Don\u0027t allow hand physics damage",
               "Description": ""
-            },
-            {
-              "Name": "Debris - Don\u0027t collide with the player or other debris",
-              "Description": ""
-            },
-            {
-              "Name": "Motion Disabled",
-              "Description": ""
-            },
-            {
-              "Name": "Use Preferred Carry Angles",
-              "Description": ""
-            },
-            {
-              "Name": "Enable motion on Physcannon grab",
-              "Description": ""
-            },
-            {
-              "Name": "Ignore \u002BUSE for Pickup",
-              "Description": ""
-            },
-            {
-              "Name": "Generate output on \u002BUSE ",
-              "Description": ""
-            },
-            {
-              "Name": "Start Asleep",
-              "Description": ""
-            },
-            {
-              "Name": "Physgun is NOT allowed to pick this up.",
-              "Description": ""
-            },
-            {
-              "Name": "Physgun is NOT allowed to punt this object.",
-              "Description": ""
-            },
-            {
-              "Name": "Prevent motion enable on player bump",
-              "Description": ""
-            },
-            {
-              "Name": "Force nav-ignore",
-              "Description": ""
             }
           ],
           "Annotations": []
@@ -4676,15 +4671,64 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "",
+          "InternalName": "spawnflags",
+          "VariableType": "Flags",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Debris - Don\u0027t collide with the player or other debris",
+              "Description": ""
+            },
+            {
+              "Name": "Motion Disabled",
+              "Description": ""
+            },
+            {
+              "Name": "Use Preferred Carry Angles",
+              "Description": ""
+            },
+            {
+              "Name": "Enable motion on Physcannon grab",
+              "Description": ""
+            },
+            {
+              "Name": "Ignore \u002BUSE for Pickup",
+              "Description": ""
+            },
+            {
+              "Name": "Generate output on \u002BUSE ",
+              "Description": ""
+            },
+            {
+              "Name": "Start Asleep",
+              "Description": ""
+            },
+            {
+              "Name": "Physgun is NOT allowed to pick this up.",
+              "Description": ""
+            },
+            {
+              "Name": "Physgun is NOT allowed to punt this object.",
+              "Description": ""
+            },
+            {
+              "Name": "Prevent motion enable on player bump",
+              "Description": ""
+            },
+            {
+              "Name": "Force nav-ignore",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Impact Damage Type",
           "InternalName": "Damagetype",
           "VariableType": "Choices",
           "Description": "",
           "Options": [
-            {
-              "Name": "Disabled",
-              "Description": ""
-            },
             {
               "Name": "Blunt",
               "Description": ""
@@ -4717,6 +4761,14 @@
           "InternalName": "forcetoenablemotion",
           "VariableType": "Float",
           "Description": "If specified, this object will start motion disabled. Any impact that imparts a force greater than this value on the physbox will enable motion.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Strength",
+          "InternalName": "health",
+          "VariableType": "Integer",
+          "Description": "Number of points of damage to take before breaking.  0 means don\u0027t break.",
           "Options": [],
           "Annotations": []
         },
@@ -4767,14 +4819,6 @@
           "InternalName": "touchoutputperentitydelay",
           "VariableType": "Float",
           "Description": "When set to 0 OnStartTouch events are never sent. Otherwise it\u0027s a delay in seconds before another OnStartTouch is sent for the same entity.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Bias Lighting Origin Towards Player",
-          "InternalName": "fixup_lighting_origin_to_player_side",
-          "VariableType": "Bool",
-          "Description": "For windows and doors and other dynamic things that straddle lighting volume boundaries - bias the lighting origin toward whichever side the local player is on",
           "Options": [],
           "Annotations": []
         }

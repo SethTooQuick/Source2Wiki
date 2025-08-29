@@ -2,7 +2,7 @@
   "Name": "func_precipitation",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "func_precipitation",
       "Description": "A brush entity that creates rain and snow inside its volume.",
@@ -324,6 +324,10 @@
             },
             {
               "Name": "Correctly account for object mass (trigger_push used to assume 100Kg) and multiple component physobjs (car, blob...)",
+              "Description": ""
+            },
+            {
+              "Name": "Touch objects in the trigger\u0027s hierarchy",
               "Description": ""
             }
           ],
@@ -667,7 +671,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Mesh",
       "Name": "func_precipitation",
       "Description": "A brush entity that creates rain and snow inside its volume.",

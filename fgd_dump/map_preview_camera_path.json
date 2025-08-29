@@ -88,6 +88,54 @@
           "Description": "Set to true if the camera animation should loop when reaching the end of the path. By default, the camera animation will hold the last frame.",
           "Options": [],
           "Annotations": []
+        },
+        {
+          "FriendlyName": "Depth of Field Enabled",
+          "InternalName": "dof_enabled",
+          "VariableType": "Bool",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Depth of Field Near Blurry Distance",
+          "InternalName": "dof_near_blurry",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Depth of Field Near Crisp Distance",
+          "InternalName": "dof_near_crisp",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Depth of Field Far Crisp Distance",
+          "InternalName": "dof_far_crisp",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Depth of Field Far Blurry Distance",
+          "InternalName": "dof_far_blurry",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Depth of Field Tilt Lens to Align With Ground Plane",
+          "InternalName": "dof_tilt_to_ground",
+          "VariableType": "Float",
+          "Description": "",
+          "Options": [],
+          "Annotations": []
         }
       ],
       "InputOutputs": [

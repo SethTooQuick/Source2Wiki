@@ -10,6 +10,23 @@
       "PageAnnotation": null,
       "Properties": [
         {
+          "FriendlyName": "Create Client-Only Entity",
+          "InternalName": "clientSideEntity",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "No",
+              "Description": ""
+            },
+            {
+              "Name": "Yes",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Entity Scripts",
           "InternalName": "vscripts",
           "VariableType": "ScriptList",
@@ -262,11 +279,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "filter_damage_type",
       "Description": "A damage filter that filters by the type of damage inflicted. This can only be used as a damage filter, not as an activator filter.",
-      "IconPath": "fgd_dump/img/steamvr/filter_damage_type.png",
+      "IconPath": "fgd_dump/img/hla/filter_damage_type.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -793,11 +810,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "filter_damage_type",
       "Description": "A damage filter that filters by the type of damage inflicted. This can only be used as a damage filter, not as an activator filter.",
-      "IconPath": "fgd_dump/img/hla/filter_damage_type.png",
+      "IconPath": "fgd_dump/img/steamvr/filter_damage_type.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -291,11 +291,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_ballsocket",
       "Description": "A constraint that keeps the position of two objects fixed, relative to the constraint\u0027s origin. It does not affect rotation.",
-      "IconPath": "fgd_dump/img/steamvr/phys_ballsocket.png",
+      "IconPath": "fgd_dump/img/hla/phys_ballsocket.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -823,11 +823,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_ballsocket",
       "Description": "A constraint that keeps the position of two objects fixed, relative to the constraint\u0027s origin. It does not affect rotation.",
-      "IconPath": "fgd_dump/img/hla/phys_ballsocket.png",
+      "IconPath": "fgd_dump/img/steamvr/phys_ballsocket.png",
       "PageAnnotation": null,
       "Properties": [
         {

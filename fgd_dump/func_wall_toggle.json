@@ -2,7 +2,7 @@
   "Name": "func_wall_toggle",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "func_wall_toggle",
       "Description": "A brush entity that can be toggled on/off. When off, the brush will be non-solid and invisible. Does not cast lightmap shadows.",
@@ -999,7 +999,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Mesh",
       "Name": "func_wall_toggle",
       "Description": "A brush entity that can be toggled on/off. When off, the brush will be non-solid and invisible. Does not cast lightmap shadows.",

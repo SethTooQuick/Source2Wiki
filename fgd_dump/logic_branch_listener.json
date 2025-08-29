@@ -290,7 +290,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_branch_listener",
       "Description": "Contains a list of logic_branch entities and fires outputs when the state of any of the logic_branches changes.\u003Cbr\u003E\u003Cbr\u003EThis entity is used to fire an event when a set of conditions are all satisfied.",
@@ -860,7 +860,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_branch_listener",
       "Description": "Contains a list of logic_branch entities and fires outputs when the state of any of the logic_branches changes.\u003Cbr\u003E\u003Cbr\u003EThis entity is used to fire an event when a set of conditions are all satisfied.",

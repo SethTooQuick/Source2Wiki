@@ -2,11 +2,11 @@
   "Name": "aiscripted_schedule",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "aiscripted_schedule",
       "Description": "Issues a command to an NPC without taking the NPC out of its AI. This does not seize control of the NPC as a scripted_sequence does",
-      "IconPath": "fgd_dump/img/steamvr/aiscripted_schedule.png",
+      "IconPath": "fgd_dump/img/hla/aiscripted_schedule.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -178,11 +178,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "aiscripted_schedule",
       "Description": "Issues a command to an NPC without taking the NPC out of its AI. This does not seize control of the NPC as a scripted_sequence does",
-      "IconPath": "fgd_dump/img/hla/aiscripted_schedule.png",
+      "IconPath": "fgd_dump/img/steamvr/aiscripted_schedule.png",
       "PageAnnotation": null,
       "Properties": [
         {

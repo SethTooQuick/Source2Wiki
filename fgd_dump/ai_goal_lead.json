@@ -2,11 +2,11 @@
   "Name": "ai_goal_lead",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_lead",
       "Description": "AI Goal Lead",
-      "IconPath": "fgd_dump/img/steamvr/ai_goal_lead.png",
+      "IconPath": "fgd_dump/img/hla/ai_goal_lead.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -336,11 +336,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_lead",
       "Description": "AI Goal Lead",
-      "IconPath": "fgd_dump/img/hla/ai_goal_lead.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_goal_lead.png",
       "PageAnnotation": null,
       "Properties": [
         {

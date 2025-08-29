@@ -202,11 +202,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_compare",
       "Description": "Compares an input value to another value. If the input value is less than the compare value, the OnLessThan output is fired with the input value. If the input value is equal to the compare value, the OnEqualTo output is fired with the input value. If the input value is greater than the compare value, the OnGreaterThan output is fired with the input value.",
-      "IconPath": "fgd_dump/img/steamvr/logic_compare.png",
+      "IconPath": "fgd_dump/img/hla/logic_compare.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -596,11 +596,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_compare",
       "Description": "Compares an input value to another value. If the input value is less than the compare value, the OnLessThan output is fired with the input value. If the input value is equal to the compare value, the OnEqualTo output is fired with the input value. If the input value is greater than the compare value, the OnGreaterThan output is fired with the input value.",
-      "IconPath": "fgd_dump/img/hla/logic_compare.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_compare.png",
       "PageAnnotation": null,
       "Properties": [
         {

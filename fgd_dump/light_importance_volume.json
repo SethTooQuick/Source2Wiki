@@ -2,11 +2,11 @@
   "Name": "light_importance_volume",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "light_importance_volume",
       "Description": "",
-      "IconPath": "fgd_dump/img/steamvr/light_importance_volume.png",
+      "IconPath": "fgd_dump/img/hla/light_importance_volume.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -29,11 +29,11 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "light_importance_volume",
       "Description": "",
-      "IconPath": "fgd_dump/img/hla/light_importance_volume.png",
+      "IconPath": "fgd_dump/img/steamvr/light_importance_volume.png",
       "PageAnnotation": null,
       "Properties": [
         {

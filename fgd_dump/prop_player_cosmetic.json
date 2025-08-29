@@ -890,6 +890,30 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "interactAs",
+          "InternalName": "interactAs",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact as",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactWith",
+          "InternalName": "interactWith",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactExclude",
+          "InternalName": "interactExclude",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to not collide with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
@@ -1215,6 +1239,12 @@
           "Name": "OnIgnite",
           "Description": "Fired when this object catches fire.",
           "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Output"
         },
         {

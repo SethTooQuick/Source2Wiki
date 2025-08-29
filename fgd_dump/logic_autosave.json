@@ -180,11 +180,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_autosave",
       "Description": "An entity that is used to force an autosave.",
-      "IconPath": "fgd_dump/img/steamvr/logic_autosave.png",
+      "IconPath": "fgd_dump/img/hla/logic_autosave.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -530,11 +530,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_autosave",
       "Description": "An entity that is used to force an autosave.",
-      "IconPath": "fgd_dump/img/hla/logic_autosave.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_autosave.png",
       "PageAnnotation": null,
       "Properties": [
         {

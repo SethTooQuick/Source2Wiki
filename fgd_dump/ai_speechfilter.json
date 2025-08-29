@@ -2,7 +2,7 @@
   "Name": "ai_speechfilter",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_speechfilter",
       "Description": "An entity that can be used to control the idle speech patterns of a set of NPCs.",
@@ -217,7 +217,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_speechfilter",
       "Description": "An entity that can be used to control the idle speech patterns of a set of NPCs.",

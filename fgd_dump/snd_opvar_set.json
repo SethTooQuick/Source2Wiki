@@ -259,11 +259,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "snd_opvar_set",
       "Description": "Sets an opvar value on a library stack",
-      "IconPath": "fgd_dump/img/steamvr/snd_opvar_set.png",
+      "IconPath": "fgd_dump/img/hla/snd_opvar_set.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -767,11 +767,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "snd_opvar_set",
       "Description": "Sets an opvar value on a library stack",
-      "IconPath": "fgd_dump/img/hla/snd_opvar_set.png",
+      "IconPath": "fgd_dump/img/steamvr/snd_opvar_set.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -286,6 +286,18 @@
           "Type": "Input"
         },
         {
+          "Name": "SetDistanceMapMin",
+          "Description": "Set the min distance map value",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetDistanceMapMax",
+          "Description": "Set the max distance map value",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
           "Name": "OnEnter",
           "Description": "Fired when the player enters the outer distance.",
           "VariableType": "Void",
@@ -408,11 +420,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "snd_opvar_set_aabb",
       "Description": "Sets an opvar value on a library stack",
-      "IconPath": "fgd_dump/img/steamvr/snd_opvar_set_aabb.png",
+      "IconPath": "fgd_dump/img/hla/snd_opvar_set_aabb.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -1218,11 +1230,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "snd_opvar_set_aabb",
       "Description": "Sets an opvar value on a library stack",
-      "IconPath": "fgd_dump/img/hla/snd_opvar_set_aabb.png",
+      "IconPath": "fgd_dump/img/steamvr/snd_opvar_set_aabb.png",
       "PageAnnotation": null,
       "Properties": [
         {

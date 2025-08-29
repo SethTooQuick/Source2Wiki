@@ -2,7 +2,7 @@
   "Name": "env_beam",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_beam",
       "Description": "An entity that creates a visible beam between two points. The points can be attached to entities to make the beam move around.",
@@ -1238,7 +1238,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_beam",
       "Description": "An entity that creates a visible beam between two points. The points can be attached to entities to make the beam move around.",

@@ -154,11 +154,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "tanktrain_aitarget",
       "Description": "An entity that changes the target of a tanktrain_ai entity.",
-      "IconPath": "fgd_dump/img/steamvr/tanktrain_aitarget.png",
+      "IconPath": "fgd_dump/img/hla/tanktrain_aitarget.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -452,11 +452,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "tanktrain_aitarget",
       "Description": "An entity that changes the target of a tanktrain_ai entity.",
-      "IconPath": "fgd_dump/img/hla/tanktrain_aitarget.png",
+      "IconPath": "fgd_dump/img/steamvr/tanktrain_aitarget.png",
       "PageAnnotation": null,
       "Properties": [
         {

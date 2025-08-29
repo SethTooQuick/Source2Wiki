@@ -34,6 +34,10 @@
             {
               "Name": "Force only on stretch",
               "Description": ""
+            },
+            {
+              "Name": "Enable collision",
+              "Description": ""
             }
           ],
           "Annotations": []
@@ -66,7 +70,15 @@
           "FriendlyName": "Length",
           "InternalName": "length",
           "VariableType": "String",
-          "Description": "How long the spring would be if it was at rest (nothing hanging on it or attached). 0 means the length of the helpr .",
+          "Description": "How long the spring would be if it was at rest (nothing hanging on it or attached). 0 means the length of the helper.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Length Scale",
+          "InternalName": "lengthscale",
+          "VariableType": "Float",
+          "Description": "Scale on the rest length. You can use this to easily make the spring start out stretched. e.g. a value of 0.75 here means the spring will spawn stretched by ~25%.",
           "Options": [],
           "Annotations": []
         },
@@ -217,7 +229,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_spring",
       "Description": "A physically simulated spring. \u0027Length\u0027 is what\u0027s known as the \u0027natural spring length\u0027. This is how long the spring would be if it was at rest (nothing hanging on it or attached). When you attach something to the spring, it will stretch longer than its \u0027natural length\u0027. The amount of stretch is determined by the \u0027Sprint Frequency\u0027. The larger the spring frequency the less stretch the spring.",
@@ -641,7 +653,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_spring",
       "Description": "A physically simulated spring. \u0027Length\u0027 is what\u0027s known as the \u0027natural spring length\u0027. This is how long the spring would be if it was at rest (nothing hanging on it or attached). When you attach something to the spring, it will stretch longer than its \u0027natural length\u0027. The amount of stretch is determined by the \u0027Sprint Frequency\u0027. The larger the spring frequency the less stretch the spring.",

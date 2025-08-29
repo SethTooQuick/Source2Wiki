@@ -2,11 +2,11 @@
   "Name": "npc_maker",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "npc_maker",
       "Description": "NPC Maker",
-      "IconPath": "fgd_dump/img/steamvr/npc_maker.png",
+      "IconPath": "fgd_dump/img/hla/npc_maker.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -95,11 +95,11 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "npc_maker",
       "Description": "NPC Maker",
-      "IconPath": "fgd_dump/img/hla/npc_maker.png",
+      "IconPath": "fgd_dump/img/steamvr/npc_maker.png",
       "PageAnnotation": null,
       "Properties": [
         {

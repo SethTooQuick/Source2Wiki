@@ -2,7 +2,7 @@
   "Name": "func_fish_pool",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "dota2",
       "EntityType": "Point",
       "Name": "func_fish_pool",
       "Description": "Creates a school of interactive fish that swim near this entity.",
@@ -37,7 +37,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "dota2",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "func_fish_pool",
       "Description": "Creates a school of interactive fish that swim near this entity.",

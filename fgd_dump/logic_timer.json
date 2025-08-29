@@ -297,11 +297,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_timer",
       "Description": "An entity that fires a timer event at regular, or random, intervals. It can also be set to oscillate betweena high and low end, in which case it will fire alternating high/low outputs each time it fires.",
-      "IconPath": "fgd_dump/img/steamvr/logic_timer.png",
+      "IconPath": "fgd_dump/img/hla/logic_timer.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -873,11 +873,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_timer",
       "Description": "An entity that fires a timer event at regular, or random, intervals. It can also be set to oscillate betweena high and low end, in which case it will fire alternating high/low outputs each time it fires.",
-      "IconPath": "fgd_dump/img/hla/logic_timer.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_timer.png",
       "PageAnnotation": null,
       "Properties": [
         {

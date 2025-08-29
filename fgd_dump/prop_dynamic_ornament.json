@@ -351,14 +351,6 @@
             {
               "Name": "No Gibs",
               "Description": ""
-            },
-            {
-              "Name": "Full Gibs on All Platforms",
-              "Description": ""
-            },
-            {
-              "Name": "Reduced gibs",
-              "Description": ""
             }
           ],
           "Annotations": []
@@ -612,15 +604,23 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Parent Model Bone/Attachment Name",
+          "FriendlyName": "Parent Bone/Attachment Name",
           "InternalName": "parentAttachmentName",
           "VariableType": "ParentAttachment",
-          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.",
+          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if \u0027Use Local Transform\u0027 is NOT specified (in that case local transform will be identity)",
           "Options": [],
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment position offset",
+          "FriendlyName": "Use Local Transform",
+          "InternalName": "useLocalOffset",
+          "VariableType": "Bool",
+          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Origin",
           "InternalName": "local.origin",
           "VariableType": "Vector",
           "Description": "Offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -628,7 +628,7 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment angular offset",
+          "FriendlyName": "Local Angles",
           "InternalName": "local.angles",
           "VariableType": "Angle",
           "Description": "Angular offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -636,18 +636,10 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment scale",
+          "FriendlyName": "Local Scale",
           "InternalName": "local.scales",
           "VariableType": "Vector",
           "Description": "Scale in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Use Model Attachment Offset",
-          "InternalName": "useLocalOffset",
-          "VariableType": "Bool",
-          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
           "Options": [],
           "Annotations": []
         },
@@ -772,6 +764,30 @@
           "InternalName": "AnimateOnServer",
           "VariableType": "Bool",
           "Description": "Enable this to animate on the server in multiplayer games, such as for props with triggers parented to attachment points. Use sparingly as there is a performance cost.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactAs",
+          "InternalName": "interactAs",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact as",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactWith",
+          "InternalName": "interactWith",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactExclude",
+          "InternalName": "interactExclude",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to not collide with",
           "Options": [],
           "Annotations": []
         },
@@ -1003,6 +1019,12 @@
           "Type": "Input"
         },
         {
+          "Name": "OnStartDeath",
+          "Description": "Fired when this prop has begun dying (breaking) before other death-related callbacks.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
           "Name": "OnBreak",
           "Description": "Fired when this breakable breaks.",
           "VariableType": "Void",
@@ -1060,6 +1082,12 @@
           "Name": "OnIgnite",
           "Description": "Fired when this object catches fire.",
           "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Output"
         },
         {
@@ -1177,6 +1205,12 @@
           "Type": "Input"
         },
         {
+          "Name": "SetRagdollProfile",
+          "Description": "Sets the active ragdoll profile.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
           "Name": "OnAnimationBegun",
           "Description": "Fired whenever a new animation has begun playing.",
           "VariableType": "Void",
@@ -1221,7 +1255,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "prop_dynamic_ornament",
       "Description": "A way to attach one model to another as an ornament. It will render in the way that player/NPC weapons render.",
@@ -2005,7 +2039,7 @@
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
-          "Description": "Select a path_corner entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
+          "Description": "Select an entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
           "Options": [],
           "Annotations": []
         },
@@ -2030,6 +2064,14 @@
           "InternalName": "CreateNavObstacle",
           "VariableType": "Bool",
           "Description": "Create a navigation obstacle to assist NPC pathfinding",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Force NPC Exclude",
+          "InternalName": "forcenpcexclude",
+          "VariableType": "Bool",
+          "Description": "If set, NPC movement will ignore this prop",
           "Options": [],
           "Annotations": []
         },
@@ -3245,6 +3287,30 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "interactAs",
+          "InternalName": "interactAs",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact as",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactWith",
+          "InternalName": "interactWith",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactExclude",
+          "InternalName": "interactExclude",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to not collide with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
@@ -3538,6 +3604,12 @@
           "Type": "Output"
         },
         {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Output"
+        },
+        {
           "Name": "SetParent",
           "Description": "Changes the entity\u0027s parent in the movement hierarchy.",
           "VariableType": "TargetDestination",
@@ -3702,7 +3774,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "prop_dynamic_ornament",
       "Description": "A way to attach one model to another as an ornament. It will render in the way that player/NPC weapons render.",
@@ -4486,7 +4558,7 @@
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
-          "Description": "Select an entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
+          "Description": "Select a path_corner entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
           "Options": [],
           "Annotations": []
         },
@@ -4511,14 +4583,6 @@
           "InternalName": "CreateNavObstacle",
           "VariableType": "Bool",
           "Description": "Create a navigation obstacle to assist NPC pathfinding",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Force NPC Exclude",
-          "InternalName": "forcenpcexclude",
-          "VariableType": "Bool",
-          "Description": "If set, NPC movement will ignore this prop",
           "Options": [],
           "Annotations": []
         },

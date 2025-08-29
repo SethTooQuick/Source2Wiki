@@ -2,7 +2,7 @@
   "Name": "func_shatterglass",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "func_shatterglass",
       "Description": "A procedurally-shattering glass panel.",
@@ -830,7 +830,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Mesh",
       "Name": "func_shatterglass",
       "Description": "A procedurally-shattering glass panel.",

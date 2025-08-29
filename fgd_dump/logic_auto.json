@@ -260,11 +260,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_auto",
       "Description": "Fires outputs when a map spawns. If \u0027Remove on fire\u0027 flag is set the logic_auto is deleted after firing. It can be set to check a global state before firing. This allows you to only fire events based on what took place in a previous map.",
-      "IconPath": "fgd_dump/img/steamvr/logic_auto.png",
+      "IconPath": "fgd_dump/img/hla/logic_auto.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -770,11 +770,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_auto",
       "Description": "Fires outputs when a map spawns. If \u0027Remove on fire\u0027 flag is set the logic_auto is deleted after firing. It can be set to check a global state before firing. This allows you to only fire events based on what took place in a previous map.",
-      "IconPath": "fgd_dump/img/hla/logic_auto.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_auto.png",
       "PageAnnotation": null,
       "Properties": [
         {

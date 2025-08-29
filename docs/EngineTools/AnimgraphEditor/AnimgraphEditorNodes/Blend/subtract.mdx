@@ -1,0 +1,44 @@
+---
+description: Subtract animation to use in additive.
+title: Subtract Anim Node
+---
+
+This node is used to subtract the current pose of one animation from another, and return the result.
+
+![add in editor](./subtractnode_image.png "Subtract Node in Editor")
+
+![add properties](./subtractnode_properties.png "Subtract Node Properties")
+
+## Timing Control
+
+Choose how the node its presents its  timing to its parent node.
+
+- <b> Use Child1:</b> Use the cycle and duration of Child1 as the cycle and duration of this node.  The child nodes are not synchronized.   <br/>
+- <b> Use Child2:</b> Use the cycle and duration of Child2 as the cycle and duration of this node.  The child nodes are not synchronized.   <br/>
+- <b> Synchronize Children:</b> The cycle of the child nodes are kept in sync, and the cycle and duration of this node is a blend of the values from both children.   <br/>
+
+## Foot Motion Timing
+
+Choose how the node its presents its  foot motion timing to its parent node.
+
+- <b> Use Child1:</b> The foot motion from the first child is used  <br/>
+- <b> Use Child2:</b> The foot motion from the second child is used  <br/>
+
+## Subtract Foot Motion
+When enabled, this node will subtract the foot motion of one child from the other.
+
+When disabled, only the foot motion from the child set in the \"Foot Motion Timing\" option is used.
+
+## Reset Base Child
+If true, then when this node receives a reset it will forward the reset on to its Base Child.
+
+## Reset Subtracted Child
+If true, then when this node receives a reset it will forward the reset on to its Subtracted Child.
+
+## Treat Translation Separately
+In the Source 1 anim system, translation and rotation were added independently of each other.  Enabling this option preserves the previous functionality.  Most of the time you won't notice a difference because most additive animations are rotation only.  But be aware that enabling this option means that additive animations may not appear the same in game as they do in Maya.
+
+## Use Model Space
+Subtract animation in model-space. Model Space is relative to the entity's model.  Think world space if the entity was standing at the world origin.
+
+

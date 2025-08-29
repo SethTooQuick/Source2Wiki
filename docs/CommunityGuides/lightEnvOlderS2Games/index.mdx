@@ -1,0 +1,36 @@
+---  
+description: How to get Static and Dynamic lighting from the light_environment in older Source 2 Games.  
+title: light_environment in older Source 2 games  
+---
+
+This guide explains how in older Source 2 games like <Game name="hla"/> and <Game name="steamvr"/> you can have both static and dynamic (CSM) lighting from the `light_environment`.
+
+:::info
+Although in newer versions of the Source 2 engine (since 2020) the `light_environment` supports both static and dynamic at the same time in a single entity, this is not retroactive for older Source 2 versions.
+:::
+
+:::info
+It is highly recommended to name at least your dynamic `light_environment`, as in interior areas of the level you can disable it (by killing it) to save resources.
+:::
+
+Create your base `light_environment` entity. This first one is going to be static only (generates baked lighting). After you finish setting up the entity it should look something like this:  
+![base light_environment](./stock_light_env_static.png "StockLightEnv")
+
+Change the `Direct Lighting` label to be Static (a.k.a. Baked):  
+![Static light_environment](./final_light_env_static.png "StaticLightEnv")  
+
+---
+
+Once you have done this, make a copy of the static `light_environment`. This will be our base for the dynamic `light_environment`, which will add CSM to the level.  
+Change the `Render Specular` label to `off`, `Direct Lighting` to `Per-Pixel`, `Indirect Lighting` to `None`, and disable AO if it is enabled.  
+It should look something like this:  
+![Dynamic light_environment](./final_light_env_dynamic.png "DynamicLightEnv")
+
+:::info
+It is highly recommended that you reduce the brightness of the dynamic `light_environment`, as CSM not only add shadows but also brightness to the level. If not adjusted, this could result in an overbright environment.
+:::
+
+# Example
+The level [City-Oasis](https://steamcommunity.com/sharedfiles/filedetails/?id=3409720496) in SteamVR uses this technique. Here are a few images below:  
+![ex1](./example1.png "Example1")  
+![ex2](./example2.png "Example2")

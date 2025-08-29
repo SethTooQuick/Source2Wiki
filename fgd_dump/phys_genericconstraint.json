@@ -575,6 +575,114 @@
           "Type": "Output"
         },
         {
+          "Name": "SetLinearMotionLockedX",
+          "Description": "",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearMotionLockedY",
+          "Description": "",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearMotionLockedZ",
+          "Description": "",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearFrequencyX",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearFrequencyY",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearFrequencyZ",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearDampingRatioX",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearDampingRatioY",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetLinearDampingRatioZ",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularMotionLockedX",
+          "Description": "",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularMotionLockedY",
+          "Description": "",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularMotionLockedZ",
+          "Description": "",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularFrequencyX",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularFrequencyY",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularFrequencyZ",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularDampingRatioX",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularDampingRatioY",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetAngularDampingRatioZ",
+          "Description": "",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
           "Name": "NotifyForceReachedX",
           "Description": "The requested force has been reached on the X axis.  Won\u0027t fire if force min time is zero.",
           "VariableType": "Void",
@@ -595,7 +703,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_genericconstraint",
       "Description": "A configurable constraint between two objects.",
@@ -1883,7 +1991,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_genericconstraint",
       "Description": "A configurable constraint between two objects.",

@@ -64,6 +64,14 @@
           "Description": "The amount of seconds after which, if any client hasn\u0027t finished streaming the necessary assets, that client is disconnected and the spawngroup spawns anyways. 0 means use some reasonable default set in the code.",
           "Options": [],
           "Annotations": []
+        },
+        {
+          "FriendlyName": "Automatically activate and show streamed level",
+          "InternalName": "autoactivate",
+          "VariableType": "Bool",
+          "Description": "Automatically activates the spawn group once loaded.",
+          "Options": [],
+          "Annotations": []
         }
       ],
       "InputOutputs": [
@@ -220,11 +228,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_spawngroup_load_unload",
       "Description": "Logical entity that starts async loading or unloading a level.",
-      "IconPath": "fgd_dump/img/steamvr/info_spawngroup_load_unload.png",
+      "IconPath": "fgd_dump/img/hla/info_spawngroup_load_unload.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -494,6 +502,14 @@
           "Description": "The amount of seconds after which, if any client hasn\u0027t finished streaming the necessary assets, that client is disconnected and the spawngroup spawns anyways. 0 means use some reasonable default set in the code.",
           "Options": [],
           "Annotations": []
+        },
+        {
+          "FriendlyName": "Automatically activate and show streamed level",
+          "InternalName": "autoactivate",
+          "VariableType": "Bool",
+          "Description": "Automatically activates the spawn group once loaded.",
+          "Options": [],
+          "Annotations": []
         }
       ],
       "InputOutputs": [
@@ -650,11 +666,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_spawngroup_load_unload",
       "Description": "Logical entity that starts async loading or unloading a level.",
-      "IconPath": "fgd_dump/img/hla/info_spawngroup_load_unload.png",
+      "IconPath": "fgd_dump/img/steamvr/info_spawngroup_load_unload.png",
       "PageAnnotation": null,
       "Properties": [
         {

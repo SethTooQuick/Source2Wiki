@@ -207,11 +207,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_fade",
       "Description": "An entity that controls screen fades.",
-      "IconPath": "fgd_dump/img/steamvr/env_fade.png",
+      "IconPath": "fgd_dump/img/hla/env_fade.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -611,11 +611,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_fade",
       "Description": "An entity that controls screen fades.",
-      "IconPath": "fgd_dump/img/hla/env_fade.png",
+      "IconPath": "fgd_dump/img/steamvr/env_fade.png",
       "PageAnnotation": null,
       "Properties": [
         {

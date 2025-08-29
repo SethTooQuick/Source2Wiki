@@ -2,7 +2,7 @@
   "Name": "ai_goal_assault",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_assault",
       "Description": "AI Goal Assault",
@@ -136,7 +136,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_assault",
       "Description": "AI Goal Assault",

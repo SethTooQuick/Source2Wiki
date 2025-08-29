@@ -2,11 +2,11 @@
   "Name": "color_correction",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "color_correction",
       "Description": "An entity to control the color correction in the map.",
-      "IconPath": "fgd_dump/img/steamvr/color_correction.png",
+      "IconPath": "fgd_dump/img/hla/color_correction.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -478,11 +478,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "color_correction",
       "Description": "An entity to control the color correction in the map.",
-      "IconPath": "fgd_dump/img/hla/color_correction.png",
+      "IconPath": "fgd_dump/img/steamvr/color_correction.png",
       "PageAnnotation": null,
       "Properties": [
         {

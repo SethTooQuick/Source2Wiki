@@ -138,7 +138,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "trigger_serverragdoll",
       "Description": "A volume that forces any NPC inside it to create a server side ragdoll instead of a client one.",
@@ -404,7 +404,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Mesh",
       "Name": "trigger_serverragdoll",
       "Description": "A volume that forces any NPC inside it to create a server side ragdoll instead of a client one.",

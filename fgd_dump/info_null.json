@@ -138,7 +138,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_null",
       "Description": "An entity that\u0027s immediately removed on spawning. Useful as a spotlight target.",
@@ -404,7 +404,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_null",
       "Description": "An entity that\u0027s immediately removed on spawning. Useful as a spotlight target.",

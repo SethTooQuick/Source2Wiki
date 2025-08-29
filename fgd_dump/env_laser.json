@@ -2,7 +2,7 @@
   "Name": "env_laser",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_laser",
       "Description": "An entity that creates a laser beam between itself and a given target.",
@@ -892,7 +892,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_laser",
       "Description": "An entity that creates a laser beam between itself and a given target.",

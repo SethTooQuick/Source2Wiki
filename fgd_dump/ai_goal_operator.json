@@ -2,7 +2,7 @@
   "Name": "ai_goal_operator",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_operator",
       "Description": "Indicates items in the world that some NPCs may operate upon",
@@ -118,7 +118,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_operator",
       "Description": "Indicates items in the world that some NPCs may operate upon",

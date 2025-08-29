@@ -2,11 +2,11 @@
   "Name": "env_instructor_vr_hint",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_instructor_vr_hint",
       "Description": "An entity that allows for creation and control of VR Based instructor lessons by map logic",
-      "IconPath": "fgd_dump/img/steamvr/env_instructor_vr_hint.png",
+      "IconPath": "fgd_dump/img/hla/env_instructor_vr_hint.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -488,11 +488,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_instructor_vr_hint",
       "Description": "An entity that allows for creation and control of VR Based instructor lessons by map logic",
-      "IconPath": "fgd_dump/img/hla/env_instructor_vr_hint.png",
+      "IconPath": "fgd_dump/img/steamvr/env_instructor_vr_hint.png",
       "PageAnnotation": null,
       "Properties": [
         {

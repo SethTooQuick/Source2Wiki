@@ -2,11 +2,11 @@
   "Name": "ai_relationship",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_relationship",
       "Description": "AI Relationship - Sets relationships between groups of NPCs in the AI.",
-      "IconPath": "fgd_dump/img/steamvr/ai_relationship.png",
+      "IconPath": "fgd_dump/img/hla/ai_relationship.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -122,11 +122,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_relationship",
       "Description": "AI Relationship - Sets relationships between groups of NPCs in the AI.",
-      "IconPath": "fgd_dump/img/hla/ai_relationship.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_relationship.png",
       "PageAnnotation": null,
       "Properties": [
         {

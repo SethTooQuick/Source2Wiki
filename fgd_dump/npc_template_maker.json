@@ -2,11 +2,11 @@
   "Name": "npc_template_maker",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "npc_template_maker",
       "Description": "An entity that creates NPCs. The NPCs it creates are clones of a template NPC. NPCs are spawned around this maker\u0027s origin, or at specified destination points.",
-      "IconPath": "fgd_dump/img/steamvr/npc_template_maker.png",
+      "IconPath": "fgd_dump/img/hla/npc_template_maker.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -101,6 +101,10 @@
             },
             {
               "Name": "Don\u0027t Spawn While Visible",
+              "Description": ""
+            },
+            {
+              "Name": "Don\u0027t preload template models",
               "Description": ""
             }
           ],
@@ -475,11 +479,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "npc_template_maker",
       "Description": "An entity that creates NPCs. The NPCs it creates are clones of a template NPC. NPCs are spawned around this maker\u0027s origin, or at specified destination points.",
-      "IconPath": "fgd_dump/img/hla/npc_template_maker.png",
+      "IconPath": "fgd_dump/img/steamvr/npc_template_maker.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -574,10 +578,6 @@
             },
             {
               "Name": "Don\u0027t Spawn While Visible",
-              "Description": ""
-            },
-            {
-              "Name": "Don\u0027t preload template models",
               "Description": ""
             }
           ],

@@ -18,6 +18,39 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Ref Pos",
+          "InternalName": "ref_position",
+          "VariableType": "LocalPoint",
+          "Description": "Reference position.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Use Reference Position",
+          "InternalName": "use_ref_position",
+          "VariableType": "Bool",
+          "Description": "Use the reference position when calculating validity of query positions.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "",
+          "InternalName": "flags",
+          "VariableType": "Flags",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "Ground",
+              "Description": ""
+            },
+            {
+              "Name": "Air",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Nav Generation Markup",
           "InternalName": "navProperty_NavGen",
           "VariableType": "TagList",
@@ -29,6 +62,14 @@
             },
             {
               "Name": "No Nav",
+              "Description": ""
+            },
+            {
+              "Name": "No Nav Non Solid",
+              "Description": ""
+            },
+            {
+              "Name": "No Nav Space",
               "Description": ""
             }
           ],

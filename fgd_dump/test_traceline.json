@@ -12,7 +12,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "test_traceline",
       "Description": "A debugging tool for testing tracelines.",
@@ -32,7 +32,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "test_traceline",
       "Description": "A debugging tool for testing tracelines.",

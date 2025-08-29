@@ -1,0 +1,42 @@
+---
+description: Lean Matrix.
+title: Lean Matrix
+---
+
+An additive matrix of leans.
+
+
+![leanmatrix in editor](./leanmatrix_image.png "Lean Matrix Node in Editor")
+
+![leanmatrix properties](./leanmatrix_properties.png "Lean Matrix Node Properties")
+
+## Max Value
+
+## Blend Source
+
+## Parameter
+
+## Vertical Axis
+
+## Horizontal Axis
+
+## Damping
+
+Controls how the output of this node is blended over time.
+
+### Speed Function
+Controls how damped speed is adjusted based on how far the current value is from the target value. 
+- <b>No Damping:</b> Damping is not applied. <br/>
+- <b>Constant:</b> The damping speed does not change with distance from the target value. <br/>
+- <b>Spring:</b> A critically damped spring is used to accelerate the current value toward the target value.  The farther the current value is from the target, the more the acceleration.  However the spring will not overshoot the target value. <br/>
+- <b>Asymmetric Spring</b>
+### Speed Scale
+Scales the speed of the damping, or in the case of the Spring <b>Speed Function</b> it controls the strength of the spring.
+### Speed Scale (Falling)
+When using AsymmetricSpring for <b>Speed Function</b> it controls the strength of the spring, only when damping to a lower value.
+### Limit Speed
+Toggle whether or not to clamp the damping speed
+### Min Speed
+If <b>Limit Speed </b>is set, this is the slowest speed that the dampened value can change at.
+### Max Speed
+If <b>Limit Speed </b>is set, this is the fastest speed that the dampened value can change at.

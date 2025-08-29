@@ -2,7 +2,7 @@
   "Name": "point_viewcontrol",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_viewcontrol",
       "Description": "A camera entity that controls the player\u0027s view. While it\u0027s active, the player will see out of the camera.",
@@ -343,7 +343,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_viewcontrol",
       "Description": "A camera entity that controls the player\u0027s view. While it\u0027s active, the player will see out of the camera.",

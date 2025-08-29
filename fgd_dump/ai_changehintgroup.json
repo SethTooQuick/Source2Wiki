@@ -2,7 +2,7 @@
   "Name": "ai_changehintgroup",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_changehintgroup",
       "Description": "Change Hint Group",
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_changehintgroup",
       "Description": "Change Hint Group",

@@ -2,11 +2,11 @@
   "Name": "logic_random_outputs",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_random_outputs",
       "Description": "A message forwarder. Fires up to eight separate outputs, each with a different chance of firing.",
-      "IconPath": "fgd_dump/img/steamvr/logic_random_outputs.png",
+      "IconPath": "fgd_dump/img/hla/logic_random_outputs.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -305,11 +305,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_random_outputs",
       "Description": "A message forwarder. Fires up to eight separate outputs, each with a different chance of firing.",
-      "IconPath": "fgd_dump/img/hla/logic_random_outputs.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_random_outputs.png",
       "PageAnnotation": null,
       "Properties": [
         {

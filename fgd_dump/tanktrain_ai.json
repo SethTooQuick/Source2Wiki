@@ -170,11 +170,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "tanktrain_ai",
       "Description": "Train chase AI",
-      "IconPath": "fgd_dump/img/steamvr/tanktrain_ai.png",
+      "IconPath": "fgd_dump/img/hla/tanktrain_ai.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -500,11 +500,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "tanktrain_ai",
       "Description": "Train chase AI",
-      "IconPath": "fgd_dump/img/hla/tanktrain_ai.png",
+      "IconPath": "fgd_dump/img/steamvr/tanktrain_ai.png",
       "PageAnnotation": null,
       "Properties": [
         {

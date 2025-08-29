@@ -2,7 +2,7 @@
   "Name": "point_posecontroller",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_posecontroller",
       "Description": "An entity that controls a pose parameter of a prop and cycles the pose clientside.",
@@ -291,7 +291,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_posecontroller",
       "Description": "An entity that controls a pose parameter of a prop and cycles the pose clientside.",

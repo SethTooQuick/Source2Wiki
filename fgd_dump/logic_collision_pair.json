@@ -188,7 +188,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_collision_pair",
       "Description": "An entity that can be used to enables/disable vphysics collisions between two target entities.",
@@ -546,7 +546,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_collision_pair",
       "Description": "An entity that can be used to enables/disable vphysics collisions between two target entities.",

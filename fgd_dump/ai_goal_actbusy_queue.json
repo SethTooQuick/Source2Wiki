@@ -2,7 +2,7 @@
   "Name": "ai_goal_actbusy_queue",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_actbusy_queue",
       "Description": "AI Goal Act Busy Queue",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_actbusy_queue",
       "Description": "AI Goal Act Busy Queue",

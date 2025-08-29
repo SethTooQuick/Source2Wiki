@@ -2,11 +2,11 @@
   "Name": "assault_rallypoint",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "assault_rallypoint",
       "Description": "(Assault) rally point",
-      "IconPath": "fgd_dump/img/steamvr/assault_rallypoint.png",
+      "IconPath": "fgd_dump/img/hla/assault_rallypoint.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -76,11 +76,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "assault_rallypoint",
       "Description": "(Assault) rally point",
-      "IconPath": "fgd_dump/img/hla/assault_rallypoint.png",
+      "IconPath": "fgd_dump/img/steamvr/assault_rallypoint.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -195,7 +195,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "math_colorblend",
       "Description": "Used to create a blend between two colors for controlling the color of another entity.",
@@ -575,7 +575,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "math_colorblend",
       "Description": "Used to create a blend between two colors for controlling the color of another entity.",

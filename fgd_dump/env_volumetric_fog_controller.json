@@ -2,7 +2,7 @@
   "Name": "env_volumetric_fog_controller",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_volumetric_fog_controller",
       "Description": "Controller for volumetric fogging - bounds are extents of fog irradiance volume (for indirect)",
@@ -354,18 +354,6 @@
           "Name": "SetDrawDistance",
           "Description": "Set draw distance",
           "VariableType": "Float",
-          "Type": "Input"
-        },
-        {
-          "Name": "Enable",
-          "Description": "Enable",
-          "VariableType": "Bool",
-          "Type": "Input"
-        },
-        {
-          "Name": "Disable",
-          "Description": "Disable",
-          "VariableType": "Bool",
           "Type": "Input"
         },
         {
@@ -806,7 +794,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_volumetric_fog_controller",
       "Description": "Controller for volumetric fogging - bounds are extents of fog irradiance volume (for indirect)",
@@ -1158,6 +1146,18 @@
           "Name": "SetDrawDistance",
           "Description": "Set draw distance",
           "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "Enable",
+          "Description": "Enable",
+          "VariableType": "Bool",
+          "Type": "Input"
+        },
+        {
+          "Name": "Disable",
+          "Description": "Disable",
+          "VariableType": "Bool",
           "Type": "Input"
         },
         {

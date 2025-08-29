@@ -158,7 +158,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_overlay",
       "Description": "An entity that places an overlay on the world.",
@@ -470,7 +470,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_overlay",
       "Description": "An entity that places an overlay on the world.",

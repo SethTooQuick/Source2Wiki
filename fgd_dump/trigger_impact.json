@@ -180,7 +180,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "trigger_impact",
       "Description": "A trigger volume that can be told to push all physics objects that are inside of it in the direction specified by this trigger\u0027s angles.\u003Cbr\u003EAlso outputs the force at the time of impact for anyone else that wants to use it.",
@@ -530,7 +530,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Mesh",
       "Name": "trigger_impact",
       "Description": "A trigger volume that can be told to push all physics objects that are inside of it in the direction specified by this trigger\u0027s angles.\u003Cbr\u003EAlso outputs the force at the time of impact for anyone else that wants to use it.",

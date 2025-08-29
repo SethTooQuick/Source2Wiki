@@ -162,7 +162,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "skybox_reference",
       "Description": "",
@@ -316,7 +316,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "skybox_reference",
       "Description": "",

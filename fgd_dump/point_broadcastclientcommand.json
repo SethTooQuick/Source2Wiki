@@ -144,7 +144,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_broadcastclientcommand",
       "Description": "An entity that issues commands to each valid client\u0027s console, as if it was typed in by that player locally.",
@@ -422,7 +422,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_broadcastclientcommand",
       "Description": "An entity that issues commands to each valid client\u0027s console, as if it was typed in by that player locally.",

@@ -2,11 +2,11 @@
   "Name": "ai_goal_injured_follow",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_injured_follow",
       "Description": "AI Goal Injured Follow",
-      "IconPath": "fgd_dump/img/steamvr/ai_goal_injured_follow.png",
+      "IconPath": "fgd_dump/img/hla/ai_goal_injured_follow.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -117,11 +117,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_injured_follow",
       "Description": "AI Goal Injured Follow",
-      "IconPath": "fgd_dump/img/hla/ai_goal_injured_follow.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_goal_injured_follow.png",
       "PageAnnotation": null,
       "Properties": [
         {

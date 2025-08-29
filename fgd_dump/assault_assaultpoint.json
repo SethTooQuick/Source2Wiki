@@ -2,11 +2,11 @@
   "Name": "assault_assaultpoint",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "assault_assaultpoint",
       "Description": "(Assault) assault point",
-      "IconPath": "fgd_dump/img/steamvr/assault_assaultpoint.png",
+      "IconPath": "fgd_dump/img/hla/assault_assaultpoint.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -167,11 +167,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "assault_assaultpoint",
       "Description": "(Assault) assault point",
-      "IconPath": "fgd_dump/img/hla/assault_assaultpoint.png",
+      "IconPath": "fgd_dump/img/steamvr/assault_assaultpoint.png",
       "PageAnnotation": null,
       "Properties": [
         {

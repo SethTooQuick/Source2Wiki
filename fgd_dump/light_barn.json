@@ -506,6 +506,14 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Force Shadows Enabled",
+          "InternalName": "forceshadowsenabled",
+          "VariableType": "Bool",
+          "Description": "Always enable shadows for this light, regardless of any global settings.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Direct Lighting Type",
           "InternalName": "directlight",
           "VariableType": "Choices",

@@ -2,7 +2,7 @@
   "Name": "point_playermoveconstraint",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_playermoveconstraint",
       "Description": "An entity that constrains players to a radius around itself, slowing them down the closer they get to the edge of the radius.",
@@ -174,7 +174,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_playermoveconstraint",
       "Description": "An entity that constrains players to a radius around itself, slowing them down the closer they get to the edge of the radius.",

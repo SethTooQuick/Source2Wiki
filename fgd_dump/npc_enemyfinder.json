@@ -2,11 +2,11 @@
   "Name": "npc_enemyfinder",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "npc_enemyfinder",
       "Description": "EnemyFinder",
-      "IconPath": "fgd_dump/img/steamvr/npc_enemyfinder.png",
+      "IconPath": "fgd_dump/img/hla/npc_enemyfinder.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -135,11 +135,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "npc_enemyfinder",
       "Description": "EnemyFinder",
-      "IconPath": "fgd_dump/img/hla/npc_enemyfinder.png",
+      "IconPath": "fgd_dump/img/steamvr/npc_enemyfinder.png",
       "PageAnnotation": null,
       "Properties": [
         {

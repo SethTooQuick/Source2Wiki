@@ -2,11 +2,11 @@
   "Name": "ai_sound",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_sound",
       "Description": "This entity makes sounds or smells that can be sensed by NPCs, but not by the player. This can be used to cause reactions in nearby NPCs.\u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003ESound Types\u003C/b\u003E\u003Cbr\u003E- Combat: Will cause most NPCs to become alert\u003Cbr\u003E- World: Will cause most NPCs to become alert\u003Cbr\u003E- Danger: Will cause most NPCs to move away from the position of the sound\u003Cbr\u003E- Bullet Impact\u003Cbr\u003E- Carcass\u003Cbr\u003E- Meat\u003Cbr\u003E- Garbage\u003Cbr\u003E- Thumper: causes antlions to run away briefly\u003Cbr\u003E- Readiness: (Low, Medium, High) Causes player companions that can hear this sound to change readiness",
-      "IconPath": "fgd_dump/img/steamvr/ai_sound.png",
+      "IconPath": "fgd_dump/img/hla/ai_sound.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -132,11 +132,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_sound",
       "Description": "This entity makes sounds or smells that can be sensed by NPCs, but not by the player. This can be used to cause reactions in nearby NPCs.\u003Cbr\u003E\u003Cbr\u003E\u003Cb\u003ESound Types\u003C/b\u003E\u003Cbr\u003E- Combat: Will cause most NPCs to become alert\u003Cbr\u003E- World: Will cause most NPCs to become alert\u003Cbr\u003E- Danger: Will cause most NPCs to move away from the position of the sound\u003Cbr\u003E- Bullet Impact\u003Cbr\u003E- Carcass\u003Cbr\u003E- Meat\u003Cbr\u003E- Garbage\u003Cbr\u003E- Thumper: causes antlions to run away briefly\u003Cbr\u003E- Readiness: (Low, Medium, High) Causes player companions that can hear this sound to change readiness",
-      "IconPath": "fgd_dump/img/hla/ai_sound.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_sound.png",
       "PageAnnotation": null,
       "Properties": [
         {

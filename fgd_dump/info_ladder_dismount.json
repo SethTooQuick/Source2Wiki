@@ -2,7 +2,7 @@
   "Name": "info_ladder_dismount",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_ladder_dismount",
       "Description": "An entity to handle endpoints for multiple ladders that are too close to each other.",
@@ -192,7 +192,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_ladder_dismount",
       "Description": "An entity to handle endpoints for multiple ladders that are too close to each other.",

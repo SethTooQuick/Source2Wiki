@@ -430,7 +430,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_slideconstraint",
       "Description": "A constraint that constrains an entity along a line segment.",
@@ -692,6 +692,14 @@
           "InternalName": "motormaxforcemultiplier",
           "VariableType": "Float",
           "Description": "Measured in multiples (e.g. 10x) of the mass where zero means NO limit (only used when driving the relative offset through the offset input)",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Force Pivot",
+          "InternalName": "useEntityPivot",
+          "VariableType": "Bool",
+          "Description": "Force joint position as constraint pivot",
           "Options": [],
           "Annotations": []
         }
@@ -1272,7 +1280,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_slideconstraint",
       "Description": "A constraint that constrains an entity along a line segment.",
@@ -1534,14 +1542,6 @@
           "InternalName": "motormaxforcemultiplier",
           "VariableType": "Float",
           "Description": "Measured in multiples (e.g. 10x) of the mass where zero means NO limit (only used when driving the relative offset through the offset input)",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Force Pivot",
-          "InternalName": "useEntityPivot",
-          "VariableType": "Bool",
-          "Description": "Force joint position as constraint pivot",
           "Options": [],
           "Annotations": []
         }

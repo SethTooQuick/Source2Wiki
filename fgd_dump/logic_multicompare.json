@@ -178,11 +178,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_multicompare",
       "Description": "Compares a set of inputs to each other. If they are all the same, fires an OnEqual output. If any are different, fires the OnNotEqual output.",
-      "IconPath": "fgd_dump/img/steamvr/logic_multicompare.png",
+      "IconPath": "fgd_dump/img/hla/logic_multicompare.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -524,11 +524,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_multicompare",
       "Description": "Compares a set of inputs to each other. If they are all the same, fires an OnEqual output. If any are different, fires the OnNotEqual output.",
-      "IconPath": "fgd_dump/img/hla/logic_multicompare.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_multicompare.png",
       "PageAnnotation": null,
       "Properties": [
         {

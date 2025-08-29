@@ -181,42 +181,42 @@
         },
         {
           "Name": "Trigger",
-          "Description": "Trigger the relay, causing its OnTrigger output to fire if it is enabled.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Input"
         },
         {
           "Name": "Toggle",
-          "Description": "Toggle the relay between enabled and disabled.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Input"
         },
         {
           "Name": "CancelPending",
-          "Description": "Cancel any events fired by this relay that are currently pending in the I/O event queue.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Input"
         },
         {
           "Name": "OnSpawn",
-          "Description": "Fired when the relay is spawned. If the relay is set to only trigger once, it will delete itself after firing this output.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Output"
         },
         {
           "Name": "OnTrigger",
-          "Description": "Fired when the relay is triggered. If the relay is set to only trigger once, it will delete itself after firing this output.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Output"
         }
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_relay",
       "Description": "A message forwarder. Fires an OnTrigger output when triggered, and can be disabled to prevent forwarding outputs.\u003Cbr\u003E\u003Cbr\u003EUseful as an intermediary between one entity and another for turning on or off an I/O connection, or as a container for holding a set of outputs that can be triggered from multiple places.",
-      "IconPath": "fgd_dump/img/steamvr/logic_relay.png",
+      "IconPath": "fgd_dump/img/hla/logic_relay.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -626,11 +626,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_relay",
       "Description": "A message forwarder. Fires an OnTrigger output when triggered, and can be disabled to prevent forwarding outputs.\u003Cbr\u003E\u003Cbr\u003EUseful as an intermediary between one entity and another for turning on or off an I/O connection, or as a container for holding a set of outputs that can be triggered from multiple places.",
-      "IconPath": "fgd_dump/img/hla/logic_relay.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_relay.png",
       "PageAnnotation": null,
       "Properties": [
         {

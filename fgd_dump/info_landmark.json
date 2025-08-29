@@ -2,11 +2,11 @@
   "Name": "info_landmark",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_landmark",
       "Description": "An entity that acts as a local coordinate frame for transitions to another level. There should be a corresponding info_landmark entity in the next map. Entities will transition to the next level at the same relative offset from the info_landmark entity.\u003Cbr\u003E\u003Cbr\u003ENote that only entities in same the PVS as the info_landmark are considered for transitioning, so it should generally be placed inside the transition space.",
-      "IconPath": "fgd_dump/img/steamvr/info_landmark.png",
+      "IconPath": "fgd_dump/img/hla/info_landmark.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -274,11 +274,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_landmark",
       "Description": "An entity that acts as a local coordinate frame for transitions to another level. There should be a corresponding info_landmark entity in the next map. Entities will transition to the next level at the same relative offset from the info_landmark entity.\u003Cbr\u003E\u003Cbr\u003ENote that only entities in same the PVS as the info_landmark are considered for transitioning, so it should generally be placed inside the transition space.",
-      "IconPath": "fgd_dump/img/hla/info_landmark.png",
+      "IconPath": "fgd_dump/img/steamvr/info_landmark.png",
       "PageAnnotation": null,
       "Properties": [
         {

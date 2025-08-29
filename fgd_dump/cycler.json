@@ -2,7 +2,7 @@
   "Name": "cycler",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "cycler",
       "Description": "An entity used to display a model for testing purposes. Shooting it with cycle through the model\u0027s animations.",
@@ -715,7 +715,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "cycler",
       "Description": "An entity used to display a model for testing purposes. Shooting it with cycle through the model\u0027s animations.",

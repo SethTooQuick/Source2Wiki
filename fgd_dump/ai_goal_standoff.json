@@ -2,11 +2,11 @@
   "Name": "ai_goal_standoff",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_standoff",
       "Description": "AI Goal Standoff",
-      "IconPath": "fgd_dump/img/steamvr/ai_goal_standoff.png",
+      "IconPath": "fgd_dump/img/hla/ai_goal_standoff.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -139,11 +139,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_standoff",
       "Description": "AI Goal Standoff",
-      "IconPath": "fgd_dump/img/hla/ai_goal_standoff.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_goal_standoff.png",
       "PageAnnotation": null,
       "Properties": [
         {

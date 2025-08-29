@@ -263,11 +263,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_cubemap_fog",
       "Description": "",
-      "IconPath": "fgd_dump/img/steamvr/env_cubemap_fog.png",
+      "IconPath": "fgd_dump/img/hla/env_cubemap_fog.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -477,11 +477,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_cubemap_fog",
       "Description": "",
-      "IconPath": "fgd_dump/img/hla/env_cubemap_fog.png",
+      "IconPath": "fgd_dump/img/steamvr/env_cubemap_fog.png",
       "PageAnnotation": null,
       "Properties": [
         {

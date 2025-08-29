@@ -2,7 +2,7 @@
   "Name": "env_screeneffect",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_screeneffect",
       "Description": "Allows screenspace effects to be played on the player\u0027s view.",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_screeneffect",
       "Description": "Allows screenspace effects to be played on the player\u0027s view.",

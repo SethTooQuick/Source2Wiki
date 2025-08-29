@@ -188,11 +188,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_branch",
       "Description": "Tests a boolean value and fires an output based on whether the value is true or false. Use this entity to branch between two potential sets of events.",
-      "IconPath": "fgd_dump/img/steamvr/logic_branch.png",
+      "IconPath": "fgd_dump/img/hla/logic_branch.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -554,11 +554,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_branch",
       "Description": "Tests a boolean value and fires an output based on whether the value is true or false. Use this entity to branch between two potential sets of events.",
-      "IconPath": "fgd_dump/img/hla/logic_branch.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_branch.png",
       "PageAnnotation": null,
       "Properties": [
         {

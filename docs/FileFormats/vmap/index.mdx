@@ -1,0 +1,115 @@
+---
+description: The file format for uncompiled Source2 maps.
+title: VMAP
+---
+
+.vmap is the file format for uncompiled Source2 maps when they are being edited in [Hammer](../../EngineTools/HammerEditor/index.mdx).
+
+It is a [DMX](../dmx.md) file under binary encoding version 4, [Hammer](../../EngineTools/HammerEditor/index.mdx) can export a plain text version if you go to `File -> Save Copy As Text`
+
+:::info
+<Tool name="s2v"/> can decompile compiled maps (.vmap_c usually contained within a VPK) into a .vmap 
+:::
+
+## Vmap example
+
+The following is a simple vmap in plain text format from <Game name="cs2" /> consisting of a hammer mesh and an entity.
+
+:::info
+The Root of a vmap DMX file is `CMapRootElement`\
+In the text encoding of DMX, when an Element is only referenced once, it will be directly inserted as a value of the property that references it, when it's referenced multiple times, it will be extracted and put into the Root element, and everything referencing it will reference its GUID.
+:::
+
+[Vmap example](./example.vmap.mdx) (external page due to the large size)
+
+## Vmap file structure
+
+A list of vmap DMX nodes can be found below, this list is based on a <Game name="cs2" /> version 40 vmap.
+
+Annoyingly the [naming convention](https://en.wikipedia.org/wiki/Naming_convention_(programming)) of attributes in vmaps is all over the place, some of the cases used include:
+- flatcase
+- camelCase
+- PascalCase
+- snake_case
+- `m_` member variable notation
+
+:::todo
+Would be nice to have info on which nodes exists in what vmap version, and possibly even game specific vmap nodes.
+:::
+
+### CMapRootElement
+
+This is the main element of the vmap, it contains a few map specific properties and helper objects, and the main "world" object. All Elements which are referenced more than once will be put inside of this Root node.
+
+```json
+"CMapRootElement"
+{
+	"isprefab" "bool" "0"
+	"editorbuild" "int" "10533"
+	"editorversion" "int" "400"
+	"itemFile" "string" ""
+
+	"defaultcamera" "CStoredCamera"
+	"3dcameras" "CStoredCameras"
+	
+	"world" "CMapWorld" 
+	"visbility" "CVisibilityMgr"
+	
+	"mapVariables" "CMapVariableSet"
+
+	"rootSelectionSet" "CMapSelectionSet"
+	
+	"m_ReferencedMeshSnapshots" "element_array" 
+	[
+	]
+
+	"m_bIsCordoning" "bool" "0"
+	"m_bCordonsVisible" "bool" "0"
+
+	"nodeInstanceData" "element_array" 
+	[
+	]
+}
+```
+
+- isprefab : `bool`\
+    If the map is a prefab or not.
+
+- editorbuild : `int`\
+    The build number that you can view in `Help -> About`.
+
+- editorversion : `int`\
+    Unknown.
+
+- itemFile : `string`\
+    Unknown.
+
+- defaultcamera : `CStoredCamera`\
+    The default editor camera.
+
+- 3dcameras : `CStoredCameras`\
+    A list of other editor cameras.
+
+- world : `CMapWorld`\
+    An Element containing Elements or referenced to Elements which make up the map like entities, meshes, etc..
+
+- visbility : `CVisibilityMgr`\
+    Yes you read that right, this Element is hilariously misspelled as `visbility` instead of `visibility`. It keeps track of what is hidden in the map, from quick hide, selection sets, etc..
+
+- mapVariabled : `CMapVariableSet`\
+    Map variables, they can be set in the `Map -> MapProperties -> Map Variables` tab.
+
+- rootSelectionSet : `CMapSelectionSet`\
+    A hidden selection set which contains all other selection sets.
+
+- m_ReferencedMeshSnapshots : `element_array`\
+    Mesh snapshots referenced by this map.
+
+- m_bIsCordoning : `bool`\
+    If the cordon tool is active.
+
+- m_bCordonsVisible : `bool`\
+    If the cordon tool is visible.
+
+- nodeInstanceData : `element_array`\
+    Per node instance data for things like hammer preview lighting

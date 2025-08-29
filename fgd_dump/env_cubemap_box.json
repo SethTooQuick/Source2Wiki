@@ -115,7 +115,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_cubemap_box",
       "Description": "An env_cubemap with box projection.",
@@ -211,7 +211,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_cubemap_box",
       "Description": "An env_cubemap with box projection.",

@@ -266,11 +266,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_script",
       "Description": "An entity that acts as a container for scripts",
-      "IconPath": "fgd_dump/img/steamvr/logic_script.png",
+      "IconPath": "fgd_dump/img/hla/logic_script.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -788,11 +788,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_script",
       "Description": "An entity that acts as a container for scripts",
-      "IconPath": "fgd_dump/img/hla/logic_script.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_script.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -1,0 +1,15 @@
+{
+  "Name": "cs_pet_placement",
+  "Pages": [
+    {
+      "Game": "cs2",
+      "EntityType": "Point",
+      "Name": "cs_pet_placement",
+      "Description": "Location on the map where to place pet.",
+      "IconPath": "",
+      "PageAnnotation": null,
+      "Properties": [],
+      "InputOutputs": []
+    }
+  ]
+}

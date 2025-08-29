@@ -289,11 +289,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "game_text",
       "Description": "An entity that displays text on player\u0027s screens.",
-      "IconPath": "fgd_dump/img/steamvr/game_text.png",
+      "IconPath": "fgd_dump/img/hla/game_text.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -857,11 +857,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "game_text",
       "Description": "An entity that displays text on player\u0027s screens.",
-      "IconPath": "fgd_dump/img/hla/game_text.png",
+      "IconPath": "fgd_dump/img/steamvr/game_text.png",
       "PageAnnotation": null,
       "Properties": [
         {

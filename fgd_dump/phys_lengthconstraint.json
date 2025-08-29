@@ -284,7 +284,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_lengthconstraint",
       "Description": "A constraint that preserves the distance between two entities. If the \u0027Keep Rigid\u0027 flag is set, think of it as a rod. If not, think off it as a virtual rope.",
@@ -401,6 +401,14 @@
           "InternalName": "attachpoint",
           "VariableType": "Vecline",
           "Description": "",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Enable Collision",
+          "InternalName": "enablecollision",
+          "VariableType": "Bool",
+          "Description": "Constraints disable collision between the attached entities. In some rare cases we want to enable this collision.",
           "Options": [],
           "Annotations": []
         },
@@ -834,7 +842,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_lengthconstraint",
       "Description": "A constraint that preserves the distance between two entities. If the \u0027Keep Rigid\u0027 flag is set, think of it as a rod. If not, think off it as a virtual rope.",
@@ -951,14 +959,6 @@
           "InternalName": "attachpoint",
           "VariableType": "Vecline",
           "Description": "",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Enable Collision",
-          "InternalName": "enablecollision",
-          "VariableType": "Bool",
-          "Description": "Constraints disable collision between the attached entities. In some rare cases we want to enable this collision.",
           "Options": [],
           "Annotations": []
         },

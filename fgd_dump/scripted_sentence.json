@@ -2,11 +2,11 @@
   "Name": "scripted_sentence",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "scripted_sentence",
       "Description": "Scripted Sentence",
-      "IconPath": "fgd_dump/img/steamvr/scripted_sentence.png",
+      "IconPath": "fgd_dump/img/hla/scripted_sentence.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -142,11 +142,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "scripted_sentence",
       "Description": "Scripted Sentence",
-      "IconPath": "fgd_dump/img/hla/scripted_sentence.png",
+      "IconPath": "fgd_dump/img/steamvr/scripted_sentence.png",
       "PageAnnotation": null,
       "Properties": [
         {

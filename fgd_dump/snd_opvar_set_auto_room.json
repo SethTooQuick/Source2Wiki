@@ -257,6 +257,18 @@
           "Type": "Input"
         },
         {
+          "Name": "SetDistanceMapMin",
+          "Description": "Set the min distance map value",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetDistanceMapMax",
+          "Description": "Set the max distance map value",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
           "Name": "OnEnter",
           "Description": "Fired when the player enters the outer distance.",
           "VariableType": "Void",

@@ -170,11 +170,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Mesh",
       "Name": "trigger_autosave",
       "Description": "A trigger volume that autosaves when the player touches it.",
-      "IconPath": "fgd_dump/img/steamvr/trigger_autosave.png",
+      "IconPath": "fgd_dump/img/hla/trigger_autosave.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -500,11 +500,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Mesh",
       "Name": "trigger_autosave",
       "Description": "A trigger volume that autosaves when the player touches it.",
-      "IconPath": "fgd_dump/img/hla/trigger_autosave.png",
+      "IconPath": "fgd_dump/img/steamvr/trigger_autosave.png",
       "PageAnnotation": null,
       "Properties": [
         {

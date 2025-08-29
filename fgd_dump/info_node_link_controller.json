@@ -2,7 +2,7 @@
   "Name": "info_node_link_controller",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_node_link_controller",
       "Description": "An entity that controls all connections between nodes that intersect the controller\u0027s volume. This allows for mass enabling/disabling of all node connections through a volume.",
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_node_link_controller",
       "Description": "An entity that controls all connections between nodes that intersect the controller\u0027s volume. This allows for mass enabling/disabling of all node connections through a volume.",

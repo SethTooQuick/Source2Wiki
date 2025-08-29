@@ -41,3 +41,11 @@ This is a `danger` Admonition.
 :::legacy
 
 :::
+
+:::nonFGD
+
+:::
+
+:::todo
+Something to do.
+:::

@@ -359,14 +359,6 @@
             {
               "Name": "No Gibs",
               "Description": ""
-            },
-            {
-              "Name": "Full Gibs on All Platforms",
-              "Description": ""
-            },
-            {
-              "Name": "Reduced gibs",
-              "Description": ""
             }
           ],
           "Annotations": []
@@ -620,15 +612,23 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Parent Model Bone/Attachment Name",
+          "FriendlyName": "Parent Bone/Attachment Name",
           "InternalName": "parentAttachmentName",
           "VariableType": "ParentAttachment",
-          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.",
+          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if \u0027Use Local Transform\u0027 is NOT specified (in that case local transform will be identity)",
           "Options": [],
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment position offset",
+          "FriendlyName": "Use Local Transform",
+          "InternalName": "useLocalOffset",
+          "VariableType": "Bool",
+          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Origin",
           "InternalName": "local.origin",
           "VariableType": "Vector",
           "Description": "Offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -636,7 +636,7 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment angular offset",
+          "FriendlyName": "Local Angles",
           "InternalName": "local.angles",
           "VariableType": "Angle",
           "Description": "Angular offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -644,18 +644,10 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment scale",
+          "FriendlyName": "Local Scale",
           "InternalName": "local.scales",
           "VariableType": "Vector",
           "Description": "Scale in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Use Model Attachment Offset",
-          "InternalName": "useLocalOffset",
-          "VariableType": "Bool",
-          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
           "Options": [],
           "Annotations": []
         },
@@ -780,6 +772,30 @@
           "InternalName": "AnimateOnServer",
           "VariableType": "Bool",
           "Description": "Enable this to animate on the server in multiplayer games, such as for props with triggers parented to attachment points. Use sparingly as there is a performance cost.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactAs",
+          "InternalName": "interactAs",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact as",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactWith",
+          "InternalName": "interactWith",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactExclude",
+          "InternalName": "interactExclude",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to not collide with",
           "Options": [],
           "Annotations": []
         },
@@ -998,6 +1014,12 @@
           "Type": "Input"
         },
         {
+          "Name": "OnStartDeath",
+          "Description": "Fired when this prop has begun dying (breaking) before other death-related callbacks.",
+          "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
           "Name": "OnBreak",
           "Description": "Fired when this breakable breaks.",
           "VariableType": "Void",
@@ -1055,6 +1077,12 @@
           "Name": "OnIgnite",
           "Description": "Fired when this object catches fire.",
           "VariableType": "Void",
+          "Type": "Output"
+        },
+        {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Output"
         },
         {
@@ -1172,6 +1200,12 @@
           "Type": "Input"
         },
         {
+          "Name": "SetRagdollProfile",
+          "Description": "Sets the active ragdoll profile.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
           "Name": "OnAnimationBegun",
           "Description": "Fired whenever a new animation has begun playing.",
           "VariableType": "Void",
@@ -1204,7 +1238,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "prop_dynamic",
       "Description": "A prop that can be placed in hierarchy and can play animations and/or simulate cloth. It can also be configured to break when it takes enough damage. Note that the health of the object will be overridden by the health inside the model, to ensure consistent health game-wide. If the model used by the prop is configured to be used as a prop_physics (i.e. it should be physically simulated) then it CANNOT be used as a prop_dynamic. Upon level load it will display a warning in the console and remove itself. Use a prop_physics instead.",
@@ -1996,7 +2030,7 @@
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
-          "Description": "Select a path_corner entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
+          "Description": "Select an entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
           "Options": [],
           "Annotations": []
         },
@@ -2025,10 +2059,26 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Force NPC Exclude",
+          "InternalName": "forcenpcexclude",
+          "VariableType": "Bool",
+          "Description": "If set, NPC movement will ignore this prop",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Cloth Scale",
           "InternalName": "clothScale",
           "VariableType": "Float",
           "Description": "Cloth scale (stretch) relative to model scale. Use to stretch (not scale) the model, e.g. to reuse a single rope model when different lengths of the rope needed.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Bias Lighting Origin Towards Player",
+          "InternalName": "fixup_lighting_origin_to_player_side",
+          "VariableType": "Bool",
+          "Description": "For windows and doors and other dynamic things that straddle lighting volume boundaries - bias the lighting origin toward whichever side the local player is on",
           "Options": [],
           "Annotations": []
         }
@@ -3219,6 +3269,30 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "interactAs",
+          "InternalName": "interactAs",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact as",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactWith",
+          "InternalName": "interactWith",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to interact with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "interactExclude",
+          "InternalName": "interactExclude",
+          "VariableType": "String",
+          "Description": "comma-separated list of interaction layers to not collide with",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
@@ -3499,6 +3573,12 @@
           "Type": "Output"
         },
         {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Output"
+        },
+        {
           "Name": "SetParent",
           "Description": "Changes the entity\u0027s parent in the movement hierarchy.",
           "VariableType": "TargetDestination",
@@ -3651,7 +3731,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "prop_dynamic",
       "Description": "A prop that can be placed in hierarchy and can play animations and/or simulate cloth. It can also be configured to break when it takes enough damage. Note that the health of the object will be overridden by the health inside the model, to ensure consistent health game-wide. If the model used by the prop is configured to be used as a prop_physics (i.e. it should be physically simulated) then it CANNOT be used as a prop_dynamic. Upon level load it will display a warning in the console and remove itself. Use a prop_physics instead.",
@@ -4443,7 +4523,7 @@
           "FriendlyName": "Lighting Origin",
           "InternalName": "lightingorigin",
           "VariableType": "TargetDestination",
-          "Description": "Select an entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
+          "Description": "Select a path_corner entity to specify a location to sample lighting from, instead of using this entity\u0027s origin.",
           "Options": [],
           "Annotations": []
         },
@@ -4472,26 +4552,10 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Force NPC Exclude",
-          "InternalName": "forcenpcexclude",
-          "VariableType": "Bool",
-          "Description": "If set, NPC movement will ignore this prop",
-          "Options": [],
-          "Annotations": []
-        },
-        {
           "FriendlyName": "Cloth Scale",
           "InternalName": "clothScale",
           "VariableType": "Float",
           "Description": "Cloth scale (stretch) relative to model scale. Use to stretch (not scale) the model, e.g. to reuse a single rope model when different lengths of the rope needed.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Bias Lighting Origin Towards Player",
-          "InternalName": "fixup_lighting_origin_to_player_side",
-          "VariableType": "Bool",
-          "Description": "For windows and doors and other dynamic things that straddle lighting volume boundaries - bias the lighting origin toward whichever side the local player is on",
           "Options": [],
           "Annotations": []
         }

@@ -34,10 +34,26 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Friction",
+          "InternalName": "friction",
+          "VariableType": "Float",
+          "Description": "Friction that slows the object\u0027s rotation when the motor is disabled. Start with a very small value between 0 and 1, and tune from there.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Spin up time",
           "InternalName": "spinup",
           "VariableType": "String",
           "Description": "spin up time in seconds (also affects the rate at which speed changes happen)",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Spin down time",
+          "InternalName": "spindown",
+          "VariableType": "String",
+          "Description": "spin down time in seconds (also affects the rate at which speed changes happen)",
           "Options": [],
           "Annotations": []
         },
@@ -83,6 +99,14 @@
           "InternalName": "attach1",
           "VariableType": "TargetDestination",
           "Description": "Object to apply the force to",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Anchor Object",
+          "InternalName": "attach2",
+          "VariableType": "TargetDestination",
+          "Description": "Object the other side of the motor joint is attached to. If blank, the motor is anchored to the world.",
           "Options": [],
           "Annotations": []
         }
@@ -203,6 +227,30 @@
           "Type": "Input"
         },
         {
+          "Name": "SetSpinUpTime",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetSpinDownTime",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetFriction",
+          "Description": "Sets friction -- only applies when the motor is off",
+          "VariableType": "Float",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetSystemInertiaScale",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Input"
+        },
+        {
           "Name": "TurnOn",
           "Description": "Turns motor on",
           "VariableType": "Void",
@@ -217,7 +265,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_motor",
       "Description": "An entity that tries to spin a target entity at a particular speed.",
@@ -689,7 +737,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_motor",
       "Description": "An entity that tries to spin a target entity at a particular speed.",

@@ -307,6 +307,12 @@
           "Type": "Output"
         },
         {
+          "Name": "OnDestructiblePartDestroyed",
+          "Description": "",
+          "VariableType": "Cpp",
+          "Type": "Output"
+        },
+        {
           "Name": "CutDown",
           "Description": "Cut down the tree.",
           "VariableType": "Void",

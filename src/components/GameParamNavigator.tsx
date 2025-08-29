@@ -11,8 +11,6 @@ export default function GameParamNavigator() {
         const unlisten = history.listen((locationUpdate: Location) => {
             if (!gameParam) return;
 
-            console.log(`useEffect GameParamNavigator ${gameParam}`);
-
             const params = new URLSearchParams(locationUpdate.search);
             if (!params.has('game')) {
                 params.set('game', gameParam);

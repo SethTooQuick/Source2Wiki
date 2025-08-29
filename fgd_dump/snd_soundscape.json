@@ -26,15 +26,23 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Parent Model Bone/Attachment Name",
+          "FriendlyName": "Parent Bone/Attachment Name",
           "InternalName": "parentAttachmentName",
           "VariableType": "ParentAttachment",
-          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment.",
+          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if \u0027Use Local Transform\u0027 is NOT specified (in that case local transform will be identity)",
           "Options": [],
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment position offset",
+          "FriendlyName": "Use Local Transform",
+          "InternalName": "useLocalOffset",
+          "VariableType": "Bool",
+          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Origin",
           "InternalName": "local.origin",
           "VariableType": "Vector",
           "Description": "Offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -42,7 +50,7 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment angular offset",
+          "FriendlyName": "Local Angles",
           "InternalName": "local.angles",
           "VariableType": "Angle",
           "Description": "Angular offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
@@ -50,18 +58,10 @@
           "Annotations": []
         },
         {
-          "FriendlyName": "Model Attachment scale",
+          "FriendlyName": "Local Scale",
           "InternalName": "local.scales",
           "VariableType": "Vector",
           "Description": "Scale in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
-          "Options": [],
-          "Annotations": []
-        },
-        {
-          "FriendlyName": "Use Model Attachment Offset",
-          "InternalName": "useLocalOffset",
-          "VariableType": "Bool",
-          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
           "Options": [],
           "Annotations": []
         },
@@ -344,11 +344,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "snd_soundscape",
       "Description": "An entity to control sound in an area. The active soundscape at any time is the last one that had line-of-sight to the player, and was within the radius.",
-      "IconPath": "fgd_dump/img/steamvr/snd_soundscape.png",
+      "IconPath": "fgd_dump/img/hla/snd_soundscape.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -1006,11 +1006,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "snd_soundscape",
       "Description": "An entity to control sound in an area. The active soundscape at any time is the last one that had line-of-sight to the player, and was within the radius.",
-      "IconPath": "fgd_dump/img/hla/snd_soundscape.png",
+      "IconPath": "fgd_dump/img/steamvr/snd_soundscape.png",
       "PageAnnotation": null,
       "Properties": [
         {

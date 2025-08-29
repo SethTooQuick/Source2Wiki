@@ -216,7 +216,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_message",
       "Description": "An entity that draws a text message on player\u0027s HUDs.",
@@ -638,7 +638,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_message",
       "Description": "An entity that draws a text message on player\u0027s HUDs.",

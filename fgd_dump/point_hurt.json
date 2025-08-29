@@ -287,7 +287,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_hurt",
       "Description": "An entity that does damage to all entities in a radius around itself, with a specified delay.If \u0027Target Entity\u0027 is specified, the damage is only done to that entity.",
@@ -851,7 +851,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_hurt",
       "Description": "An entity that does damage to all entities in a radius around itself, with a specified delay.If \u0027Target Entity\u0027 is specified, the damage is only done to that entity.",

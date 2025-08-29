@@ -226,7 +226,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_angularvelocitysensor",
       "Description": "An entity that detects if another entity\u0027s angular velocity meets or exceeds a threshold value.",
@@ -668,7 +668,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_angularvelocitysensor",
       "Description": "An entity that detects if another entity\u0027s angular velocity meets or exceeds a threshold value.",

@@ -183,11 +183,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_visibility_box",
-      "Description": "A visibility culling box which can be used to hide objects at runtime and can be toggled on and off by entity I/O.",
-      "IconPath": "fgd_dump/img/steamvr/info_visibility_box.png",
+      "Description": "A dynamic visibility culling box which can be used to hide objects at runtime and can be toggled on and off by entity I/O.",
+      "IconPath": "fgd_dump/img/hla/info_visibility_box.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -539,11 +539,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_visibility_box",
-      "Description": "A dynamic visibility culling box which can be used to hide objects at runtime and can be toggled on and off by entity I/O.",
-      "IconPath": "fgd_dump/img/hla/info_visibility_box.png",
+      "Description": "A visibility culling box which can be used to hide objects at runtime and can be toggled on and off by entity I/O.",
+      "IconPath": "fgd_dump/img/steamvr/info_visibility_box.png",
       "PageAnnotation": null,
       "Properties": [
         {

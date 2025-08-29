@@ -2,7 +2,7 @@
   "Name": "ai_npc_eventresponsesystem",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_npc_eventresponsesystem",
       "Description": "An entity that allows you to generate events for nearby friendly NPCs to respond to.",
@@ -31,7 +31,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_npc_eventresponsesystem",
       "Description": "An entity that allows you to generate events for nearby friendly NPCs to respond to.",

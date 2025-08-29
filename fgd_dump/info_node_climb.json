@@ -2,7 +2,7 @@
   "Name": "info_node_climb",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_node_climb",
       "Description": "A climb-node for AI navigation. Only usable by NPCs that can climb.",
@@ -478,7 +478,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_node_climb",
       "Description": "A climb-node for AI navigation. Only usable by NPCs that can climb.",

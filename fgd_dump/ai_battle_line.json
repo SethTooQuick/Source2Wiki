@@ -2,7 +2,7 @@
   "Name": "ai_battle_line",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_battle_line",
       "Description": "Battle line",
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_battle_line",
       "Description": "Battle line",

@@ -190,7 +190,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_navigation",
       "Description": "An entity that is used to set navigation properties on other entities. Useful to make NPCs ignore physics props in their way that they can easily push.",
@@ -560,7 +560,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_navigation",
       "Description": "An entity that is used to set navigation properties on other entities. Useful to make NPCs ignore physics props in their way that they can easily push.",

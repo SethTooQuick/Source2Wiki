@@ -10,6 +10,23 @@
       "PageAnnotation": null,
       "Properties": [
         {
+          "FriendlyName": "Create Client-Only Entity",
+          "InternalName": "clientSideEntity",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "No",
+              "Description": ""
+            },
+            {
+              "Name": "Yes",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Entity Scripts",
           "InternalName": "vscripts",
           "VariableType": "ScriptList",
@@ -181,11 +198,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "filter_activator_name",
       "Description": "A filter that filters by the name of the activator.",
-      "IconPath": "fgd_dump/img/steamvr/filter_activator_name.png",
+      "IconPath": "fgd_dump/img/hla/filter_activator_name.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -550,11 +567,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "filter_activator_name",
       "Description": "A filter that filters by the name of the activator.",
-      "IconPath": "fgd_dump/img/hla/filter_activator_name.png",
+      "IconPath": "fgd_dump/img/steamvr/filter_activator_name.png",
       "PageAnnotation": null,
       "Properties": [
         {

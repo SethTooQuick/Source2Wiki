@@ -10,6 +10,23 @@
       "PageAnnotation": null,
       "Properties": [
         {
+          "FriendlyName": "Create Client-Only Entity",
+          "InternalName": "clientSideEntity",
+          "VariableType": "Choices",
+          "Description": "",
+          "Options": [
+            {
+              "Name": "No",
+              "Description": ""
+            },
+            {
+              "Name": "Yes",
+              "Description": ""
+            }
+          ],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Entity Scripts",
           "InternalName": "vscripts",
           "VariableType": "ScriptList",
@@ -218,11 +235,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "filter_enemy",
       "Description": "A filter that filters a potential enemy entity by a set of criteria.",
-      "IconPath": "fgd_dump/img/steamvr/filter_enemy.png",
+      "IconPath": "fgd_dump/img/hla/filter_enemy.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -661,11 +678,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "filter_enemy",
       "Description": "A filter that filters a potential enemy entity by a set of criteria.",
-      "IconPath": "fgd_dump/img/hla/filter_enemy.png",
+      "IconPath": "fgd_dump/img/steamvr/filter_enemy.png",
       "PageAnnotation": null,
       "Properties": [
         {

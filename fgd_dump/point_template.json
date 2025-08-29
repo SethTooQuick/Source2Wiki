@@ -27,6 +27,54 @@
           "Annotations": []
         },
         {
+          "FriendlyName": "Parent",
+          "InternalName": "parentname",
+          "VariableType": "TargetDestination",
+          "Description": "The name of this entity\u0027s parent in the movement hierarchy. Entities with parents move with their parent.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Parent Bone/Attachment Name",
+          "InternalName": "parentAttachmentName",
+          "VariableType": "ParentAttachment",
+          "Description": "The name of the bone or attachment to attach to on the entity\u0027s parent in the movement hierarchy. Use !bonemerge to use bone-merge style attachment. NOTE: If this is specified the Hammer transform will be disregarded, even if \u0027Use Local Transform\u0027 is NOT specified (in that case local transform will be identity)",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Use Local Transform",
+          "InternalName": "useLocalOffset",
+          "VariableType": "Bool",
+          "Description": "Whether to respect the specified local offset when doing the initial hierarchical attachment to its parent.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Origin",
+          "InternalName": "local.origin",
+          "VariableType": "Vector",
+          "Description": "Offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Angles",
+          "InternalName": "local.angles",
+          "VariableType": "Angle",
+          "Description": "Angular offset in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Local Scale",
+          "InternalName": "local.scales",
+          "VariableType": "Vector",
+          "Description": "Scale in the local space of the parent model\u0027s attachment/bone to use in hierarchy. Not used if you are not using parent attachment.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
           "FriendlyName": "Entity Scripts",
           "InternalName": "vscripts",
           "VariableType": "ScriptList",
@@ -636,6 +684,36 @@
       ],
       "InputOutputs": [
         {
+          "Name": "SetParent",
+          "Description": "Changes the entity\u0027s parent in the movement hierarchy.",
+          "VariableType": "TargetDestination",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetParentAttachment",
+          "Description": "Change this entity to attach to a specific attachment point on its parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "SetParentAttachmentMaintainOffset",
+          "Description": "Change this entity to attach to a specific attachment point on it\u0027s parent. Entities must be parented before being sent this input. The parameter passed in should be the name of the attachment. The entity will maintain it\u0027s position relative to the parent at the time it is attached.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
+          "Name": "ClearParent",
+          "Description": "Removes this entity from the the movement hierarchy, leaving it free to move independently.",
+          "VariableType": "Void",
+          "Type": "Input"
+        },
+        {
+          "Name": "FollowEntity",
+          "Description": "Bone merges this entity to a parent entity. Call again passing nothing to end the bone merge.",
+          "VariableType": "String",
+          "Type": "Input"
+        },
+        {
           "Name": "RunScriptFile",
           "Description": "Load and execute a script file",
           "VariableType": "String",
@@ -745,30 +823,30 @@
         },
         {
           "Name": "ForceSpawn",
-          "Description": "Spawn an instance of the template at the original position.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Input"
         },
         {
           "Name": "DeleteCreatedSpawnGroups",
-          "Description": "Deletes all spawn groups created by the template. Only works if you use asynchronous spawn and INSERT_INTO_NEWLY_CREATED_SPAWN_GROUP.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Input"
         },
         {
           "Name": "OnEntitySpawned",
-          "Description": "Fired after spawning an instance of this template.",
-          "VariableType": "Void",
+          "Description": "",
+          "VariableType": "Cpp",
           "Type": "Output"
         }
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_template",
       "Description": "Turns an entity, or set of entities, into a single template that can be instanced anywhere, and multiple times. If there are interdependencies (entity I/O, hierarchy, or other name references) between the entities in the template, the entities in the template will have their names changed and the interdependencies will be reconnected to the changes names. The name change format is as follows: \u0027\u003Coriginal name\u003E\u00260000\u0027, where the 0000 will be replaced with the current global template instance, so wildcard searches for \u0027\u003Coriginal name\u003E*\u0027 will still find them.\u003Cbr\u003E\u003Cbr\u003EIf you don\u0027t want the name fixup to happen because you\u0027re only spawning the template once, or you want inputs to trigger all instances of the template, check the \u0027Preserve entity names\u0027 spawnflag.\u003Cbr\u003E\u003Cbr\u003ETo spawn the template in other places, use an env_entity_maker.",
-      "IconPath": "fgd_dump/img/steamvr/point_template.png",
+      "IconPath": "fgd_dump/img/hla/point_template.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -2343,11 +2421,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_template",
       "Description": "Turns an entity, or set of entities, into a single template that can be instanced anywhere, and multiple times. If there are interdependencies (entity I/O, hierarchy, or other name references) between the entities in the template, the entities in the template will have their names changed and the interdependencies will be reconnected to the changes names. The name change format is as follows: \u0027\u003Coriginal name\u003E\u00260000\u0027, where the 0000 will be replaced with the current global template instance, so wildcard searches for \u0027\u003Coriginal name\u003E*\u0027 will still find them.\u003Cbr\u003E\u003Cbr\u003EIf you don\u0027t want the name fixup to happen because you\u0027re only spawning the template once, or you want inputs to trigger all instances of the template, check the \u0027Preserve entity names\u0027 spawnflag.\u003Cbr\u003E\u003Cbr\u003ETo spawn the template in other places, use an env_entity_maker.",
-      "IconPath": "fgd_dump/img/hla/point_template.png",
+      "IconPath": "fgd_dump/img/steamvr/point_template.png",
       "PageAnnotation": null,
       "Properties": [
         {

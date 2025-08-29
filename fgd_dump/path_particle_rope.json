@@ -2,7 +2,7 @@
   "Name": "path_particle_rope",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "path_particle_rope",
       "Description": "",
@@ -496,7 +496,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "path_particle_rope",
       "Description": "",

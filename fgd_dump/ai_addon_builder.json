@@ -2,7 +2,7 @@
   "Name": "ai_addon_builder",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_addon_builder",
       "Description": "",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_addon_builder",
       "Description": "",

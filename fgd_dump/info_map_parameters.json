@@ -105,6 +105,46 @@
           "Description": "Enable or disable traces for rain droplet effects.",
           "Options": [],
           "Annotations": []
+        },
+        {
+          "FriendlyName": "Environment Rain Strength",
+          "InternalName": "envrainstrength",
+          "VariableType": "Float",
+          "Description": "Controls the amount of rain splashes.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Environment Puddle Ripple Strength",
+          "InternalName": "envpuddleripplestrength",
+          "VariableType": "Float",
+          "Description": "Strength of the puddle ripples.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Environment Puddle Ripple Direction",
+          "InternalName": "envpuddlerippledirection",
+          "VariableType": "Float",
+          "Description": "Rotates the puddle ripples (0 to 1, i.e. 0.5 is reversed, 0.25 is 90 degrees).",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Environment Wetness Coverage",
+          "InternalName": "envwetnesscoverage",
+          "VariableType": "Float",
+          "Description": "How wet the environment was before drying.",
+          "Options": [],
+          "Annotations": []
+        },
+        {
+          "FriendlyName": "Environment Wetness Drying Amount",
+          "InternalName": "envwetnessdryingamount",
+          "VariableType": "Float",
+          "Description": "How much the environment dried out.",
+          "Options": [],
+          "Annotations": []
         }
       ],
       "InputOutputs": [

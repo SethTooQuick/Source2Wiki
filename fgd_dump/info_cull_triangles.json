@@ -58,11 +58,11 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_cull_triangles",
-      "Description": "",
-      "IconPath": "fgd_dump/img/steamvr/info_cull_triangles.png",
+      "Description": "A static (compile-time) volume that will delete geometry inside it as part of map compile.",
+      "IconPath": "fgd_dump/img/hla/info_cull_triangles.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -170,11 +170,11 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_cull_triangles",
-      "Description": "A static (compile-time) volume that will delete geometry inside it as part of map compile.",
-      "IconPath": "fgd_dump/img/hla/info_cull_triangles.png",
+      "Description": "",
+      "IconPath": "fgd_dump/img/steamvr/info_cull_triangles.png",
       "PageAnnotation": null,
       "Properties": [
         {

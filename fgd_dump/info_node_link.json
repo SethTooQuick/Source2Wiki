@@ -2,7 +2,7 @@
   "Name": "info_node_link",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_node_link",
       "Description": "A dynamic connection between two navigation nodes. You specify the node IDs of the start and end nodes, and then you can use entity I/O to turn on and off the connection. This could be used to create or destroy a connection in the nodegraph because of some event in your map (a bridge being created/destroyed, etc).",
@@ -331,7 +331,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_node_link",
       "Description": "A dynamic connection between two navigation nodes. You specify the node IDs of the start and end nodes, and then you can use entity I/O to turn on and off the connection. This could be used to create or destroy a connection in the nodegraph because of some event in your map (a bridge being created/destroyed, etc).",

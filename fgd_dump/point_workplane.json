@@ -146,7 +146,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_workplane",
       "Description": "A dummy entity used to bookmark a frequently used workplane origin and angles. Not compiled into the map.",
@@ -428,7 +428,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_workplane",
       "Description": "A dummy entity used to bookmark a frequently used workplane origin and angles. Not compiled into the map.",

@@ -2,7 +2,7 @@
   "Name": "npc_vehicledriver",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "npc_vehicledriver",
       "Description": "NPC used to drive a target vehicle.",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "npc_vehicledriver",
       "Description": "NPC used to drive a target vehicle.",

@@ -2,11 +2,11 @@
   "Name": "env_tonemap_controller",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_tonemap_controller",
       "Description": "An entity that controls the HDR tonemapping for the player. Think of it as a method of controlling the exposure of the player\u0027s eyes.",
-      "IconPath": "fgd_dump/img/steamvr/env_tonemap_controller.png",
+      "IconPath": "fgd_dump/img/hla/env_tonemap_controller.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -472,11 +472,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_tonemap_controller",
       "Description": "An entity that controls the HDR tonemapping for the player. Think of it as a method of controlling the exposure of the player\u0027s eyes.",
-      "IconPath": "fgd_dump/img/hla/env_tonemap_controller.png",
+      "IconPath": "fgd_dump/img/steamvr/env_tonemap_controller.png",
       "PageAnnotation": null,
       "Properties": [
         {

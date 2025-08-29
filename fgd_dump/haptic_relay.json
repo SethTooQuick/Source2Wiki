@@ -2,11 +2,11 @@
   "Name": "haptic_relay",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "haptic_relay",
       "Description": "Takes Eventoutput and translates them to a Haptic Event (VR / Controller Target)",
-      "IconPath": "fgd_dump/img/steamvr/haptic_relay.png",
+      "IconPath": "fgd_dump/img/hla/haptic_relay.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -328,11 +328,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "haptic_relay",
       "Description": "Takes Eventoutput and translates them to a Haptic Event (VR / Controller Target)",
-      "IconPath": "fgd_dump/img/hla/haptic_relay.png",
+      "IconPath": "fgd_dump/img/steamvr/haptic_relay.png",
       "PageAnnotation": null,
       "Properties": [
         {

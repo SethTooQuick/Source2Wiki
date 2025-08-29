@@ -2,7 +2,7 @@
   "Name": "func_instance",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "dota2",
       "EntityType": "Point",
       "Name": "func_instance",
       "Description": "An entity for placing an instance of a prefab map file.  You may translate and rotate this entity. You can use the replace keys to do parameter changes on the instance contents.  In a $ at the beginning of a variable name.  Then just use the $variable name inside of the instance contents on any value portion of a key/value pair.",
@@ -130,7 +130,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "dota2",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "func_instance",
       "Description": "An entity for placing an instance of a prefab map file.  You may translate and rotate this entity. You can use the replace keys to do parameter changes on the instance contents.  In a $ at the beginning of a variable name.  Then just use the $variable name inside of the instance contents on any value portion of a key/value pair.",

@@ -276,7 +276,7 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "phys_pulleyconstraint",
       "Description": "A constraint that is essentially two length constraints and two points. Imagine it as a virtual rope connected to two objects, each suspended from a pulley above them.The constraint keeps the sum of the distances between the pulley points and their suspended objects constant.",
@@ -818,7 +818,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "phys_pulleyconstraint",
       "Description": "A constraint that is essentially two length constraints and two points. Imagine it as a virtual rope connected to two objects, each suspended from a pulley above them.The constraint keeps the sum of the distances between the pulley points and their suspended objects constant.",

@@ -611,11 +611,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "logic_npc_counter_radius",
       "Description": "Does calculations based on the number of a specified type of NPC in a specified region.",
-      "IconPath": "fgd_dump/img/steamvr/logic_npc_counter_radius.png",
+      "IconPath": "fgd_dump/img/hla/logic_npc_counter_radius.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -1823,11 +1823,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "logic_npc_counter_radius",
       "Description": "Does calculations based on the number of a specified type of NPC in a specified region.",
-      "IconPath": "fgd_dump/img/hla/logic_npc_counter_radius.png",
+      "IconPath": "fgd_dump/img/steamvr/logic_npc_counter_radius.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -1,0 +1,8 @@
+.sidebarAction{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-right:0.5rem;
+    color: var(--ifm-font-color-base);
+}

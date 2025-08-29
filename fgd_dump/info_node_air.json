@@ -2,7 +2,7 @@
   "Name": "info_node_air",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_node_air",
       "Description": "A navigation node for flying NPCs. Air navigation nodes are baked into the nodegraph so that NPCs can move to them. Air nodes do not fall to the ground when they spawn.",
@@ -29,7 +29,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_node_air",
       "Description": "A navigation node for flying NPCs. Air navigation nodes are baked into the nodegraph so that NPCs can move to them. Air nodes do not fall to the ground when they spawn.",

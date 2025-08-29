@@ -29,7 +29,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "dota2",
       "EntityType": "Point",
       "Name": "point_devshot_camera",
       "Description": "An entity used by the -makedevshots system, which automatically takes screenshots at the position of every devshot camera in the level.",
@@ -56,7 +56,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "dota2",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_devshot_camera",
       "Description": "An entity used by the -makedevshots system, which automatically takes screenshots at the position of every devshot camera in the level.",

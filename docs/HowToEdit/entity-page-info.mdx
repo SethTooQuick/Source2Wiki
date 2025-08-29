@@ -11,6 +11,8 @@ To make an entity override, you can add a new file in the `/fgd_dump_overrides` 
 - `{entity_classname}`.json for a global override for this entity in all games
 - `{entity-classname}`-`{game_name}`.json for a game specific override
 
+You can make an override be specific for more than one game at a time, for example: `info_null-cs2-hla`
+
 Available game names are:
 - `cs2` (for Counter-Strike 2)
 - `hla` (for Half-Life: Alyx)
@@ -21,6 +23,15 @@ Available game names are:
 :::tip
 Global overrides are applied before game specific ones!
 :::
+
+## Non FGD Entities
+
+If a page override doesn't match with any existing entity, it will be treated as a non FGD entity page, it will simply be added to the entity list and will gain this annotation:
+
+:::nonFGD
+:::
+
+If no game is specific, it will be added to all games.
 
 ## Entity Page Override Structure
 

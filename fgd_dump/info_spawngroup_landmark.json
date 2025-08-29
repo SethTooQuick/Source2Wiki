@@ -138,11 +138,11 @@
       ]
     },
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "info_spawngroup_landmark",
       "Description": "Used by info_spawngroup_load to specify a landmark between two spawngroups to load",
-      "IconPath": "fgd_dump/img/steamvr/info_spawngroup_landmark.png",
+      "IconPath": "fgd_dump/img/hla/info_spawngroup_landmark.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -404,11 +404,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_spawngroup_landmark",
       "Description": "Used by info_spawngroup_load to specify a landmark between two spawngroups to load",
-      "IconPath": "fgd_dump/img/hla/info_spawngroup_landmark.png",
+      "IconPath": "fgd_dump/img/steamvr/info_spawngroup_landmark.png",
       "PageAnnotation": null,
       "Properties": [
         {

@@ -93,7 +93,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "steamvr",
+      "Game": "dota2",
       "EntityType": "Point",
       "Name": "info_overlay_transition",
       "Description": "Overlay Transition",
@@ -184,7 +184,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "dota2",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "info_overlay_transition",
       "Description": "Overlay Transition",

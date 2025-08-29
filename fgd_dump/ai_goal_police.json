@@ -2,11 +2,11 @@
   "Name": "ai_goal_police",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "ai_goal_police",
       "Description": "AI Goal Police",
-      "IconPath": "fgd_dump/img/steamvr/ai_goal_police.png",
+      "IconPath": "fgd_dump/img/hla/ai_goal_police.png",
       "PageAnnotation": null,
       "Properties": [
         {
@@ -89,11 +89,11 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "ai_goal_police",
       "Description": "AI Goal Police",
-      "IconPath": "fgd_dump/img/hla/ai_goal_police.png",
+      "IconPath": "fgd_dump/img/steamvr/ai_goal_police.png",
       "PageAnnotation": null,
       "Properties": [
         {

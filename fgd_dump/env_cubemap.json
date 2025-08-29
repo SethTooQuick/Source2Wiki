@@ -2,7 +2,7 @@
   "Name": "env_cubemap",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "env_cubemap",
       "Description": "Cubemap for sampling indirect specular reflection.",
@@ -90,7 +90,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "env_cubemap",
       "Description": "Cubemap for sampling indirect specular reflection.",

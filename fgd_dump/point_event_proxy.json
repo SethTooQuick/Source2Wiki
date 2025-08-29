@@ -2,7 +2,7 @@
   "Name": "point_event_proxy",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "point_event_proxy",
       "Description": "An entity that allows fires simple game events from map logic",
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "point_event_proxy",
       "Description": "An entity that allows fires simple game events from map logic",

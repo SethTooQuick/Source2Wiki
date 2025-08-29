@@ -2,7 +2,7 @@
   "Name": "prop_detail",
   "Pages": [
     {
-      "Game": "steamvr",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "prop_detail",
       "Description": "Detail Prop",
@@ -29,7 +29,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "steamvr",
       "EntityType": "Point",
       "Name": "prop_detail",
       "Description": "Detail Prop",

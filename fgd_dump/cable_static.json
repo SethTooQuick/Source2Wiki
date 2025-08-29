@@ -12,7 +12,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "dota2",
+      "Game": "hla",
       "EntityType": "Point",
       "Name": "cable_static",
       "Description": "",
@@ -22,7 +22,7 @@
       "InputOutputs": []
     },
     {
-      "Game": "hla",
+      "Game": "dota2",
       "EntityType": "Point",
       "Name": "cable_static",
       "Description": "",
